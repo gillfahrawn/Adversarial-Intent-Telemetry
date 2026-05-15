@@ -50,8 +50,9 @@ This is the source of truth for what the README may describe as existing.
 | Path | Status | Notes |
 |---|---|---|
 | `README.md` | exists | Current version; iteratively refined |
-| `paper/Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf` | exists | The paper |
-| `LICENSE` | exists | CC BY 4.0 |
+| `CLAUDE.md` | exists | Session context and project instructions |
+| `Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf` | exists | The paper (at repository root, not in a subdirectory) |
+| `LICENSE` | **TODO** | Add CC BY 4.0 license file before first public share |
 | `CITATION.cff` | **TODO** | Add before first public share |
 | `CHANGELOG.md` | **TODO** | Track draft version history |
 | `spec/manifest-schema.json` | **not yet** | Appendix A as JSON Schema |
