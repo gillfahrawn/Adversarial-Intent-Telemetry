@@ -1,0 +1,468 @@
+# CLAUDE.md — Decentralized Telemetry for Adversarial AI Intent
+
+This file is the persistent context for all Claude Code sessions on this repository.
+Read it fully before making any change to any file. Update the **Repository State**
+section whenever you add, remove, or rename a file.
+
+---
+
+## 1. Project Identity
+
+**What this is**: A GitHub repository for a technical working-paper that specifies a
+decentralized handshake protocol for cross-provider exchange of structural signatures
+of adversarial AI intent. It is a specification document with a synthetic-validation
+harness, not a deployed system or a software library.
+
+**Paper**: `paper/Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf`  
+**Author**: Fahrawn Gill, Advisor, AI Governance & Cross-Platform Safety, ACCO  
+**Draft version**: v8.1, May 2026
+
+**What the repository must communicate, in order of importance:**
+1. What the protocol is and where it sits in the stack
+2. The paper's epistemic discipline (the Maturity Matrix)
+3. The core mathematical claims, with enough framing to interpret them
+4. What is actually in the repository right now
+5. What is planned and what is open
+
+---
+
+## 2. Target Audience
+
+Primary: Trust & Safety architects at Anthropic, OpenAI, Google DeepMind.  
+Secondary: Adversarial-ML researchers, AI security engineers, AI governance staff,
+technically sophisticated hiring managers.
+
+These readers:
+- Read READMEs in 2–4 minutes before deciding whether to open the paper
+- Immediately notice invented Quick Start commands, non-rendering Mermaid syntax,
+  and badge inflation
+- Trust epistemic modesty more than confident claims
+- Know the difference between `specified`, `proposed`, `hypothesized`, and `demonstrated`
+- Will clone the repo if the README is compelling — the repo must then hold up
+
+---
+
+## 3. Repository State
+
+**Update this table every time a file is added, removed, or renamed.**
+This is the source of truth for what the README may describe as existing.
+
+| Path | Status | Notes |
+|---|---|---|
+| `README.md` | exists | Current version; iteratively refined |
+| `paper/Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf` | exists | The paper |
+| `LICENSE` | exists | CC BY 4.0 |
+| `CITATION.cff` | **TODO** | Add before first public share |
+| `CHANGELOG.md` | **TODO** | Track draft version history |
+| `spec/manifest-schema.json` | **not yet** | Appendix A as JSON Schema |
+| `validation/synthetic/s_curve.py` | **not yet** | Sec. 7.4 operating-point harness |
+| `validation/synthetic/requirements.txt` | **not yet** | numpy, scipy, matplotlib |
+| `tools/manifest_gen.py` | **not yet** | Manifest serializer |
+| `tools/lsh.py` | **not yet** | Banded MinHash signature primitive |
+
+**Hard rule**: The README must never describe, link to, or provide commands for
+any path in the **not yet** column. If you add a file, move it to **exists** in
+this table and then update the README to reflect it.
+
+---
+
+## 4. README Architecture
+
+### Section order (do not reorder without deliberate justification)
+
+1. Title + one-line description (no badge overload)
+2. Author line + draft status
+3. Badge row — exactly 3: draft version, privacy invariant, license
+4. **What this is** — 2–4 paragraphs, no bullets
+5. **How to read this** — reader-type table pointing to paper sections
+6. **Position in the stack** — one Mermaid flowchart
+7. **Why this layer is missing** — the structural argument
+8. **Maturity Matrix** — table + brief framing
+9. **Threat model** — adversary-class table (A1–A5)
+10. **Signature primitive** — math section (see §6 below)
+11. **Byzantine isolation** — math section (see §6 below)
+12. **Privacy invariant** — the invariant stated plainly
+13. **Compliance posture** — jurisdiction list
+14. **Scope and non-goals** — explicit limits
+15. **Repository contents** — honest file tree (mirrors §3 above)
+16. **Research agenda** — named open items from Sec. 14
+17. **Citation** — bibtex block
+18. **License** — one sentence + link
+19. **Contact** — email + LinkedIn
+
+### Sections that must NOT exist
+
+- "Executive Summary" (consultancy register)
+- "Quick Start" (until runnable code is in the repo; see §7)
+- "Why This Matters" with breathless bullet lists (use "Operational Context" if needed)
+- Any section whose title announces "Technical Rigor," "The Solution," etc.
+- A "Roadmap" section with feature-list items (use "Research Agenda" instead)
+- An "About the Author" section longer than two sentences
+
+---
+
+## 5. Core Constraints
+
+These apply to every session. They are not negotiable.
+
+### Language and tone
+- Match the paper's register: measured, dry, precise.
+- Never use: *revolutionary*, *groundbreaking*, *paradigm-shifting*, *next-generation*,
+  *cutting-edge*, *state-of-the-art* (except when quoting cited literature),
+  *comprehensive*, *robust* (as a general adjective), *powerful*.
+- Prefer active voice with concrete subjects.
+- Avoid LLM-cadence phrasing: "In this document we will explore...", "It is worth noting...",
+  "Crucially...", "Notably...", "This is a critical...", "Dive into..."
+- One idea per sentence. Short paragraphs.
+
+### Formatting
+- No emojis anywhere — not in section headers, not inline.
+- Section headers use `##` and `###` only; no `####` in the README.
+- Bold sparingly: for first-use technical terms and the Privacy Invariant statement.
+- Italics for paper section references: *Sec. 7.1*, *Table 1*, *Appendix A*.
+- Do not bold entire sentences or bullet points.
+- Mermaid diagrams only; no raw HTML; no SVG embeds in the README.
+
+### Badges
+- Exactly 3 badges in the header row: draft version, privacy invariant, license.
+- No CI/CD badges, no "tests passing," no "production-ready," no stars.
+- Badge labels must be factually accurate.
+
+### Citations and claims
+- Every specific claim in the README about detection performance, latency,
+  enforcement actions, CVE numbers, or regulatory dates must be traceable to
+  either the paper or the cited sources within the paper.
+- Never attribute a claim to "research shows" or "studies indicate" without a
+  specific source.
+- Status of each technical claim must match the paper's Maturity Matrix tag.
+  Do not describe a `hypothesized` claim as if it is `demonstrated`.
+
+---
+
+## 6. Mathematical Content Guide
+
+### GitHub math rendering
+
+GitHub renders `$...$` for inline math and `$$...$$` for display math in `.md`
+files. Use these natively — do not use image workarounds or `<img>` tags for
+formulas. Test that formulas render by previewing on GitHub, not just locally.
+
+### Which formulas belong in the README
+
+The README is not the paper. Include only formulas that illuminate a design
+decision visible to a non-expert reader in 60 seconds. The bar is: *does seeing
+this formula tell a T&S architect something they could not get from prose alone?*
+
+**Include** (in a dedicated "Signature Primitive" section):
+
+```
+LSH match probability — the S-curve
+P_match(J; b, r) = 1 - (1 - J^r)^b
+
+Inflection point at recommended operating point
+J* = (1/b)^(1/r) = (1/16)^(1/16) ≈ 0.841
+
+FPR constraint
+1 - (1 - (J_benign_max)^r)^b ≤ α_0
+```
+
+Immediately after the formulas, give the plain-English meaning:
+"The recommended (b=16, r=16) operating point concentrates recall on the upper
+tail of the Jaccard distribution — where adversarial manifests cluster — while
+holding empirical FPR at 0.0002. The operating-point selection is `demonstrated`
+against synthetic pairs in Sec. 7.4 / Figure 1."
+
+**Include** (in a "Byzantine Isolation" section):
+
+```
+Trust-decay EMA
+w_ij(t+1) = (1 - λ) w_ij(t) + λ p̂_ij(t)
+
+Isolation threshold (Hoeffding)
+ε*(n; δ) = sqrt( ln(1/δ) / 2n )
+```
+
+Immediately after: "At λ = 0.1, the EMA has an effective memory of two to three
+weeks. At n = 500 observations and δ = 10⁻³, the isolation threshold resolves to
+ε* ≈ 0.083, maintaining Byzantine tolerance up to fraction β* ≥ 1/3. Parameters
+are `hypothesized`; pilot calibration will tighten them."
+
+**Do not include**:
+- The full Algorithm 1 pseudocode (belongs in the paper)
+- The manifest schema field-level entropy derivations (belongs in Appendix A)
+- The demographic-prior or scope_class token definitions
+- The PSI protocol detail
+
+### Framing principle
+
+Every formula in the README must:
+1. Have a plain-English sentence before it (what this measures).
+2. Have the formula itself in a `$$...$$` block.
+3. Have a plain-English sentence after it (what the value means at the recommended
+   operating point, with the Maturity Matrix tag for that claim).
+
+Never present a formula as decoration or as a credential signal. If you cannot
+write the before/after sentences, the formula should not be in the README.
+
+---
+
+## 7. Diagram Guide
+
+### Current diagrams
+
+| Name | Type | Status | Section |
+|---|---|---|---|
+| Position in the stack | Mermaid `flowchart LR` | exists in README | "Position in the stack" |
+
+### Adding diagrams — decision criteria
+
+A new diagram earns its place if it shows something a reader cannot recover from
+the prose or the existing diagram in less than 30 seconds. Maximum 3 diagrams
+total in the README.
+
+**Candidate: Protocol handshake sequence**  
+A Mermaid `sequenceDiagram` showing Emitter → Overlay Cache → Receiver (the three-
+step flow: emit, sync, inline match). Adds value because it shows *timing and
+actors*, which the flowchart does not. Status: **approved to add when ready**.
+
+**Candidate: Adversarial trajectory state machine**  
+A `stateDiagram-v2` showing the behavioral-phase progression that the sequence
+classifier tracks (baseline → contact → escalation → extraction). Adds value
+because it makes the "trajectory detection" claim concrete. Status: **conditionally
+approved — add only after the sequence diagram is added and tested**.
+
+**Candidate: S-curve plot**  
+The empirical vs. theoretical banded MinHash plot (Figure 1 in the paper) as an
+embedded PNG. Status: **add only when the Python validation harness in
+`validation/synthetic/s_curve.py` actually generates it**. The path would be
+`validation/synthetic/results/s_curve.png` and it must be auto-generated by
+running the harness, not hand-crafted. A PNG from an AI or from a quick matplotlib
+stub that does not match the synthetic-validation methodology must not be used.
+
+### Mermaid syntax rules
+
+- Use only `flowchart`, `sequenceDiagram`, `stateDiagram-v2`. Never `architecture-beta`
+  (inconsistent GitHub rendering).
+- Test Mermaid blocks in the GitHub Markdown preview before committing.
+- Subgraph labels should be short (≤4 words).
+- No more than 12 nodes in a single diagram.
+- Avoid styling directives (`classDef`, `style`) — they do not render uniformly.
+
+---
+
+## 8. Runnable Code / Quick Start Policy
+
+### The fundamental rule
+
+**The README must never contain a command that a user cannot successfully run on
+a clean clone of this repository.** This includes `python`, `pip install`, `curl`,
+`bash`, and any other execution command. A broken Quick Start is more damaging to
+credibility than no Quick Start at all.
+
+### When to add a Quick Start section
+
+Add a "Quick Start" section to the README only after ALL of the following are true:
+- The relevant code file exists in the repository.
+- The code runs successfully from a clean virtual environment.
+- A `requirements.txt` or `pyproject.toml` is present for any Python dependencies.
+- The section has been tested by running the commands literally, in order.
+
+Until then, the README uses the current "Repository contents" section with the
+honest note: "A reference implementation of the signature primitive and synthetic-
+validation harness is the next deliverable."
+
+### Implementation priority order
+
+When implementing code, proceed in this order. Do not skip steps.
+
+**Step 1 — `spec/manifest-schema.json`** (highest priority)  
+The Appendix A normative schema as a valid JSON Schema (Draft 7 or 2020-12). This
+is self-contained, has no runtime dependencies, and makes the specification
+independently citable. It is the right first artifact. When this exists, update
+the README repository contents section and add a note: "The normative manifest
+schema is in `spec/manifest-schema.json`. It is independently citable and usable
+without running any code."
+
+**Step 2 — `validation/synthetic/s_curve.py`** (core scientific claim)  
+A self-contained Python script that:
+- Generates 5,000 synthetic adversarial manifest pairs (Jaccard ~ Beta(8,5))
+  and 5,000 benign-analogue pairs (Jaccard ~ Beta(3,8)).
+- Runs banded MinHash at (b=8,r=32), (b=16,r=16), (b=32,r=8) for L=256.
+- Plots empirical vs. closed-form S-curves (matching Figure 1 in the paper).
+- Outputs the plot to `validation/synthetic/results/s_curve.png`.
+- Prints recall and FPR at each operating point.
+Dependencies: `numpy`, `scipy`, `matplotlib`. No other dependencies.
+When this exists and runs, update README and add Quick Start (Step 2 form):
+```
+git clone https://github.com/<user>/intent-telemetry-protocol.git
+cd intent-telemetry-protocol
+pip install -r validation/synthetic/requirements.txt
+python validation/synthetic/s_curve.py
+# Outputs: validation/synthetic/results/s_curve.png
+```
+Also update the README diagram section to embed the output PNG.
+
+**Step 3 — `tools/manifest_gen.py`** (implementability demo)  
+A CLI tool that takes a JSON trajectory (sample in `examples/trajectory.json`)
+and outputs a canonical manifest conforming to `spec/manifest-schema.json`.
+This demonstrates the schema is implementable. When this exists, add to Quick
+Start and expand the "Repository contents" section.
+
+**Step 4 — `tools/lsh.py`** (signature primitive)  
+A CLI tool that takes a manifest JSON and outputs the banded MinHash signature
+at the recommended (b=16, r=16) operating point. Pair with a test in
+`validation/synthetic/test_lsh.py`. When this exists, the Quick Start can show
+the full inline-match simulation.
+
+### Do not implement
+
+- PSI reconciliation: cryptographic protocol implementation has its own
+  deployment-risk considerations; leave it specified but unimplemented until
+  there is a pilot partner and a proper security review process.
+- A federated overlay: the overlay (libp2p or equivalent) is specified as
+  `proposed` in the paper; implementing a stub would be misleading about the
+  deployment status.
+- Any live network calls or API keys: the repository must be usable offline.
+
+---
+
+## 9. Session Workflow
+
+At the start of every Claude Code session on this repository:
+
+1. **Read this file fully.**
+2. **Check the Repository State table (§3)** — confirm it matches what is on
+   disk. If they diverge, update the table first before doing anything else.
+3. **Read the current README.md** from disk, not from memory.
+4. **Identify what the user wants to change** and which section(s) it affects.
+5. **Check the constraint list (§5)** for any rule that applies to the planned change.
+6. **Make the change.**
+7. **Run the Quality Checklist (§11)** before presenting the result.
+
+When proposing README edits, show a diff or a clearly marked before/after rather
+than the full README. The README is long enough that showing it wholesale every
+session is noisy.
+
+When adding new code files:
+1. Implement the code.
+2. Verify it runs from a clean environment.
+3. Update the Repository State table in this file.
+4. Update the README (repository contents section; add Quick Start block if criteria met).
+5. Never do 4 before 1 and 2 are confirmed.
+
+---
+
+## 10. Known Improvement Areas
+
+These are confirmed improvement targets. Work through them in roughly this order;
+the user may redirect at any time.
+
+### 10a. Mathematical content (HIGH PRIORITY)
+The current README has no rendered math. The paper has five formulas that meet the
+"include in README" bar in §6 of this file. The next README iteration should add:
+- A "Signature Primitive" section with the LSH S-curve, inflection point, and FPR
+  bound. Each formula wrapped in `$$...$$` with before/after prose per the framing
+  principle in §6.
+- A "Byzantine Isolation" section with the trust-decay EMA and Hoeffding isolation
+  threshold. Same framing principle.
+The total addition is approximately 30–40 lines of README. Do not add more than
+these five formulas; the rest belong in the paper.
+
+### 10b. Diagram expansion (MEDIUM PRIORITY)
+Add the protocol handshake sequence diagram (Mermaid `sequenceDiagram`) as a second
+diagram after the current flowchart. Show: Emitter extracts manifest → entropy gate
+check → LSH projection → emits to federated cache → Receiver pulls cache → inline
+match → on hit, PSI reconciliation. Keep it under 12 actors/steps. Label the
+protocol primitives (LSH, PSI) and the key invariant assertion (H(f) ≥ H_min).
+When `validation/synthetic/s_curve.py` exists and outputs `s_curve.png`, embed it
+as a third figure under the signature-primitive math section.
+
+### 10c. Runnable validation harness (MEDIUM PRIORITY, conditional)
+The user has indicated they want the repo to become usable in realtime. The right
+first step is `spec/manifest-schema.json` (no runtime dependencies, zero chance of
+a broken Quick Start). The second step is `validation/synthetic/s_curve.py`. Do
+not jump to Step 3 or 4 from §8 until Steps 1 and 2 are confirmed working.
+
+### 10d. CITATION.cff (LOW EFFORT, HIGH SIGNAL)
+Create `CITATION.cff` at the repo root. GitHub renders a "Cite this repository"
+button automatically. Content should match the bibtex block in the README.
+
+### 10e. CHANGELOG.md (LOW EFFORT)
+Create `CHANGELOG.md` tracking the v7.x → v8.0 → v8.1 evolution of the working
+draft. Even a three-entry changelog signals that this is ongoing, version-controlled
+work rather than a one-shot upload.
+
+### 10f. Operating-point comparison table
+Add a concise version of Table 3 from the paper (b=8/r=32, b=16/r=16, b=32/r=8
+operating points with Inflection J*, Recall, FPR columns) below the LSH math.
+This is the clearest single artifact that makes the parameter-selection rationale
+legible in the README without reading the paper.
+
+---
+
+## 11. Quality Checklist
+
+Run this before presenting any README change to the user.
+
+**Content accuracy**
+- [ ] Every file path in the README exists in the Repository State table as `exists`.
+- [ ] No Quick Start command for code in the `not yet` column.
+- [ ] Every performance claim (latency, FPR, recall, enforcement-action counts,
+      CVE numbers) matches the paper and carries the correct Maturity Matrix tag.
+- [ ] No claim uses a status stronger than the paper assigns it.
+
+**Math**
+- [ ] Every formula has a plain-English sentence before and after it.
+- [ ] Maturity Matrix tag for each formula's underlying claim is stated after it.
+- [ ] No formula is present for decoration alone.
+
+**Diagrams**
+- [ ] Mermaid uses only `flowchart`, `sequenceDiagram`, or `stateDiagram-v2`.
+- [ ] No `architecture-beta`, no `classDef`, no `style` directives.
+- [ ] Node count per diagram ≤ 12.
+
+**Tone and formatting**
+- [ ] No emojis.
+- [ ] No forbidden vocabulary (§5).
+- [ ] No `####` headers.
+- [ ] No section from the "must NOT exist" list (§4).
+- [ ] Badge count is exactly 3.
+
+**Repository integrity**
+- [ ] Repository State table (§3) matches actual disk contents.
+- [ ] If a new file was added, this CLAUDE.md was updated before the README.
+
+---
+
+## 12. Reference: Key Paper Sections and Claims
+
+Bookmark for quick citation in README prose.
+
+| Topic | Paper location | Maturity tag |
+|---|---|---|
+| Threat model (A1–A5), Security Goals (SG1–SG5) | Sec. 2 | specified |
+| Adversarial taxonomy (six classes) | Sec. 5, Table 2 | specified |
+| Behavioral architecture / trajectory layer | Sec. 6 | hypothesized (lift); proposed (architecture) |
+| Handshake protocol — LSH primitive | Sec. 7.1 | — |
+| S-curve equation P_match = 1-(1-J^r)^b | Sec. 7.1, Eq. (1) | demonstrated |
+| Inflection J* = (1/b)^(1/r) ≈ 0.841 | Sec. 7.1 | demonstrated |
+| FPR bound Eq. (2) | Sec. 7.1 | demonstrated |
+| Synthetic validation harness | Sec. 7.4, Fig. 1, Table 3 | demonstrated (operating point) |
+| Minimum-entropy gate H(f) ≥ H_min = 24 bits | Sec. 7.1, Appendix A | specified (gate must exist); proposed (H_min value) |
+| Trust-decay EMA, Hoeffding isolation | Sec. 9, Eq. (4)–(6) | specified (math); hypothesized (λ, n parameters) |
+| MCP composition / provenance | Sec. 8 | specified (interface); proposed (deployment) |
+| Compliance mapping | Sec. 10 | proposed |
+| Deployment topology / latency | Sec. 11 | specified (target); hypothesized (volumetrics) |
+| Detection lift M3 | Sec. 12 | hypothesized |
+| Research agenda / open questions | Sec. 14 | N/A |
+| Sub-50 ms p99 is achievable | Sec. 11, citing PhotoDNA/VHIP production data | demonstrated (analogue) |
+| Byzantine tolerance β* ≥ 1/3 | Sec. 9 | hypothesized |
+| Tech Coalition Lantern: 2M+ signals, 350K enforcement actions, 17× AI growth | Sec. 1, citing [5] | cited production data |
+| SoK 2026 adaptive attack success >85% | Abstract, citing [1] | cited literature |
+| Anthropic MCP CVEs | Abstract | public CVE record |
+
+---
+
+*Update this file at the start of each session if the repository state has changed.
+The Repository State table (§3) is the single source of truth for what the README
+may describe as existing.*
