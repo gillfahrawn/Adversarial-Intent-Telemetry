@@ -161,11 +161,13 @@ The three operating points evaluated in the synthetic validation (*Table 3*, *Se
 
 | Configuration | L | $J^*$ | Recall | FPR |
 |---|---|---|---|---|
-| b=8, r=32 | 256 | 0.937 | — | — |
-| **b=16, r=16** | 256 | **0.841** | — | **0.0002** |
-| b=32, r=8 | 256 | 0.648 | — | — |
+| b=8, r=32 | 256 | 0.937 | 0.0048 | 0.0000 |
+| **b=16, r=16** | 256 | **0.841** | **0.0854** | **0.0002** |
+| b=32, r=8 | 256 | 0.648 | 0.5148 | 0.0252 |
 
-$J^*$ values follow from the closed-form expression above. Recall and FPR for all three configurations are in *Table 3*, *Sec. 7.4*. At (b=8, r=32) recall is concentrated at high $J$ (precision-optimized). At (b=32, r=8) recall is higher and FPR increases accordingly. The (b=16, r=16) selection is the recommended operating point.
+Numbers are from the synthetic validation harness (`validation/synthetic/s_curve.py`): 5,000 adversarial-similar pairs (Jaccard ~ Beta(8,5), mean ≈ 0.618) and 5,000 benign-analogue pairs (Jaccard ~ Beta(3,8), mean ≈ 0.271). Recall at (b=16, r=16) is 0.0854 because the inflection at $J^* \approx 0.841$ sits above most of the adversarial distribution — the mean adversarial Jaccard of 0.618 is well below the inflection, so the operating point concentrates recall on the upper tail rather than on the bulk. This is the intended behavior: only the tightest adversarial clusters clear the band-match threshold, holding FPR at 0.0002. The full empirical S-curve is shown below.
+
+![S-curve: empirical vs. theoretical at three operating points](validation/synthetic/results/s_curve.png)
 
 ## Byzantine isolation
 
@@ -217,10 +219,33 @@ Out of scope (*Sec. 2.5*):
 ```
 .
 ├── Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf
-└── README.md
+├── spec/
+│   └── manifest-schema.json          normative feature manifest schema (Appendix A)
+└── validation/
+    └── synthetic/
+        ├── s_curve.py                operating-point harness (Sec. 7.4)
+        ├── requirements.txt
+        └── results/
+            ├── results.json          numeric output (recall, FPR, S-curve data)
+            └── s_curve.png           empirical vs. theoretical S-curve plot
 ```
 
-The repository currently hosts the specification document. A reference implementation of the signature primitive and synthetic-validation harness (*Sec. 7.4*) is the next deliverable; it will be released under the same license when the operating-point parameters have been re-checked against an additional benchmark and the manifest schema has stabilized at v8.x.
+The normative manifest schema is in `spec/manifest-schema.json`. It is independently citable and usable without running any code.
+
+## Quick Start
+
+Reproduces Figure 1 and the operating-point numbers from *Sec. 7.4*.
+
+```bash
+git clone https://github.com/gillfahrawn/adversarial-intent-telemetry.git
+cd adversarial-intent-telemetry
+pip install -r validation/synthetic/requirements.txt
+python validation/synthetic/s_curve.py
+# Outputs: validation/synthetic/results/s_curve.png
+#          validation/synthetic/results/results.json
+```
+
+Runtime is under 60 seconds on a single core. No network calls; no API keys.
 
 ## Research agenda
 

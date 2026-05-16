@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gillfahrawn/adversarial-intent-telemetry/spec/manifest-schema.json",
+  "title": "FeatureManifest",
+  "description": "Normative schema for a single feature manifest (Appendix A, Table 5). A manifest is a multiset of typed structural feature tokens of cardinality |f| in [32, 128], canonically ordered before MinHash projection. No field encodes raw prompt text, user identity, or model weights; this satisfies the privacy invariant at the schema level rather than at runtime. Before emission, the aggregate Shannon entropy H(f) must satisfy the minimum-entropy gate H(f) >= H_min = 24 bits (gate presence: specified; recommended H_min value: proposed). The manifest_version field identifies the schema revision under which the manifest was generated; receivers reject manifests at unsupported versions.",
+  "type": "object",
+  "required": ["manifest_version", "scope_class"],
+  "additionalProperties": false,
+  "properties": {
+    "manifest_version": {
+      "type": "string",
+      "pattern": "^fm-\\d{4}-\\d{2}$",
+      "examples": ["fm-2026-05"],
+      "description": "Schema revision identifier of the form fm-YYYY-MM. Receivers reject manifests whose version is not in their SupportedManifests set. Schema changes are announced with a deprecation window of no less than 60 days."
+    },
+    "intent_class": {
+      "type": "array",
+      "description": "Output of the local classifier stack. One or more of the six adversarial-class labels from Table 2, encoded as (intent_class, label_id) tokens. Cardinality: 1-3 tokens. Entropy contribution: log2(6) ~= 2.58 bits per token, uniform over 6 classes; higher in practice because the empirical distribution is non-uniform.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "reframe",
+          "euphem",
+          "decomp",
+          "role_inj",
+          "hypoth",
+          "ctx_poison"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "behavior_phase": {
+      "type": "array",
+      "description": "Latent phase label from the trajectory classifier in the Behavioral Architecture (Sec. 6). One of the five grooming-phase labels; phase enumerations for other harm categories are governed analogously. Encoded as (behavior_phase, label_id) tokens. Cardinality: 0-2 tokens. Entropy contribution: log2(5) ~= 2.32 bits per token.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "rapport",
+          "isolation",
+          "desensitize",
+          "sexualize",
+          "coerce"
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 2,
+      "uniqueItems": true
+    },
+    "phase_transition": {
+      "type": "string",
+      "description": "Detected phase-transition signal in the current conversation window. Encoded as (phase_transition, transition_id). Cardinality: 0-1 token. Entropy contribution: ~3 bits per token for grooming's five-state chain (10 directed transitions plus the null transition). The null transition (no transition detected) is represented by the absence of this field.",
+      "enum": [
+        "rapport_to_isolation",
+        "rapport_to_desensitize",
+        "rapport_to_sexualize",
+        "rapport_to_coerce",
+        "isolation_to_desensitize",
+        "isolation_to_sexualize",
+        "isolation_to_coerce",
+        "desensitize_to_sexualize",
+        "desensitize_to_coerce",
+        "sexualize_to_coerce"
+      ]
+    },
+    "embed_anom_bin": {
+      "type": "array",
+      "description": "Embedding-space anomaly score from the local classifier, quantized to B=16 bins. Encoded as (embed_anom_bin_k, 1) for each bin k that exceeds the participant's calibration threshold. Multiple bin tokens indicate clustered anomaly. Quantization is the canonicalization step that makes cross-provider matching tolerant of embedding-stack drift. Cardinality: 8-16 tokens. Entropy contribution: log2(16) = 4 bits per token.",
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 15
+      },
+      "minItems": 8,
+      "maxItems": 16
+    },
+    "role_marker": {
+      "type": "array",
+      "description": "Presence flags for role-injection markers. Encoded as (role_marker, marker_id) for each detected marker. Cardinality: 0-6 tokens. Entropy contribution: log2(6) ~= 2.58 bits per token; up to 6 * log2(6) ~= 15.5 bits when all markers are present.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "researcher",
+          "developer",
+          "parent",
+          "law_enf",
+          "system_role",
+          "red_team"
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 6,
+      "uniqueItems": true
+    },
+    "hypoth_frame": {
+      "type": "array",
+      "description": "Hypothetical-sandboxing frame markers. Encoded as (hypoth_frame, frame_id) for each detected frame. Cardinality: 0-4 tokens. Entropy contribution: log2(5) ~= 2.32 bits per token.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "fiction",
+          "simulation",
+          "training",
+          "worldbuild",
+          "academic"
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 4,
+      "uniqueItems": true
+    },
+    "decomp_signal": {
+      "type": "array",
+      "description": "Cross-turn intent-aggregation score from the sequence classifier in the Behavioral Architecture (Sec. 6), quantized to B=8 bins per turn over a sliding window of up to k=16 turns. Encoded as (decomp_signal, turn_idx, bin) triples. Cardinality: 4-16 tokens. Entropy contribution: log2(8 * 16) = 7 bits per token.",
+      "items": {
+        "type": "object",
+        "required": ["turn_idx", "bin"],
+        "additionalProperties": false,
+        "properties": {
+          "turn_idx": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 15,
+            "description": "Zero-based index of the conversation turn within the sliding window (0-15)."
+          },
+          "bin": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 7,
+            "description": "Quantized anomaly bin (0-7) for this turn."
+          }
+        }
+      },
+      "minItems": 4,
+      "maxItems": 16
+    },
+    "prem_drift": {
+      "type": "array",
+      "description": "Premise-drift signal. Divergence between the structured belief-state at turn t and the belief-state at turn t-k for k in {1, 2, 4, 8}, quantized to B=8 bins. Encoded as (prem_drift, k, bin) triples. Cardinality: 0-8 tokens. Entropy contribution: log2(8 * 4) = 5 bits per token.",
+      "items": {
+        "type": "object",
+        "required": ["k", "bin"],
+        "additionalProperties": false,
+        "properties": {
+          "k": {
+            "type": "integer",
+            "enum": [1, 2, 4, 8],
+            "description": "Turn-lag offset k in {1, 2, 4, 8} over which drift is measured."
+          },
+          "bin": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 7,
+            "description": "Quantized drift bin (0-7) for this lag offset."
+          }
+        }
+      },
+      "minItems": 0,
+      "maxItems": 8
+    },
+    "provenance_fail": {
+      "type": "array",
+      "description": "MCP / retrieval-channel provenance failure markers from the Composition Framework (Sec. 8). Encoded as (provenance_fail, marker_id) for each detected failure. Cardinality: 0-3 tokens. Entropy contribution: log2(3) ~= 1.58 bits per token.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "instr_in_data",
+          "cross_tool_inject",
+          "unattested_source"
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "demographic_prior": {
+      "type": "string",
+      "description": "Inferred demographic-asymmetry prior (for example, an inferred adult-to-minor interaction), used to raise classifier sensitivity per the Behavioral Architecture (Sec. 6). Encoded as (demographic_prior, prior_id) for non-default priors only; the default prior is omitted to avoid emitting a constant token. Cardinality: 0-1 token. Entropy contribution: ~12 bits per token. The enum of recognized prior identifiers is extended through the manifest_version mechanism."
+    },
+    "scope_class": {
+      "type": "string",
+      "description": "Coarse harm-category gate matching the scope field of the handshake payload. Disambiguates the federated cache lookup. Encoded as (scope_class, class_id). Cardinality: exactly 1 token. Entropy contribution: log2(3) ~= 1.58 bits per token. This field is low-entropy by design; it carries no adversarial-class discriminative information.",
+      "enum": [
+        "CSAM",
+        "CSAE",
+        "sextortion"
+      ]
+    }
+  }
+}
