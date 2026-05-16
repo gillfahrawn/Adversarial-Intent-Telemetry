@@ -61,18 +61,37 @@ The sequence below shows how the three-party handshake proceeds within a single 
 
 ```mermaid
 sequenceDiagram
-    participant E as Emitter
-    participant C as Overlay Cache
-    participant R as Receiver
-    participant P as PSI Channel
-    E->>E: Extract manifest f; assert H(f) ≥ H_min
-    E->>E: Compute LSH bands (b=16, r=16, L=256)
-    E->>C: Emit bands + TTL
-    R->>C: Query bands (inline match)
-    C->>R: Candidate band matches
-    Note over R: Match decision < 50 ms
-    R->>P: On candidate hit — PSI reconciliation
-    P-->>R: Confirmed match or null
+    autonumber
+    participant Emitter as Emitter Node
+    participant PKI as Federated PKI
+    participant Cache as Overlay Cache
+    participant Receiver as Receiver Node
+
+    Note over Emitter: Local Conversation Detects Adversarial Intent
+    Emitter->>Emitter: Extract Feature Manifest
+    Emitter->>Emitter: Assert Entropy Gate Passes
+    Emitter->>Emitter: Compute BandedMinHash Signature
+    Emitter->>Emitter: Construct JSON Canonical Payload
+    Emitter->>Cache: Broadcast Payload and Node Signature
+
+    Note over Receiver: Continuous Cache Synchronization
+    Cache->>Receiver: Receive New Signature Payload
+    Receiver->>PKI: Request Key Attestation Verification
+    PKI-->>Receiver: Valid ed25519 Signature
+    Receiver->>Receiver: Verify Manifest Version
+    Receiver->>Receiver: Verify Sender Trust Score
+    Receiver->>Receiver: Store Signature in Local Cache
+
+    Note over Receiver: New Local User Conversation
+    Receiver->>Receiver: Extract Local Manifest
+    Receiver->>Receiver: Compute Local BandedMinHash
+    Receiver->>Receiver: Evaluate LSH Similarity Match
+
+    alt Match Detected
+        Receiver->>Receiver: Enqueue Independent Investigation
+    else No Match
+        Receiver->>Receiver: Process Next Turn Uninterrupted
+    end
 ```
 
 ## Why this layer is missing
