@@ -129,7 +129,18 @@ The threat model (*Sec. 2*) identifies five adversary classes, stated normativel
 
 Security goals SG1–SG5 (detection lift, signature unlinkability, Byzantine tolerance, data minimization, scope confinement) are stated normatively in *Sec. 2.3*.
 
-*Sec. 5*, *Table 2* presents a six-class adversarial taxonomy that maps these threat actors to the behavioral signals captured in the feature manifest. The sequence classifier (*Sec. 6*) tracks behavioral phase progression — baseline, contact, escalation, extraction — as the structural substrate for trajectory-level detection. These phases correspond to the fields captured in *Appendix A* and form the basis for the feature manifest's Jaccard-space representation. Detection lift at the trajectory layer is `hypothesized` (*Sec. 12*); the architectural rationale is `proposed`.
+*Sec. 5*, *Table 2* operationalizes the adversarial taxonomy as six structural classes, each paired with its primary behavioral signal at the prompt layer.
+
+| Class token | Label | Behavioral signal |
+|---|---|---|
+| `reframe` | Semantic reframing | Intent preserved; pragmatic envelope shifted (declarative → interrogative, direct → hypothetical, first-person → third-person fictional) |
+| `euphem` | Lexical substitution | Flagged tokens replaced with semantically dense unflagged variants, in-group argot, or transliteration |
+| `decomp` | Compositional decomposition | Intent partitioned across turns, each individually benign; forbidden output reachable only by composing across turns |
+| `role_inj` | Authority / role injection | Prompt asserts a role (researcher, parent, law enforcement) or invokes a system-level instruction frame to shift policy posture |
+| `hypoth` | Hypothetical sandboxing | Request framed as fiction, simulation, training-data generation, red-team exercise, or worldbuilding |
+| `ctx_poison` | Cumulative context poisoning | Earlier turns establish unverified premises (consent, age, jurisdiction) that later turns rely on without restating |
+
+These tokens populate the `intent_class` field of the feature manifest (*Appendix A*); the sequence classifier tracks their progression across turns to produce the `behavior_phase` and `phase_transition` fields — detection lift at the trajectory layer is `hypothesized` (*Sec. 12*) and the architectural rationale is `proposed`.
 
 ## Signature primitive
 
@@ -194,11 +205,11 @@ Only derived artifacts — LSH bands and PSI commitments — leave a participant
 Designed for deployment under:
 
 - **EU AI Act** — Article 5(1)(a)(b) prohibitions on manipulative systems; enforcement powers apply from 2 August 2026.
-- **GDPR** — Articles 5 and 22 (data minimization, automated-decision safeguards).
+- **GDPR** — Articles 5 and 22 (data minimization, automated-decision safeguards); the protocol's privacy invariant (no raw prompts, no user identifiers, no model weights in transit) satisfies the data-minimisation requirement at the architectural level.
 - **GPAI Code of Practice** — Safety & Security Chapter, Measure 5.1 (agentic capabilities).
 - **UK Online Safety Act**, **US TAKE IT DOWN Act** (May 2025), advancing **ENFORCE Act**.
 
-The protocol rides above Lantern's existing governance foundation and requires no changes to current Lantern signal types. Compliance mapping is `proposed` per *Table 1* and is not a substitute for participant-level conformity assessment (*Sec. 10*).
+The protocol rides above Lantern's existing governance foundation and requires no changes to current Lantern signal types. Compliance mapping is `proposed` per *Table 1* and is not a substitute for participant-level conformity assessment (*Sec. 10*). The entropy gate ($H(f) \geq H_{\min}$) and the `scope_class` field provide the technical basis for demonstrating scope confinement under SG5 to a regulatory auditor; the gate requirement is `specified` and the audit mapping is `proposed`.
 
 ## Scope and non-goals
 
@@ -301,4 +312,4 @@ Released under [Creative Commons Attribution 4.0](https://creativecommons.org/li
 
 Fahrawn Gill · gillfahrawn@gmail.com · [linkedin.com/in/fahrawn-gill-1a9ba4163](https://linkedin.com/in/fahrawn-gill-1a9ba4163)
 
-Substantive technical critique, pilot interest, and pointers to prior art are welcome. Issues and pull requests against the specification text are the preferred channel for review comments.
+The paper has been forwarded by ACCO leadership through U.S. tech-policy and state-legislative channels; pilot interest from prospective federated participants is the current priority. Substantive technical critique, pilot interest, and pointers to prior art are welcome. Issues and pull requests against the specification text are the preferred channel for review comments.
