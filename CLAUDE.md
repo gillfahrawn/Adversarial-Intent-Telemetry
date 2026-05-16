@@ -13,7 +13,7 @@ decentralized handshake protocol for cross-provider exchange of structural signa
 of adversarial AI intent. It is a specification document with a synthetic-validation
 harness, not a deployed system or a software library.
 
-**Paper**: `paper/Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf`  
+**Paper**: `Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf`  
 **Author**: Fahrawn Gill, Advisor, AI Governance & Cross-Platform Safety, ACCO  
 **Draft version**: v8.1, May 2026
 
