@@ -221,6 +221,11 @@ Out of scope (*Sec. 2.5*):
 ├── Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf
 ├── spec/
 │   └── manifest-schema.json          normative feature manifest schema (Appendix A)
+├── examples/
+│   └── trajectory.json               synthetic A2-class 7-turn adversarial trajectory
+├── tools/
+│   ├── manifest_gen.py               rule-based manifest extractor CLI
+│   └── requirements.txt
 └── validation/
     └── synthetic/
         ├── s_curve.py                operating-point harness (Sec. 7.4)
@@ -230,11 +235,11 @@ Out of scope (*Sec. 2.5*):
             └── s_curve.png           empirical vs. theoretical S-curve plot
 ```
 
-The normative manifest schema is in `spec/manifest-schema.json`. It is independently citable and usable without running any code.
+The normative manifest schema is in `spec/manifest-schema.json`. It is independently citable and usable without running any code. `tools/manifest_gen.py` demonstrates that the schema is implementable: it reads a trajectory JSON and emits a conforming manifest, validating output against the schema before writing.
 
 ## Quick Start
 
-Reproduces Figure 1 and the operating-point numbers from *Sec. 7.4*.
+**Step 1 — Reproduce Figure 1 and the operating-point numbers from *Sec. 7.4*.**
 
 ```bash
 git clone https://github.com/gillfahrawn/adversarial-intent-telemetry.git
@@ -246,6 +251,17 @@ python validation/synthetic/s_curve.py
 ```
 
 Runtime is under 60 seconds on a single core. No network calls; no API keys.
+
+**Step 2 — Generate a feature manifest from the synthetic A2-class trajectory.**
+
+```bash
+pip install -r tools/requirements.txt
+python tools/manifest_gen.py --input examples/trajectory.json --output out/manifest.json
+# Prints:  H(f) = 112.35 bits  (gate: H_min = 24.0 bits)  →  PASS
+# Outputs: out/manifest.json
+```
+
+The extractor is rule-based pattern matching; it prints the aggregate manifest entropy and exits non-zero if the entropy gate fails. `out/manifest.json` is a conforming instance of `spec/manifest-schema.json`, validated before writing. Production deployments substitute a locally calibrated classifier stack per *Sec. 7.1*.
 
 ## Research agenda
 
