@@ -1,6 +1,6 @@
 # Decentralized Telemetry for Adversarial AI Intent
 
-A decentralized handshake protocol for cross-provider exchange of structural signatures of adversarial AI intent, without moving raw prompts, user identifiers, or model weights.
+A secure coordination layer that helps different AI platforms detect and flag harmful or adversarial behavior, while keeping user data and proprietary model details private.
 
 **Working Draft v8.1 · May 2026**  
 Fahrawn Gill · Advisor, AI Governance & Cross-Platform Safety, Alliance to Counter Crime Online (ACCO)
