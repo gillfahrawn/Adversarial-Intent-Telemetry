@@ -12,14 +12,15 @@ Fahrawn Gill · Advisor, AI Governance & Cross-Platform Safety, Alliance to Coun
 ---
 
 ## What this is
+This repository defines a specification for a decentralized telemetry protocol that enables cross-provider detection of adversarial behavior in agentic AI systems.
 
-This repository hosts the specification of a decentralized handshake protocol for cross-provider exchange of *structural* signatures of adversarial intent in agentic AI deployments. The protocol is designed to sit as runtime middleware inside existing Trust & Safety stacks, alongside — not in place of — content-hash infrastructure such as the Tech Coalition's Lantern program.
+The core problem it addresses is structural: modern Trust & Safety systems operate within isolated provider boundaries, while adversarial behavior increasingly spans multiple platforms and interaction surfaces.
 
-Each participating provider extracts a canonical **feature manifest** from behavioral signals at the prompt layer. The manifest is passed through a minimum-entropy gate, then projected into a banded MinHash signature. Only these locality-sensitive hash bands transit the federation — no raw prompt text, no user identifiers, no model weights leave the provider perimeter. A receiver queries the shared band cache for inline matching in under 50 ms, then escalates candidate hits to **Private Set Intersection** for cross-sector reconciliation. The protocol adds a thin upstream feed to Lantern's existing content-hash ingest where a participant chooses to expose one.
+The protocol introduces a privacy-preserving mechanism for exchanging *behavioral risk signatures* between providers without sharing raw user content, identifiers, or model artifacts. These signatures are designed to support near-real-time cross-platform matching while remaining compatible with existing Trust & Safety infrastructure.
 
-Online child exploitation is the lead worked example: it is the current highest-severity instance of agentic adversarial automation, and the regulatory clock under EU AI Act Article 5 is shortest. The same primitives extend, with no architectural changes, to indirect prompt injection in agentic systems and to multi-turn manipulation across the broader agentic ecosystem.
+The system is explicitly designed to operate alongside existing industry approaches such as content-hash-based frameworks (e.g., the Tech Coalition’s Lantern program), extending them from content-level matching to behavior-level signal exchange.
 
-This is a specification document, not a deployed system. Status of each load-bearing claim is given in the [Maturity Matrix](#maturity-matrix) and carries a tag — `specified`, `proposed`, `hypothesized`, or `demonstrated` — throughout. The paper is at [`Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf`](Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf).
+This is a specification document, not a deployed system. All components are defined with explicit status labeling in the Maturity Matrix (specified, proposed, hypothesized, demonstrated). : [`Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf`](Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf).
 
 ## How to read this
 
