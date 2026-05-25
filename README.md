@@ -20,7 +20,7 @@ The protocol introduces a privacy-preserving mechanism for exchanging *behaviora
 
 The system is explicitly designed to operate alongside existing industry approaches such as content-hash-based frameworks (e.g., the Tech Coalition’s Lantern program), extending them from content-level matching to behavior-level signal exchange.
 
-This is a specification document, not a deployed system. All components are defined with explicit status labeling in the Maturity Matrix (specified, proposed, hypothesized, demonstrated). : [`Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf`](Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf).
+This is a specification document. All components are defined with explicit status labeling in the Maturity Matrix (specified, proposed, hypothesized, demonstrated). : [`Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf`](Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf).
 
 ## How to read this
 
