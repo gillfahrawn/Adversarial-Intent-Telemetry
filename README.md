@@ -14,7 +14,7 @@ Fahrawn Gill · Advisor, AI Governance & Cross-Platform Safety, Alliance to Coun
 ## What this is
 This repository defines a specification for a decentralized telemetry protocol that enables cross-provider detection of adversarial behavior in agentic AI systems.
 
-The core problem it addresses is structural: modern Trust & Safety systems operate within isolated provider boundaries, while adversarial behavior increasingly spans multiple platforms and interaction surfaces.
+The core problem it addresses is structural in how modern Trust & Safety systems operate within isolated provider boundaries, while adversarial behavior increasingly spans multiple platforms and interaction surfaces.
 
 The protocol introduces a privacy-preserving mechanism for exchanging *behavioral risk signatures* between providers without sharing raw user content, identifiers, or model artifacts. These signatures are designed to support near-real-time cross-platform matching while remaining compatible with existing Trust & Safety infrastructure.
 
