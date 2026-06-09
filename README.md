@@ -7,7 +7,7 @@ Fahrawn Gill · Advisor, AI Governance & Cross-Platform Safety, Alliance to Coun
 
 [![Draft v8.1](https://img.shields.io/badge/draft-v8.1%20%C2%B7%20May%202026-informational)](Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf)
 [![Privacy invariant](https://img.shields.io/badge/privacy-no%20raw%20prompts%20%C2%B7%20no%20user%20ids%20%C2%B7%20no%20weights-success)](#privacy-invariant)
-[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 ---
 
@@ -307,7 +307,7 @@ Pilot collaborators and reviewers are welcome — see *Contact* below.
 
 ## License
 
-Released under [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/). You may share and adapt with attribution. Nothing in this repository constitutes legal advice or a substitute for participant-level conformity assessment under the regulatory instruments cited in *Sec. 10*.
+Released under [GNU Affero General Public License v3.0](https://gnu.org). You may share and adapt with attribution. Nothing in this repository constitutes legal advice or a substitute for participant-level conformity assessment under the regulatory instruments cited in *Sec. 10*.
 
 ## Contact
 
