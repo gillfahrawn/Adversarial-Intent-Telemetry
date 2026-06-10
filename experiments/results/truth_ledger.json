@@ -1,0 +1,56 @@
+{
+  "pan12_raw": {
+    "status": "EMPIRICAL",
+    "validation": "MULTI_TRIAL_SUBSET",
+    "metrics": {
+      "mean_cosine_avg": 0.09772603548012473,
+      "mean_cosine_std": 0.006011588861361813,
+      "mean_euclidean_avg": 0.26876199398057665,
+      "mean_euclidean_std": 0.004609551008158318,
+      "mean_lsh_avg": 0.0011858974358974358,
+      "mean_lsh_std": 0.0010077057642475956,
+      "corr_cos_euc_avg": 0.8347175664544982,
+      "corr_cos_euc_std": 0.08985354108863734,
+      "corr_cos_lsh_avg": 0.23375791977837532,
+      "corr_cos_lsh_std": 0.0423131458300179,
+      "lsh_divergence_avg": 0.09659866131911013,
+      "lsh_divergence_std": 0.005971053480521798
+    }
+  },
+  "annotated_trajectories": {
+    "status": "REPRESENTATION",
+    "validation": "MULTI_TRIAL_SUBSET",
+    "metrics": {
+      "mean_cosine_avg": 0.920062483645862,
+      "mean_cosine_std": 0.00646846180451594,
+      "mean_euclidean_avg": 0.7228641700437768,
+      "mean_euclidean_std": 0.012467167214193515,
+      "mean_lsh_avg": 0.36942307692307697,
+      "mean_lsh_std": 0.02858273600447731,
+      "corr_cos_euc_avg": 0.9483657219847561,
+      "corr_cos_euc_std": 0.003522608580495432,
+      "corr_cos_lsh_avg": 0.8412765513715199,
+      "corr_cos_lsh_std": 0.034644572136604976,
+      "lsh_divergence_avg": 0.5543182497557693,
+      "lsh_divergence_std": 0.032760689854218095
+    }
+  },
+  "synthetic_migrations": {
+    "status": "SYNTHETIC",
+    "validation": "MULTI_TRIAL_SIM",
+    "metrics": {
+      "mean_cosine_avg": 0.02571746343742052,
+      "mean_cosine_std": 0.006901152145175728,
+      "mean_euclidean_avg": 0.04383724820785622,
+      "mean_euclidean_std": 0.003923093083808844,
+      "mean_lsh_avg": 0.0442948717948718,
+      "mean_lsh_std": 0.0037348340047095867,
+      "corr_cos_euc_avg": 0.7507264775630175,
+      "corr_cos_euc_std": 0.01998757315832531,
+      "corr_cos_lsh_avg": 0.7522840600877272,
+      "corr_cos_lsh_std": 0.01976111740780419,
+      "lsh_divergence_avg": 0.14039046647232944,
+      "lsh_divergence_std": 0.002407433119018022
+    }
+  }
+}

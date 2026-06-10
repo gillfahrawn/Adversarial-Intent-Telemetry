@@ -1,0 +1,50 @@
+{
+  "logistic_regression": {
+    "auc": 0.8622222222222222,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "confusion_matrix": [
+      [
+        300,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ]
+  },
+  "random_forest": {
+    "auc": 0.8694444444444445,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "confusion_matrix": [
+      [
+        300,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ]
+  },
+  "shallow_mlp": {
+    "auc": 0.9488888888888889,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "confusion_matrix": [
+      [
+        300,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+Observer Divergence Report (Multi-Trial Statistical Summary)
+===========================================================
+
+1. Continuous Metric Agreement (Correlation: Cosine vs Euclidean Similarity)
+-------------------------------------------------------------------------
+PAN-12 Raw: 0.8347 (std: 0.0899)
+Annotated:  0.9484 (std: 0.0035)
+Synthetic:  0.7507 (std: 0.0200)
+
+2. Discretized Observer Divergence (LSH vs Cosine Similarity Magnitude)
+----------------------------------------------------------------------
+PAN-12 Raw: 0.0966 (std: 0.0060)
+Annotated:  0.5543 (std: 0.0328)
+Synthetic:  0.1404 (std: 0.0024)
+
+3. Rank Correlation Stability (Spearman proxy via seed-averaged Pearson)
+---------------------------------------------------------------------
+PAN-12 Raw: 0.2338
+Annotated:  0.8413
+Synthetic:  0.7523
+
+Note: All metrics reported as Average ± StdDev across 5 independent trials.

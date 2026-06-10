@@ -1,0 +1,164 @@
+{
+  "experiment": "m3_federation_lift",
+  "dataset": "PAN 2012 Sexual Predator Identification, training XML, 80/20 stratified split, updated 2012-05-01 files",
+  "status": "demonstrated",
+  "key_metric": {
+    "name": "federation_lift",
+    "value": 0.01485148514851485,
+    "threshold": 0.0,
+    "passed": true,
+    "at_n_providers": 8,
+    "federated_recall": 0.05693069306930693,
+    "federated_fpr": 0.0012323808056689516,
+    "max_single_provider_recall": 0.04207920792079208,
+    "fpr_ceiling": 0.005
+  },
+  "caveats": [
+    "MinHash at (b=16, r=16) requires Jaccard \u2265 J*\u22480.841 for meaningful recall. PAN 2012 inter-conversation Jaccard similarity is typically lower, so absolute recall may be near zero.",
+    "Federation lift is recall(union pool) \u2212 max recall(single-shard pool) at FPR \u2264 0.005. If both are zero, lift = 0 and status is inconclusive.",
+    "Results on training XML 80/20 split only; the test folder has no ground-truth labels and was not used."
+  ],
+  "figures": [
+    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/m3_federation_lift.pdf",
+    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/m3_federation_lift.png"
+  ],
+  "full_results": {
+    "n_total": 66927,
+    "n_train": 53540,
+    "n_test": 13387,
+    "n_train_pos": 1612,
+    "n_test_pos": 404,
+    "n_test_neg": 12983,
+    "n_valid_train_pos_sigs": 1532,
+    "minhash_params": {
+      "L": 256,
+      "b": 16,
+      "r": 16,
+      "vocab_size": 4096
+    },
+    "federated_pool_recall": 0.05693069306930693,
+    "federated_pool_fpr": 0.0012323808056689516,
+    "sweep": [
+      {
+        "n_providers": 2,
+        "max_single_provider_recall": 0.05198019801980198,
+        "max_single_provider_fpr": 0.0009242856042517138,
+        "federated_recall": 0.05693069306930693,
+        "federated_fpr": 0.0012323808056689516,
+        "federation_lift": 0.004950495049504955,
+        "lift_positive": true,
+        "fpr_ceiling_used": 0.005,
+        "provider_details": [
+          {
+            "provider": 0,
+            "n_positives_in_shard": 760,
+            "recall": 0.05198019801980198,
+            "fpr": 0.0009242856042517138
+          },
+          {
+            "provider": 1,
+            "n_positives_in_shard": 772,
+            "recall": 0.04207920792079208,
+            "fpr": 0.0010783332049603327
+          }
+        ]
+      },
+      {
+        "n_providers": 4,
+        "max_single_provider_recall": 0.05198019801980198,
+        "max_single_provider_fpr": 0.0009242856042517138,
+        "federated_recall": 0.05693069306930693,
+        "federated_fpr": 0.0012323808056689516,
+        "federation_lift": 0.004950495049504955,
+        "lift_positive": true,
+        "fpr_ceiling_used": 0.005,
+        "provider_details": [
+          {
+            "provider": 0,
+            "n_positives_in_shard": 414,
+            "recall": 0.039603960396039604,
+            "fpr": 0.0007702380035430948
+          },
+          {
+            "provider": 1,
+            "n_positives_in_shard": 346,
+            "recall": 0.05198019801980198,
+            "fpr": 0.0009242856042517138
+          },
+          {
+            "provider": 2,
+            "n_positives_in_shard": 397,
+            "recall": 0.034653465346534656,
+            "fpr": 0.0006932142031887853
+          },
+          {
+            "provider": 3,
+            "n_positives_in_shard": 375,
+            "recall": 0.039603960396039604,
+            "fpr": 0.0003851190017715474
+          }
+        ]
+      },
+      {
+        "n_providers": 8,
+        "max_single_provider_recall": 0.04207920792079208,
+        "max_single_provider_fpr": 0.0007702380035430948,
+        "federated_recall": 0.05693069306930693,
+        "federated_fpr": 0.0012323808056689516,
+        "federation_lift": 0.01485148514851485,
+        "lift_positive": true,
+        "fpr_ceiling_used": 0.005,
+        "provider_details": [
+          {
+            "provider": 0,
+            "n_positives_in_shard": 213,
+            "recall": 0.03712871287128713,
+            "fpr": 0.0003851190017715474
+          },
+          {
+            "provider": 1,
+            "n_positives_in_shard": 201,
+            "recall": 0.03712871287128713,
+            "fpr": 0.0006932142031887853
+          },
+          {
+            "provider": 2,
+            "n_positives_in_shard": 167,
+            "recall": 0.024752475247524754,
+            "fpr": 0.00015404760070861895
+          },
+          {
+            "provider": 3,
+            "n_positives_in_shard": 179,
+            "recall": 0.04207920792079208,
+            "fpr": 0.0007702380035430948
+          },
+          {
+            "provider": 4,
+            "n_positives_in_shard": 199,
+            "recall": 0.03217821782178218,
+            "fpr": 0.0003851190017715474
+          },
+          {
+            "provider": 5,
+            "n_positives_in_shard": 198,
+            "recall": 0.03217821782178218,
+            "fpr": 0.0003080952014172379
+          },
+          {
+            "provider": 6,
+            "n_positives_in_shard": 183,
+            "recall": 0.039603960396039604,
+            "fpr": 0.0003080952014172379
+          },
+          {
+            "provider": 7,
+            "n_positives_in_shard": 192,
+            "recall": 0.0297029702970297,
+            "fpr": 7.702380035430948e-05
+          }
+        ]
+      }
+    ]
+  }
+}

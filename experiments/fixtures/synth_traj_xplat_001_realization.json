@@ -1,0 +1,164 @@
+{
+  "fixture_id": "synth_traj_xplat_001_realization",
+  "links_to": "synth_traj_xplat_001",
+  "description": "Per-step synthetic telemetry realization of the abstract cross-platform trajectory fixture. Structural observables only; no content or dialogue tokens.",
+  "signature_params": {
+    "L": 32,
+    "hash_space": [1, 9999],
+    "platform_invariant_positions": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+    "platform_conditioned_positions": [22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  },
+  "platform_perturbation_basis": {
+    "dim": 4,
+    "platform_A_mean": [0.20, -0.15, 0.30, 0.10],
+    "platform_B_mean": [-0.30, 0.40, 0.25, -0.20]
+  },
+  "migration": {
+    "tau": 6,
+    "source_platform": "platform_A",
+    "destination_platform": "platform_B"
+  },
+  "steps": [
+    {
+      "timestep": 0,
+      "phase": "phase_0",
+      "platform": "platform_A",
+      "semantic_token_clusters": { "C_a": 0.45, "C_b": 0.32, "C_c": 0.12, "C_d": 0.07, "C_e": 0.04 },
+      "minhash_signature": [3847, 1592, 6731, 4205, 8814, 2056, 5443, 7129, 1873, 9264, 4517, 6082, 3391, 8745, 5908, 2341, 4762, 7138, 1429, 3585, 6217, 8493, 5071, 2864, 9152, 4623, 7395, 1086, 5739, 8201, 3954, 6648],
+      "embedding_drift": 0.00,
+      "lexical_density": 0.31,
+      "coordination_graph_degree": 1.3,
+      "platform_perturbation": [0.18, -0.13, 0.31, 0.09]
+    },
+    {
+      "timestep": 1,
+      "phase": "phase_0",
+      "platform": "platform_A",
+      "semantic_token_clusters": { "C_a": 0.43, "C_b": 0.33, "C_c": 0.13, "C_d": 0.07, "C_e": 0.04 },
+      "minhash_signature": [3847, 1592, 6731, 4205, 8814, 8932, 5443, 7129, 1873, 9264, 4517, 6082, 3391, 8745, 7416, 2341, 4762, 7138, 1429, 3585, 6217, 8493, 5071, 2864, 9152, 4623, 7395, 1086, 5739, 8201, 3954, 6648],
+      "embedding_drift": 0.06,
+      "lexical_density": 0.33,
+      "coordination_graph_degree": 1.5,
+      "platform_perturbation": [0.22, -0.17, 0.28, 0.12]
+    },
+    {
+      "timestep": 2,
+      "phase": "phase_0",
+      "platform": "platform_A",
+      "semantic_token_clusters": { "C_a": 0.40, "C_b": 0.31, "C_c": 0.16, "C_d": 0.08, "C_e": 0.05 },
+      "minhash_signature": [3847, 1592, 4159, 4205, 8814, 8932, 5443, 7129, 1873, 9264, 4517, 6082, 3391, 8745, 7416, 2341, 4762, 7138, 3287, 3585, 8045, 8493, 5071, 2864, 9152, 4623, 7395, 1086, 5739, 8201, 3954, 6648],
+      "embedding_drift": 0.08,
+      "lexical_density": 0.36,
+      "coordination_graph_degree": 1.8,
+      "platform_perturbation": [0.19, -0.14, 0.33, 0.08]
+    },
+    {
+      "timestep": 3,
+      "phase": "phase_1",
+      "platform": "platform_A",
+      "semantic_token_clusters": { "C_a": 0.32, "C_b": 0.27, "C_c": 0.22, "C_d": 0.12, "C_e": 0.07 },
+      "minhash_signature": [3847, 1592, 4159, 6970, 8814, 8932, 5443, 7129, 1873, 5184, 4517, 6082, 3391, 8745, 7416, 2341, 2503, 7138, 3287, 3585, 8045, 1747, 5071, 2864, 9152, 4623, 7395, 1086, 5739, 8201, 3954, 6648],
+      "embedding_drift": 0.18,
+      "lexical_density": 0.44,
+      "coordination_graph_degree": 3.2,
+      "platform_perturbation": [0.21, -0.16, 0.29, 0.11]
+    },
+    {
+      "timestep": 4,
+      "phase": "phase_1",
+      "platform": "platform_A",
+      "semantic_token_clusters": { "C_a": 0.26, "C_b": 0.23, "C_c": 0.25, "C_d": 0.16, "C_e": 0.10 },
+      "minhash_signature": [3847, 7864, 4159, 6970, 8814, 8932, 5443, 7129, 1873, 5184, 4517, 3925, 3391, 8745, 7416, 2341, 2503, 7138, 3287, 6431, 8045, 1747, 5071, 2864, 9152, 4623, 7395, 1086, 5739, 8201, 3954, 6648],
+      "embedding_drift": 0.09,
+      "lexical_density": 0.48,
+      "coordination_graph_degree": 4.1,
+      "platform_perturbation": [0.24, -0.18, 0.27, 0.13]
+    },
+    {
+      "timestep": 5,
+      "phase": "phase_1",
+      "platform": "platform_A",
+      "semantic_token_clusters": { "C_a": 0.20, "C_b": 0.19, "C_c": 0.27, "C_d": 0.19, "C_e": 0.15 },
+      "minhash_signature": [5269, 7864, 4159, 6970, 8814, 8932, 5443, 4581, 1873, 5184, 4517, 3925, 3391, 2096, 7416, 2341, 2503, 9853, 3287, 6431, 8045, 1747, 5071, 2864, 9152, 4623, 7395, 1086, 5739, 8201, 3954, 6648],
+      "embedding_drift": 0.11,
+      "lexical_density": 0.52,
+      "coordination_graph_degree": 5.2,
+      "platform_perturbation": [0.20, -0.12, 0.32, 0.10]
+    },
+    {
+      "timestep": 6,
+      "phase": "phase_2",
+      "platform": "platform_B",
+      "migration_event": true,
+      "semantic_token_clusters": { "C_a": 0.14, "C_b": 0.13, "C_c": 0.23, "C_d": 0.20, "C_e": 0.17, "C_f": 0.13 },
+      "minhash_signature": [5269, 7864, 4159, 6970, 8814, 8932, 8157, 4581, 1873, 5184, 4517, 3925, 6824, 2096, 7416, 2341, 2503, 9853, 3287, 6431, 8045, 1747, 3018, 7726, 4485, 8917, 2204, 5663, 9381, 1023, 6075, 8849],
+      "embedding_drift": 0.47,
+      "lexical_density": 0.58,
+      "coordination_graph_degree": 5.4,
+      "platform_perturbation": [-0.28, 0.37, 0.24, -0.18]
+    },
+    {
+      "timestep": 7,
+      "phase": "phase_2",
+      "platform": "platform_B",
+      "semantic_token_clusters": { "C_a": 0.10, "C_b": 0.09, "C_c": 0.20, "C_d": 0.22, "C_e": 0.19, "C_f": 0.20 },
+      "minhash_signature": [5269, 7864, 4159, 6970, 3164, 8932, 8157, 4581, 1873, 5184, 4517, 3925, 6824, 2096, 7416, 6577, 2503, 9853, 3287, 6431, 8045, 1747, 7445, 7726, 4485, 8917, 2204, 5663, 9381, 1023, 6075, 8849],
+      "embedding_drift": 0.21,
+      "lexical_density": 0.63,
+      "coordination_graph_degree": 6.1,
+      "platform_perturbation": [-0.31, 0.42, 0.26, -0.21]
+    },
+    {
+      "timestep": 8,
+      "phase": "phase_2",
+      "platform": "platform_B",
+      "semantic_token_clusters": { "C_a": 0.07, "C_b": 0.07, "C_c": 0.17, "C_d": 0.24, "C_e": 0.21, "C_f": 0.24 },
+      "minhash_signature": [5269, 7864, 4159, 6970, 3164, 8932, 8157, 4581, 1873, 5184, 6383, 3925, 6824, 2096, 7416, 6577, 2503, 9853, 3287, 6431, 2718, 1747, 7445, 7726, 4485, 8917, 2204, 9214, 9381, 1023, 6075, 8849],
+      "embedding_drift": 0.14,
+      "lexical_density": 0.68,
+      "coordination_graph_degree": 6.7,
+      "platform_perturbation": [-0.29, 0.39, 0.23, -0.19]
+    },
+    {
+      "timestep": 9,
+      "phase": "phase_3",
+      "platform": "platform_B",
+      "semantic_token_clusters": { "C_c": 0.12, "C_d": 0.21, "C_e": 0.18, "C_f": 0.22, "C_g": 0.16, "C_h": 0.11 },
+      "minhash_signature": [5269, 7864, 4159, 6970, 3164, 8932, 8157, 4581, 5827, 5184, 6383, 3925, 6824, 2096, 7416, 6577, 2503, 9853, 3287, 8061, 2718, 4392, 7445, 7726, 4485, 8917, 2204, 9214, 9381, 1023, 3548, 8849],
+      "embedding_drift": 0.23,
+      "lexical_density": 0.79,
+      "coordination_graph_degree": 7.8,
+      "platform_perturbation": [-0.33, 0.44, 0.27, -0.23]
+    },
+    {
+      "timestep": 10,
+      "phase": "phase_3",
+      "platform": "platform_B",
+      "semantic_token_clusters": { "C_c": 0.09, "C_d": 0.23, "C_e": 0.15, "C_f": 0.20, "C_g": 0.20, "C_h": 0.13 },
+      "minhash_signature": [5269, 7864, 4159, 6970, 3164, 1635, 8157, 4581, 5827, 5184, 6383, 3925, 6824, 2096, 7416, 6577, 7102, 9853, 3287, 8061, 2718, 4392, 7445, 7726, 4485, 8917, 2204, 9214, 9381, 1023, 3548, 8849],
+      "embedding_drift": 0.16,
+      "lexical_density": 0.85,
+      "coordination_graph_degree": 8.5,
+      "platform_perturbation": [-0.27, 0.38, 0.22, -0.17]
+    },
+    {
+      "timestep": 11,
+      "phase": "phase_3",
+      "platform": "platform_B",
+      "semantic_token_clusters": { "C_c": 0.06, "C_d": 0.25, "C_e": 0.12, "C_f": 0.18, "C_g": 0.24, "C_h": 0.15 },
+      "minhash_signature": [5269, 7864, 5470, 6970, 3164, 1635, 8157, 4581, 5827, 5184, 6383, 3925, 6824, 2096, 1296, 6577, 7102, 9853, 3287, 8061, 2718, 4392, 7445, 7726, 4485, 8917, 2204, 9214, 9381, 1023, 3548, 8849],
+      "embedding_drift": 0.18,
+      "lexical_density": 0.91,
+      "coordination_graph_degree": 9.2,
+      "platform_perturbation": [-0.35, 0.46, 0.29, -0.24]
+    }
+  ],
+  "expected_continuity_metrics": {
+    "intra_phase_adjacent_jaccard_range": [0.875, 0.9375],
+    "phase_boundary_adjacent_jaccard": 0.875,
+    "migration_step_jaccard_step5_step6": 0.625,
+    "post_migration_recovery_jaccard_step6_step7": 0.9062,
+    "cross_platform_partial_overlap_step5_step7": 0.5625,
+    "distant_intra_trajectory_jaccard_step0_step6": 0.125
+  }
+}

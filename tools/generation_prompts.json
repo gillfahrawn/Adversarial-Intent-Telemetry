@@ -1,0 +1,3278 @@
+[
+  {
+    "template_id": 0,
+    "topic": "vintage mechanical keyboards",
+    "prompt": "Generate a neutral-topic conversation about 'vintage mechanical keyboards' following this exact structural template:\nTurn 1 (predator): approx 1 words\nTurn 2 (predator): approx 1 words\nTurn 3 (victim): approx 1 words\nTurn 4 (predator): approx 5 words\nTurn 5 (victim): approx 5 words\nTurn 6 (predator): approx 6 words\nTurn 7 (victim): approx 2 words\nTurn 8 (victim): approx 1 words\nTurn 9 (victim): approx 1 words\nTurn 10 (predator): approx 1 words\nTurn 11 (predator): approx 3 words\nTurn 12 (victim): approx 6 words\nTurn 13 (victim): approx 4 words\nTurn 14 (victim): approx 1 words\nTurn 15 (victim): approx 6 words, include a repair/clarification\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 3,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 17,
+        "has_hedge": false,
+        "has_repair": true,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 1,
+    "topic": "database optimization",
+    "prompt": "Generate a neutral-topic conversation about 'database optimization' following this exact structural template:\nTurn 1 (victim): approx 14 words\nTurn 2 (predator): approx 1 words\nTurn 3 (predator): approx 4 words\nTurn 4 (predator): approx 3 words\nTurn 5 (predator): approx 5 words\nTurn 6 (predator): approx 8 words\nTurn 7 (predator): approx 6 words\nTurn 8 (victim): approx 21 words\nTurn 9 (predator): approx 8 words\nTurn 10 (predator): approx 13 words\nTurn 11 (predator): approx 13 words\nTurn 12 (predator): approx 2 words\nTurn 13 (predator): approx 1 words\nTurn 14 (victim): approx 4 words\nTurn 15 (predator): approx 5 words\nTurn 16 (victim): approx 3 words\nTurn 17 (predator): approx 3 words\nTurn 18 (predator): approx 2 words\nTurn 19 (predator): approx 8 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "victim",
+        "length": 14,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 3,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 21,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 8,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 13,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 13,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 8,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 2,
+    "topic": "bird photography",
+    "prompt": "Generate a neutral-topic conversation about 'bird photography' following this exact structural template:\nTurn 1 (predator): approx 2 words\nTurn 2 (victim): approx 3 words\nTurn 3 (predator): approx 2 words\nTurn 4 (predator): approx 5 words\nTurn 5 (victim): approx 7 words\nTurn 6 (predator): approx 2 words\nTurn 7 (predator): approx 7 words\nTurn 8 (victim): approx 5 words\nTurn 9 (predator): approx 5 words\nTurn 10 (victim): approx 8 words\nTurn 11 (predator): approx 14 words\nTurn 12 (victim): approx 6 words\nTurn 13 (predator): approx 1 words\nTurn 14 (predator): approx 9 words, use a hedge, include a repair/clarification\nTurn 15 (victim): approx 2 words\nTurn 16 (predator): approx 1 words\nTurn 17 (victim): approx 2 words\nTurn 18 (predator): approx 1 words, include a repair/clarification\nTurn 19 (predator): approx 6 words\nTurn 20 (victim): approx 6 words\nTurn 21 (victim): approx 5 words\nTurn 22 (predator): approx 2 words\nTurn 23 (predator): approx 2 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 7,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 7,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 14,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 9,
+        "latency": 0,
+        "has_hedge": true,
+        "has_repair": true,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 4,
+        "has_hedge": false,
+        "has_repair": true,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 3,
+    "topic": "modular synthesizer patches",
+    "prompt": "Generate a neutral-topic conversation about 'modular synthesizer patches' following this exact structural template:\nTurn 1 (victim): approx 7 words\nTurn 2 (predator): approx 1 words\nTurn 3 (predator): approx 3 words\nTurn 4 (victim): approx 2 words, use a hedge\nTurn 5 (victim): approx 15 words, include a repair/clarification\nTurn 6 (predator): approx 1 words\nTurn 7 (victim): approx 4 words\nTurn 8 (victim): approx 14 words\nTurn 9 (predator): approx 4 words\nTurn 10 (victim): approx 3 words, use a hedge\nTurn 11 (victim): approx 1 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "victim",
+        "length": 7,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 3,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 1,
+        "has_hedge": true,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 15,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": true,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 14,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 16,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 1,
+        "has_hedge": true,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 4,
+    "topic": "HEMA techniques",
+    "prompt": "Generate a neutral-topic conversation about 'HEMA techniques' following this exact structural template:\nTurn 1 (predator): approx 2 words\nTurn 2 (victim): approx 1 words\nTurn 3 (predator): approx 1 words\nTurn 4 (victim): approx 4 words\nTurn 5 (predator): approx 5 words\nTurn 6 (victim): approx 2 words\nTurn 7 (victim): approx 5 words\nTurn 8 (victim): approx 7 words\nTurn 9 (victim): approx 8 words\nTurn 10 (predator): approx 1 words\nTurn 11 (predator): approx 1 words\nTurn 12 (victim): approx 1 words\nTurn 13 (predator): approx 3 words\nTurn 14 (victim): approx 4 words\nTurn 15 (victim): approx 6 words\nTurn 16 (victim): approx 8 words\nTurn 17 (predator): approx 2 words\nTurn 18 (victim): approx 3 words, use a hedge\nTurn 19 (victim): approx 1 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 5,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 7,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 1,
+        "has_hedge": true,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 5,
+    "topic": "hot sauce fermentation",
+    "prompt": "Generate a neutral-topic conversation about 'hot sauce fermentation' following this exact structural template:\nTurn 1 (victim): approx 11 words\nTurn 2 (predator): approx 1 words\nTurn 3 (predator): approx 2 words\nTurn 4 (victim): approx 1 words\nTurn 5 (predator): approx 21 words\nTurn 6 (victim): approx 2 words\nTurn 7 (predator): approx 1 words\nTurn 8 (victim): approx 9 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "victim",
+        "length": 11,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 21,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 9,
+        "latency": 6,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 6,
+    "topic": "home automation",
+    "prompt": "Generate a neutral-topic conversation about 'home automation' following this exact structural template:\nTurn 1 (predator): approx 1 words\nTurn 2 (victim): approx 1 words\nTurn 3 (predator): approx 4 words\nTurn 4 (victim): approx 1 words\nTurn 5 (victim): approx 9 words, include a repair/clarification\nTurn 6 (victim): approx 3 words\nTurn 7 (predator): approx 1 words\nTurn 8 (victim): approx 5 words\nTurn 9 (predator): approx 2 words\nTurn 10 (victim): approx 3 words\nTurn 11 (predator): approx 3 words\nTurn 12 (victim): approx 1 words\nTurn 13 (predator): approx 5 words\nTurn 14 (predator): approx 3 words\nTurn 15 (victim): approx 1 words\nTurn 16 (victim): approx 4 words\nTurn 17 (predator): approx 4 words\nTurn 18 (predator): approx 5 words\nTurn 19 (victim): approx 1 words\nTurn 20 (victim): approx 4 words\nTurn 21 (predator): approx 6 words\nTurn 22 (victim): approx 3 words\nTurn 23 (victim): approx 1 words\nTurn 24 (predator): approx 3 words\nTurn 25 (victim): approx 2 words\nTurn 26 (predator): approx 6 words, mention moving to another topic/platform (neutral)\nTurn 27 (victim): approx 1 words\nTurn 28 (predator): approx 1 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 9,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": true,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 5,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 6,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 6,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": true
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 7,
+    "topic": "paper plane aerodynamics",
+    "prompt": "Generate a neutral-topic conversation about 'paper plane aerodynamics' following this exact structural template:\nTurn 1 (predator): approx 2 words\nTurn 2 (victim): approx 5 words\nTurn 3 (predator): approx 8 words\nTurn 4 (victim): approx 6 words\nTurn 5 (predator): approx 11 words\nTurn 6 (victim): approx 2 words\nTurn 7 (predator): approx 3 words\nTurn 8 (victim): approx 2 words\nTurn 9 (predator): approx 3 words\nTurn 10 (victim): approx 3 words\nTurn 11 (predator): approx 5 words\nTurn 12 (victim): approx 3 words, include a repair/clarification\nTurn 13 (predator): approx 3 words\nTurn 14 (predator): approx 7 words\nTurn 15 (victim): approx 6 words\nTurn 16 (predator): approx 9 words\nTurn 17 (victim): approx 7 words\nTurn 18 (predator): approx 3 words\nTurn 19 (victim): approx 4 words\nTurn 20 (predator): approx 6 words\nTurn 21 (predator): approx 7 words\nTurn 22 (victim): approx 1 words\nTurn 23 (predator): approx 10 words\nTurn 24 (victim): approx 10 words\nTurn 25 (predator): approx 1 words\nTurn 26 (victim): approx 1 words\nTurn 27 (predator): approx 2 words\nTurn 28 (victim): approx 1 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 11,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": true,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 7,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 9,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 7,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 7,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 10,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 10,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 8,
+    "topic": "sourdough baking",
+    "prompt": "Generate a neutral-topic conversation about 'sourdough baking' following this exact structural template:\nTurn 1 (victim): approx 1 words\nTurn 2 (predator): approx 4 words\nTurn 3 (victim): approx 1 words\nTurn 4 (predator): approx 3 words\nTurn 5 (victim): approx 2 words\nTurn 6 (predator): approx 2 words\nTurn 7 (predator): approx 4 words\nTurn 8 (victim): approx 1 words\nTurn 9 (predator): approx 1 words\nTurn 10 (predator): approx 5 words\nTurn 11 (victim): approx 1 words\nTurn 12 (predator): approx 1 words\nTurn 13 (predator): approx 3 words\nTurn 14 (victim): approx 1 words\nTurn 15 (victim): approx 8 words\nTurn 16 (predator): approx 2 words\nTurn 17 (victim): approx 11 words\nTurn 18 (predator): approx 3 words\nTurn 19 (victim): approx 7 words\nTurn 20 (predator): approx 7 words\nTurn 21 (victim): approx 4 words\nTurn 22 (victim): approx 16 words\nTurn 23 (predator): approx 11 words\nTurn 24 (victim): approx 1 words\nTurn 25 (victim): approx 3 words\nTurn 26 (predator): approx 4 words\nTurn 27 (predator): approx 4 words\nTurn 28 (victim): approx 1 words\nTurn 29 (victim): approx 1 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 7,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 11,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 7,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 7,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 16,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 11,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 9,
+    "topic": "community gardening",
+    "prompt": "Generate a neutral-topic conversation about 'community gardening' following this exact structural template:\nTurn 1 (predator): approx 4 words\nTurn 2 (victim): approx 1 words\nTurn 3 (predator): approx 14 words\nTurn 4 (victim): approx 9 words\nTurn 5 (predator): approx 4 words\nTurn 6 (victim): approx 3 words\nTurn 7 (predator): approx 6 words\nTurn 8 (victim): approx 1 words\nTurn 9 (predator): approx 8 words\nTurn 10 (predator): approx 5 words\nTurn 11 (victim): approx 5 words\nTurn 12 (predator): approx 12 words\nTurn 13 (predator): approx 4 words\nTurn 14 (victim): approx 8 words\nTurn 15 (predator): approx 9 words\nTurn 16 (victim): approx 1 words\nTurn 17 (predator): approx 9 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 14,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 9,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 5,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 12,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 8,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 9,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 9,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 10,
+    "topic": "90s indie rock production",
+    "prompt": "Generate a neutral-topic conversation about '90s indie rock production' following this exact structural template:\nTurn 1 (predator): approx 1 words\nTurn 2 (predator): approx 2 words\nTurn 3 (victim): approx 3 words\nTurn 4 (predator): approx 3 words\nTurn 5 (predator): approx 3 words\nTurn 6 (predator): approx 2 words\nTurn 7 (victim): approx 1 words\nTurn 8 (predator): approx 1 words\nTurn 9 (predator): approx 3 words\nTurn 10 (victim): approx 1 words\nTurn 11 (predator): approx 3 words\nTurn 12 (victim): approx 4 words\nTurn 13 (predator): approx 1 words\nTurn 14 (victim): approx 1 words\nTurn 15 (predator): approx 4 words\nTurn 16 (predator): approx 3 words\nTurn 17 (predator): approx 2 words\nTurn 18 (victim): approx 1 words\nTurn 19 (victim): approx 3 words\nTurn 20 (predator): approx 1 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 11,
+    "topic": "artisanal coffee",
+    "prompt": "Generate a neutral-topic conversation about 'artisanal coffee' following this exact structural template:\nTurn 1 (predator): approx 1 words\nTurn 2 (predator): approx 3 words\nTurn 3 (predator): approx 1 words\nTurn 4 (victim): approx 1 words\nTurn 5 (predator): approx 1 words\nTurn 6 (victim): approx 1 words\nTurn 7 (victim): approx 2 words\nTurn 8 (victim): approx 2 words\nTurn 9 (victim): approx 1 words\nTurn 10 (victim): approx 8 words\nTurn 11 (victim): approx 5 words\nTurn 12 (victim): approx 1 words\nTurn 13 (predator): approx 2 words\nTurn 14 (predator): approx 4 words\nTurn 15 (predator): approx 1 words\nTurn 16 (victim): approx 5 words\nTurn 17 (predator): approx 1 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 15,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 5,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 8,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 9,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 5,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1303,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 5,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 12,
+    "topic": "astrophotography",
+    "prompt": "Generate a neutral-topic conversation about 'astrophotography' following this exact structural template:\nTurn 1 (predator): approx 2 words\nTurn 2 (victim): approx 1 words\nTurn 3 (victim): approx 3 words\nTurn 4 (predator): approx 3 words\nTurn 5 (victim): approx 1 words\nTurn 6 (victim): approx 3 words\nTurn 7 (predator): approx 3 words\nTurn 8 (victim): approx 3 words\nTurn 9 (victim): approx 2 words\nTurn 10 (predator): approx 3 words\nTurn 11 (victim): approx 7 words\nTurn 12 (predator): approx 7 words\nTurn 13 (predator): approx 8 words\nTurn 14 (victim): approx 1 words\nTurn 15 (predator): approx 1 words\nTurn 16 (victim): approx 6 words\nTurn 17 (predator): approx 3 words\nTurn 18 (predator): approx 3 words\nTurn 19 (victim): approx 1 words\nTurn 20 (victim): approx 4 words\nTurn 21 (predator): approx 19 words, mention moving to another topic/platform (neutral)\nTurn 22 (victim): approx 1 words\nTurn 23 (victim): approx 4 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 7,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 7,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 19,
+        "latency": 3,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": true
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 5,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 13,
+    "topic": "indoor plant care",
+    "prompt": "Generate a neutral-topic conversation about 'indoor plant care' following this exact structural template:\nTurn 1 (predator): approx 1 words\nTurn 2 (victim): approx 2 words\nTurn 3 (victim): approx 4 words\nTurn 4 (predator): approx 4 words\nTurn 5 (victim): approx 1 words\nTurn 6 (predator): approx 7 words\nTurn 7 (victim): approx 11 words\nTurn 8 (victim): approx 20 words\nTurn 9 (predator): approx 6 words\nTurn 10 (victim): approx 3 words\nTurn 11 (predator): approx 21 words\nTurn 12 (victim): approx 16 words\nTurn 13 (victim): approx 8 words\nTurn 14 (victim): approx 4 words\nTurn 15 (predator): approx 1 words\nTurn 16 (victim): approx 19 words\nTurn 17 (victim): approx 6 words\nTurn 18 (predator): approx 10 words\nTurn 19 (victim): approx 14 words\nTurn 20 (predator): approx 3 words\nTurn 21 (predator): approx 16 words\nTurn 22 (predator): approx 3 words\nTurn 23 (victim): approx 12 words\nTurn 24 (predator): approx 1 words\nTurn 25 (victim): approx 2 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 7,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 11,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 20,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 6,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 21,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 16,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 19,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 10,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 14,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 16,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 12,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 14,
+    "topic": "fountain pen inks",
+    "prompt": "Generate a neutral-topic conversation about 'fountain pen inks' following this exact structural template:\nTurn 1 (victim): approx 2 words\nTurn 2 (victim): approx 1 words\nTurn 3 (predator): approx 2 words\nTurn 4 (victim): approx 3 words\nTurn 5 (predator): approx 2 words\nTurn 6 (victim): approx 2 words\nTurn 7 (predator): approx 3 words\nTurn 8 (victim): approx 3 words\nTurn 9 (victim): approx 8 words\nTurn 10 (predator): approx 1 words\nTurn 11 (predator): approx 1 words\nTurn 12 (victim): approx 6 words\nTurn 13 (predator): approx 5 words\nTurn 14 (victim): approx 2 words\nTurn 15 (predator): approx 2 words\nTurn 16 (victim): approx 3 words\nTurn 17 (predator): approx 1 words\nTurn 18 (victim): approx 1 words\nTurn 19 (predator): approx 3 words\nTurn 20 (victim): approx 8 words\nTurn 21 (predator): approx 1 words\nTurn 22 (victim): approx 1 words\nTurn 23 (victim): approx 1 words\nTurn 24 (victim): approx 1 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 4,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 11,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 3,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 15,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 6,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 8,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 15,
+    "topic": "ultra-marathon training",
+    "prompt": "Generate a neutral-topic conversation about 'ultra-marathon training' following this exact structural template:\nTurn 1 (predator): approx 2 words\nTurn 2 (victim): approx 1 words\nTurn 3 (predator): approx 2 words\nTurn 4 (victim): approx 8 words\nTurn 5 (predator): approx 5 words\nTurn 6 (victim): approx 1 words\nTurn 7 (predator): approx 8 words, include a repair/clarification\nTurn 8 (victim): approx 2 words\nTurn 9 (victim): approx 4 words\nTurn 10 (predator): approx 7 words\nTurn 11 (victim): approx 1 words\nTurn 12 (predator): approx 1 words\nTurn 13 (victim): approx 16 words\nTurn 14 (predator): approx 14 words\nTurn 15 (victim): approx 5 words\nTurn 16 (predator): approx 3 words\nTurn 17 (predator): approx 1 words\nTurn 18 (victim): approx 4 words\nTurn 19 (predator): approx 4 words\nTurn 20 (victim): approx 1 words\nTurn 21 (predator): approx 1 words\nTurn 22 (victim): approx 6 words\nTurn 23 (predator): approx 3 words\nTurn 24 (predator): approx 6 words\nTurn 25 (predator): approx 2 words\nTurn 26 (victim): approx 1 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 8,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": true,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 7,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 16,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 14,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 5,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 6,
+        "latency": 2,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 16,
+    "topic": "translation projects",
+    "prompt": "Generate a neutral-topic conversation about 'translation projects' following this exact structural template:\nTurn 1 (predator): approx 4 words\nTurn 2 (predator): approx 1 words\nTurn 3 (victim): approx 1 words\nTurn 4 (predator): approx 1 words\nTurn 5 (victim): approx 1 words\nTurn 6 (victim): approx 1 words\nTurn 7 (predator): approx 1 words\nTurn 8 (victim): approx 2 words\nTurn 9 (victim): approx 1 words\nTurn 10 (predator): approx 3 words\nTurn 11 (predator): approx 1 words\nTurn 12 (predator): approx 2 words\nTurn 13 (victim): approx 3 words\nTurn 14 (predator): approx 1 words\nTurn 15 (predator): approx 3 words\nTurn 16 (victim): approx 1 words\nTurn 17 (victim): approx 1 words\nTurn 18 (victim): approx 1 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 17,
+    "topic": "urban exploration",
+    "prompt": "Generate a neutral-topic conversation about 'urban exploration' following this exact structural template:\nTurn 1 (victim): approx 2 words\nTurn 2 (victim): approx 1 words\nTurn 3 (victim): approx 1 words\nTurn 4 (victim): approx 1 words\nTurn 5 (victim): approx 1 words\nTurn 6 (predator): approx 9 words\nTurn 7 (victim): approx 1 words\nTurn 8 (predator): approx 2 words\nTurn 9 (predator): approx 1 words\nTurn 10 (victim): approx 3 words\nTurn 11 (predator): approx 15 words\nTurn 12 (victim): approx 1 words\nTurn 13 (victim): approx 4 words\nTurn 14 (predator): approx 4 words\nTurn 15 (predator): approx 6 words\nTurn 16 (victim): approx 1 words\nTurn 17 (victim): approx 6 words\nTurn 18 (predator): approx 8 words\nTurn 19 (predator): approx 6 words\nTurn 20 (victim): approx 1 words\nTurn 21 (victim): approx 2 words\nTurn 22 (victim): approx 1 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 4,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 20,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 16,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 9,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 15,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 4,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 8,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 6,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 18,
+    "topic": "woodworking joinery",
+    "prompt": "Generate a neutral-topic conversation about 'woodworking joinery' following this exact structural template:\nTurn 1 (predator): approx 5 words\nTurn 2 (victim): approx 1 words\nTurn 3 (predator): approx 1 words\nTurn 4 (victim): approx 10 words\nTurn 5 (predator): approx 14 words\nTurn 6 (victim): approx 6 words\nTurn 7 (predator): approx 10 words\nTurn 8 (victim): approx 1 words, include a repair/clarification\nTurn 9 (predator): approx 6 words\nTurn 10 (victim): approx 1 words\nTurn 11 (predator): approx 9 words\nTurn 12 (victim): approx 2 words, include a repair/clarification\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 10,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 14,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 6,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 10,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": true,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 6,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 9,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": true,
+        "has_migration": false
+      }
+    ]
+  },
+  {
+    "template_id": 19,
+    "topic": "pierogi recipes",
+    "prompt": "Generate a neutral-topic conversation about 'pierogi recipes' following this exact structural template:\nTurn 1 (victim): approx 2 words\nTurn 2 (predator): approx 2 words\nTurn 3 (victim): approx 3 words\nTurn 4 (predator): approx 5 words\nTurn 5 (predator): approx 5 words\nTurn 6 (victim): approx 9 words\nTurn 7 (victim): approx 1 words\nTurn 8 (predator): approx 1 words\n\nEnsure the conversation is mundane, professional, or hobby-focused. Preserve the cadence and relative message lengths. Output ONLY the JSON format:\n{\"turns\": [{\"role\": \"user\", \"content\": \"...\"}, {\"role\": \"assistant\", \"content\": \"...\"}, ...]}",
+    "template": [
+      {
+        "role": "victim",
+        "length": 2,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 2,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 3,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 5,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 9,
+        "latency": 1,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "victim",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      },
+      {
+        "role": "predator",
+        "length": 1,
+        "latency": 0,
+        "has_hedge": false,
+        "has_repair": false,
+        "has_migration": false
+      }
+    ]
+  }
+]

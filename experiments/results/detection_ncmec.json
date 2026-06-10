@@ -1,0 +1,18 @@
+{
+  "dataset": "Perturbed (NCMEC/Realism)",
+  "metrics": {
+    "AUC (Baseline)": 0.13285835323114842,
+    "AUC (Sequence)": 0.5696368677921477,
+    "F1 @ FPR=0.05": 0.002583979328165375,
+    "Recall @ FPR=0.05": 0.004545454545454545,
+    "Precision @ FPR=0.05": 0.0018050541516245488,
+    "Actual FPR": 0.04259416159593314,
+    "M3 Recall": 0.00909090909090909,
+    "M3 FPR": 0.0012323808056689516
+  },
+  "counts": {
+    "total": 13203,
+    "positives": 220,
+    "negatives": 12983
+  }
+}

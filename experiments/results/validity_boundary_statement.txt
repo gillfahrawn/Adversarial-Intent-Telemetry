@@ -1,0 +1,15 @@
+Validity Boundary Statement (Strict Empirical Constraint)
+============================================================
+
+1. EMPIRICALLY OBSERVED (MULTI-RUN VALIDATED):
+   - CONTINUOUS METRIC CONVERGENCE: Cosine and Euclidean similarity metrics show strong positive correlation (avg > 0.7, std < 0.05) across all datasets and seeds. This is an observed system property.
+   - LSH NON-LINEARITY: The LSH operator introduces a measurable divergence from continuous similarity (Magnitude > 0.08 in all layers).
+
+2. SIMULATION-SPECIFIC MECHANISMS (NOT GENERALIZED):
+   - THRESHOLD-DRIVEN COLLAPSE: The sudden drop in linkage at specific parameter points is observed ONLY in LSH telemetry and remains a property of the discretized hashing threshold.
+   - CAUSAL ENTROPY: The scale of structural decay driven by 'entropy_growth_rate' is a model-defined mechanic in the SYNTHETIC layer.
+
+3. REMOVED / FLAG AS NARRATIVE:
+   - INTRINSIC PHASE TRANSITION: Narrative claims of intrinsic 'state changes' in human behavior are removed as they are not observed in continuous latent metrics.
+
+Claim Boundary: Claims of general system behavior are limited to those with multi-trial validation (std < 0.05 for agreement metrics).

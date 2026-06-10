@@ -1,0 +1,11 @@
+{
+  "perturbations": {
+    "retrieval_swap": 100,
+    "reciprocity_asymmetry": 2
+  },
+  "realism_delta": {
+    "pre_auc": 0.9211111111111111,
+    "post_auc": 0.7866666666666666,
+    "auc_reduction": 0.13444444444444448
+  }
+}

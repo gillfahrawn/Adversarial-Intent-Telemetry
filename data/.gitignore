@@ -1,0 +1,27 @@
+# ==========================================
+# Large Data & Datasets (Keeps things local)
+# ==========================================
+data/
+*.csv
+*.json
+*.zip
+*.tar.gz
+
+# ==========================================
+# Python / Data Science Environment
+# ==========================================
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ==========================================
+# System / IDE Junk
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/

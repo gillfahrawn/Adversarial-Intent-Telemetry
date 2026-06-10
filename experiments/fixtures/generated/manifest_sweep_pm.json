@@ -1,0 +1,152 @@
+{
+  "id_prefix": "sweep_pm",
+  "sweep": "perturbation_magnitude=0.0,0.2,0.4,0.6,0.8",
+  "count": 5,
+  "entries": [
+    {
+      "fixture_id": "sweep_pm_0000",
+      "latent": "sweep_pm_0000.json",
+      "realization": "sweep_pm_0000_realization.json",
+      "params": {
+        "fixture_id": "sweep_pm_0000",
+        "n_steps": 12,
+        "tau": 8,
+        "L": 32,
+        "invariant_ratio": 0.6875,
+        "perturbation_magnitude": 0.0,
+        "entropy_start": 2.1,
+        "entropy_growth_rate": 0.243,
+        "coord_start": 0.12,
+        "coord_slope": 0.074,
+        "seed": 0
+      },
+      "expected_continuity_metrics": {
+        "intra_phase_adjacent_jaccard_range": [
+          0.6875,
+          0.9375
+        ],
+        "phase_boundary_adjacent_jaccard": 0.7812,
+        "migration_step_jaccard_step7_step8": 0.5,
+        "post_migration_recovery_jaccard_step8_step9": 0.6875,
+        "cross_platform_partial_overlap_step7_step9": 0.2188,
+        "distant_intra_trajectory_jaccard_step0_step8": 0.0938
+      }
+    },
+    {
+      "fixture_id": "sweep_pm_0001",
+      "latent": "sweep_pm_0001.json",
+      "realization": "sweep_pm_0001_realization.json",
+      "params": {
+        "fixture_id": "sweep_pm_0001",
+        "n_steps": 12,
+        "tau": 6,
+        "L": 32,
+        "invariant_ratio": 0.6875,
+        "perturbation_magnitude": 0.2,
+        "entropy_start": 2.1,
+        "entropy_growth_rate": 0.243,
+        "coord_start": 0.12,
+        "coord_slope": 0.074,
+        "seed": 1
+      },
+      "expected_continuity_metrics": {
+        "intra_phase_adjacent_jaccard_range": [
+          0.7812,
+          0.9062
+        ],
+        "phase_boundary_adjacent_jaccard": 0.75,
+        "migration_step_jaccard_step5_step6": 0.5938,
+        "post_migration_recovery_jaccard_step6_step7": 0.8438,
+        "cross_platform_partial_overlap_step5_step7": 0.5,
+        "distant_intra_trajectory_jaccard_step0_step6": 0.1562
+      }
+    },
+    {
+      "fixture_id": "sweep_pm_0002",
+      "latent": "sweep_pm_0002.json",
+      "realization": "sweep_pm_0002_realization.json",
+      "params": {
+        "fixture_id": "sweep_pm_0002",
+        "n_steps": 12,
+        "tau": 8,
+        "L": 32,
+        "invariant_ratio": 0.6875,
+        "perturbation_magnitude": 0.4,
+        "entropy_start": 2.1,
+        "entropy_growth_rate": 0.243,
+        "coord_start": 0.12,
+        "coord_slope": 0.074,
+        "seed": 2
+      },
+      "expected_continuity_metrics": {
+        "intra_phase_adjacent_jaccard_range": [
+          0.6875,
+          0.9062
+        ],
+        "phase_boundary_adjacent_jaccard": 0.8438,
+        "migration_step_jaccard_step7_step8": 0.5,
+        "post_migration_recovery_jaccard_step8_step9": 0.8438,
+        "cross_platform_partial_overlap_step7_step9": 0.4062,
+        "distant_intra_trajectory_jaccard_step0_step8": 0.0625
+      }
+    },
+    {
+      "fixture_id": "sweep_pm_0003",
+      "latent": "sweep_pm_0003.json",
+      "realization": "sweep_pm_0003_realization.json",
+      "params": {
+        "fixture_id": "sweep_pm_0003",
+        "n_steps": 12,
+        "tau": 8,
+        "L": 32,
+        "invariant_ratio": 0.6875,
+        "perturbation_magnitude": 0.6,
+        "entropy_start": 2.1,
+        "entropy_growth_rate": 0.243,
+        "coord_start": 0.12,
+        "coord_slope": 0.074,
+        "seed": 3
+      },
+      "expected_continuity_metrics": {
+        "intra_phase_adjacent_jaccard_range": [
+          0.75,
+          0.9062
+        ],
+        "phase_boundary_adjacent_jaccard": 0.8333,
+        "migration_step_jaccard_step7_step8": 0.4062,
+        "post_migration_recovery_jaccard_step8_step9": 0.8438,
+        "cross_platform_partial_overlap_step7_step9": 0.2812,
+        "distant_intra_trajectory_jaccard_step0_step8": 0.0
+      }
+    },
+    {
+      "fixture_id": "sweep_pm_0004",
+      "latent": "sweep_pm_0004.json",
+      "realization": "sweep_pm_0004_realization.json",
+      "params": {
+        "fixture_id": "sweep_pm_0004",
+        "n_steps": 12,
+        "tau": 8,
+        "L": 32,
+        "invariant_ratio": 0.6875,
+        "perturbation_magnitude": 0.8,
+        "entropy_start": 2.1,
+        "entropy_growth_rate": 0.243,
+        "coord_start": 0.12,
+        "coord_slope": 0.074,
+        "seed": 4
+      },
+      "expected_continuity_metrics": {
+        "intra_phase_adjacent_jaccard_range": [
+          0.7188,
+          0.9062
+        ],
+        "phase_boundary_adjacent_jaccard": 0.8438,
+        "migration_step_jaccard_step7_step8": 0.5,
+        "post_migration_recovery_jaccard_step8_step9": 0.7812,
+        "cross_platform_partial_overlap_step7_step9": 0.375,
+        "distant_intra_trajectory_jaccard_step0_step8": 0.0625
+      }
+    }
+  ]
+}

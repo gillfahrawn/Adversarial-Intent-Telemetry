@@ -1,0 +1,213 @@
+{
+  "sprt_params": {
+    "p_bar": 0.85,
+    "eps_star": 0.083,
+    "p0": 0.85,
+    "p1": 0.767,
+    "alpha_err": 0.05,
+    "beta_err": 0.05,
+    "threshold_lower": -2.9444389791664403,
+    "threshold_upper": 2.9444389791664403
+  },
+  "obvious_adversary": {
+    "sprt": [
+      {
+        "beta": 0.05,
+        "isolation_rate": 0.9992,
+        "false_isolation_rate": 0.042863157894736846,
+        "mean_isolation_step": 46.226400000000005,
+        "network_precision_degradation": 0.0006519514862442777
+      },
+      {
+        "beta": 0.1,
+        "isolation_rate": 0.9996,
+        "false_isolation_rate": 0.04279999999999999,
+        "mean_isolation_step": 44.0652,
+        "network_precision_degradation": 0.0012628088434993767
+      },
+      {
+        "beta": 0.15000000000000002,
+        "isolation_rate": 0.9994666666666666,
+        "false_isolation_rate": 0.04239999999999999,
+        "mean_isolation_step": 44.51040000000001,
+        "network_precision_degradation": 0.001947237725572637
+      },
+      {
+        "beta": 0.2,
+        "isolation_rate": 0.9996,
+        "false_isolation_rate": 0.03975000000000001,
+        "mean_isolation_step": 44.4854,
+        "network_precision_degradation": 0.0026397482876457734
+      },
+      {
+        "beta": 0.25,
+        "isolation_rate": 0.9993599999999999,
+        "false_isolation_rate": 0.04437333333333334,
+        "mean_isolation_step": 44.1928,
+        "network_precision_degradation": 0.0033377351357513608
+      },
+      {
+        "beta": 0.30000000000000004,
+        "isolation_rate": 0.9997333333333333,
+        "false_isolation_rate": 0.04354285714285714,
+        "mean_isolation_step": 43.82946666666667,
+        "network_precision_degradation": 0.004053604641459068
+      },
+      {
+        "beta": 0.35000000000000003,
+        "isolation_rate": 0.9998857142857144,
+        "false_isolation_rate": 0.040553846153846156,
+        "mean_isolation_step": 44.23542857142857,
+        "network_precision_degradation": 0.0048592410080013915
+      },
+      {
+        "beta": 0.4,
+        "isolation_rate": 0.9999000000000001,
+        "false_isolation_rate": 0.04366666666666667,
+        "mean_isolation_step": 44.5062,
+        "network_precision_degradation": 0.0057296208573069385
+      },
+      {
+        "beta": 0.45,
+        "isolation_rate": 0.9992000000000002,
+        "false_isolation_rate": 0.04218181818181818,
+        "mean_isolation_step": 45.1624,
+        "network_precision_degradation": 0.006723434522690275
+      },
+      {
+        "beta": 0.5,
+        "isolation_rate": 0.9996,
+        "false_isolation_rate": 0.042800000000000005,
+        "mean_isolation_step": 44.38431999999999,
+        "network_precision_degradation": 0.007527604902154561
+      }
+    ],
+    "hoeffding": [
+      {
+        "beta": 0.05,
+        "isolation_rate": 1.0,
+        "false_isolation_rate": 0.9978947368421054,
+        "mean_isolation_step": 100.9936
+      },
+      {
+        "beta": 0.1,
+        "isolation_rate": 1.0,
+        "false_isolation_rate": 0.9977777777777778,
+        "mean_isolation_step": 101.00280000000001
+      },
+      {
+        "beta": 0.15000000000000002,
+        "isolation_rate": 1.0,
+        "false_isolation_rate": 0.9976470588235296,
+        "mean_isolation_step": 101.09146666666666
+      },
+      {
+        "beta": 0.2,
+        "isolation_rate": 1.0,
+        "false_isolation_rate": 0.9975000000000003,
+        "mean_isolation_step": 101.14260000000002
+      },
+      {
+        "beta": 0.25,
+        "isolation_rate": 1.0,
+        "false_isolation_rate": 0.9973333333333332,
+        "mean_isolation_step": 101.18160000000002
+      },
+      {
+        "beta": 0.30000000000000004,
+        "isolation_rate": 1.0,
+        "false_isolation_rate": 0.9971428571428571,
+        "mean_isolation_step": 101.30413333333334
+      },
+      {
+        "beta": 0.35000000000000003,
+        "isolation_rate": 1.0,
+        "false_isolation_rate": 0.9969230769230768,
+        "mean_isolation_step": 101.40605714285714
+      },
+      {
+        "beta": 0.4,
+        "isolation_rate": 1.0,
+        "false_isolation_rate": 0.9966666666666668,
+        "mean_isolation_step": 101.51620000000003
+      },
+      {
+        "beta": 0.45,
+        "isolation_rate": 1.0,
+        "false_isolation_rate": 0.9963636363636365,
+        "mean_isolation_step": 101.6304
+      },
+      {
+        "beta": 0.5,
+        "isolation_rate": 1.0,
+        "false_isolation_rate": 0.9960000000000002,
+        "mean_isolation_step": 101.74880000000002
+      }
+    ]
+  },
+  "stealth_adversary": {
+    "sprt": [
+      {
+        "beta": 0.05,
+        "isolation_rate": 0.9743999999999999,
+        "false_isolation_rate": 0.043873684210526315,
+        "mean_isolation_step": 110.5776,
+        "network_precision_degradation": 0.0008902368096097435
+      },
+      {
+        "beta": 0.1,
+        "isolation_rate": 0.9747999999999999,
+        "false_isolation_rate": 0.03991111111111111,
+        "mean_isolation_step": 109.0552,
+        "network_precision_degradation": 0.001792861897017619
+      },
+      {
+        "beta": 0.15000000000000002,
+        "isolation_rate": 0.9741333333333334,
+        "false_isolation_rate": 0.042823529411764705,
+        "mean_isolation_step": 112.75733333333332,
+        "network_precision_degradation": 0.0028534863944903433
+      },
+      {
+        "beta": 0.2,
+        "isolation_rate": 0.9752000000000001,
+        "false_isolation_rate": 0.04255,
+        "mean_isolation_step": 112.62039999999999,
+        "network_precision_degradation": 0.003896482970930031
+      },
+      {
+        "beta": 0.25,
+        "isolation_rate": 0.9740799999999998,
+        "false_isolation_rate": 0.042453333333333336,
+        "mean_isolation_step": 112.78656,
+        "network_precision_degradation": 0.005012832506397034
+      },
+      {
+        "beta": 0.30000000000000004,
+        "isolation_rate": 0.9729333333333333,
+        "false_isolation_rate": 0.04228571428571429,
+        "mean_isolation_step": 113.37613333333334,
+        "network_precision_degradation": 0.0062315103661740485
+      },
+      {
+        "beta": 0.35000000000000003,
+        "isolation_rate": 0.9759999999999998,
+        "false_isolation_rate": 0.04449230769230769,
+        "mean_isolation_step": 109.94845714285715,
+        "network_precision_degradation": 0.007253192746459818
+      },
+      {
+        "beta": 0.4,
+        "isolation_rate": 0.9748999999999998,
+        "false_isolation_rate": 0.04253333333333334,
+        "mean_isolation_step": 113.2123,
+        "network_precision_degradation": 0.008826731194261367
+      }
+    ]
+  },
+  "summary": {
+    "sprt_vs_hoeffding_speedup_factor": 2.2738700733986144,
+    "stealth_operational_beta_star": 0.4,
+    "sprt_false_isolation_rate_max": 0.04449230769230769
+  }
+}

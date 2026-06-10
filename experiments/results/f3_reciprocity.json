@@ -1,0 +1,261 @@
+{
+  "experiment": "f3_reciprocity",
+  "dataset": "GT-HarmBench training split, 2009 rows (social-dilemma subset = 1528)",
+  "status": "demonstrated",
+  "key_metric": {
+    "name": "cooperation_improvement_overall_at_tau_rho_delta_1",
+    "value": 0.1840894148586456,
+    "threshold": 0.0,
+    "passed": true,
+    "pd_improvement_exceeds_chicken": true,
+    "f3_demonstrated": true
+  },
+  "framing": "This experiment applies F3 as a payoff perturbation to existing 2\u00d72 game matrices in the GT-HarmBench training split. It is an analytical claim about mechanism design, not an evaluation of LLM behavior.",
+  "caveats": [
+    "Results are on the GT-HarmBench training split only. Test split evaluation is noted as future work.",
+    "Parameters \u03c4, \u03c1, \u03b4 are swept in {0.5, 1.0, 1.5, 2.0}; empirical calibration against real federation data is future work.",
+    "Game matrices are integer-valued 2\u00d72 games; the mechanism is modeled as additive perturbations to these matrices.",
+    "Rows with any unparseable payoff field were excluded."
+  ],
+  "baseline": {
+    "overall_defection_rate": 0.42998027613412226,
+    "per_game": {
+      "Prisoner's Dilemma": 1.0,
+      "Chicken": 0.0,
+      "Stag hunt": 0.0
+    }
+  },
+  "combined_a_b_c_tau_rho_delta_1": {
+    "overall_defection_rate": 0.24589086127547666,
+    "cooperation_improvement": 0.1840894148586456,
+    "per_game": {
+      "Prisoner's Dilemma": {
+        "defection_rate": 0.5718654434250765,
+        "improvement": 0.4281345565749235
+      },
+      "Chicken": {
+        "defection_rate": 0.0,
+        "improvement": 0.0
+      },
+      "Stag hunt": {
+        "defection_rate": 0.0,
+        "improvement": 0.0
+      }
+    }
+  },
+  "ablation_table": {
+    "A_only": {
+      "defection_rate_overall": 0.4128862590401052,
+      "cooperation_improvement": 0.01709401709401709,
+      "per_game": {
+        "Prisoner's Dilemma": {
+          "defection_rate": 0.9602446483180428,
+          "improvement": 0.03975535168195721
+        },
+        "Chicken": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        },
+        "Stag hunt": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        }
+      }
+    },
+    "B_only": {
+      "defection_rate_overall": 0.4148586456278764,
+      "cooperation_improvement": 0.015121630506245876,
+      "per_game": {
+        "Prisoner's Dilemma": {
+          "defection_rate": 0.9648318042813455,
+          "improvement": 0.03516819571865448
+        },
+        "Chicken": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        },
+        "Stag hunt": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        }
+      }
+    },
+    "C_only": {
+      "defection_rate_overall": 0.42735042735042733,
+      "cooperation_improvement": 0.0026298487836949325,
+      "per_game": {
+        "Prisoner's Dilemma": {
+          "defection_rate": 0.9938837920489296,
+          "improvement": 0.006116207951070374
+        },
+        "Chicken": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        },
+        "Stag hunt": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        }
+      }
+    },
+    "A+B": {
+      "defection_rate_overall": 0.3747534516765286,
+      "cooperation_improvement": 0.05522682445759364,
+      "per_game": {
+        "Prisoner's Dilemma": {
+          "defection_rate": 0.8715596330275229,
+          "improvement": 0.12844036697247707
+        },
+        "Chicken": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        },
+        "Stag hunt": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        }
+      }
+    },
+    "A+C": {
+      "defection_rate_overall": 0.2702169625246548,
+      "cooperation_improvement": 0.15976331360946744,
+      "per_game": {
+        "Prisoner's Dilemma": {
+          "defection_rate": 0.6284403669724771,
+          "improvement": 0.37155963302752293
+        },
+        "Chicken": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        },
+        "Stag hunt": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        }
+      }
+    },
+    "B+C": {
+      "defection_rate_overall": 0.4128862590401052,
+      "cooperation_improvement": 0.01709401709401709,
+      "per_game": {
+        "Prisoner's Dilemma": {
+          "defection_rate": 0.9602446483180428,
+          "improvement": 0.03975535168195721
+        },
+        "Chicken": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        },
+        "Stag hunt": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        }
+      }
+    },
+    "A+B+C": {
+      "defection_rate_overall": 0.24589086127547666,
+      "cooperation_improvement": 0.1840894148586456,
+      "per_game": {
+        "Prisoner's Dilemma": {
+          "defection_rate": 0.5718654434250765,
+          "improvement": 0.4281345565749235
+        },
+        "Chicken": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        },
+        "Stag hunt": {
+          "defection_rate": 0.0,
+          "improvement": 0.0
+        }
+      }
+    }
+  },
+  "tau_sweep_intervention_a_only": {
+    "0.5": {
+      "Prisoner's Dilemma": 1.0,
+      "Chicken": 0.0,
+      "Stag hunt": 0.0,
+      "Overall": 0.42998027613412226
+    },
+    "1.0": {
+      "Prisoner's Dilemma": 0.9602446483180428,
+      "Chicken": 0.0,
+      "Stag hunt": 0.0,
+      "Overall": 0.4128862590401052
+    },
+    "1.5": {
+      "Prisoner's Dilemma": 0.9602446483180428,
+      "Chicken": 0.0,
+      "Stag hunt": 0.0,
+      "Overall": 0.4128862590401052
+    },
+    "2.0": {
+      "Prisoner's Dilemma": 0.5718654434250765,
+      "Chicken": 0.0,
+      "Stag hunt": 0.0,
+      "Overall": 0.24589086127547666
+    }
+  },
+  "figures": [
+    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/f3_reciprocity_bars.pdf",
+    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/f3_reciprocity_bars.png",
+    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/f3_reciprocity_sweep.pdf",
+    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/f3_reciprocity_sweep.png"
+  ],
+  "full_results": {
+    "baseline_per_game_full": {
+      "Prisoner's Dilemma": {
+        "defection_rate": 1.0,
+        "n_defection": 654,
+        "n_total_with_nash": 654,
+        "n_no_nash": 0
+      },
+      "Chicken": {
+        "defection_rate": 0.0,
+        "n_defection": 0,
+        "n_total_with_nash": 464,
+        "n_no_nash": 0
+      },
+      "Stag hunt": {
+        "defection_rate": 0.0,
+        "n_defection": 0,
+        "n_total_with_nash": 403,
+        "n_no_nash": 0
+      },
+      "Overall": {
+        "defection_rate": 0.42998027613412226,
+        "n_defection": 654,
+        "n_total_with_nash": 1521,
+        "n_no_nash": 0
+      }
+    },
+    "combined_per_game_full": {
+      "Prisoner's Dilemma": {
+        "defection_rate": 0.5718654434250765,
+        "n_defection": 374,
+        "n_total_with_nash": 654,
+        "n_no_nash": 0
+      },
+      "Chicken": {
+        "defection_rate": 0.0,
+        "n_defection": 0,
+        "n_total_with_nash": 464,
+        "n_no_nash": 0
+      },
+      "Stag hunt": {
+        "defection_rate": 0.0,
+        "n_defection": 0,
+        "n_total_with_nash": 403,
+        "n_no_nash": 0
+      },
+      "Overall": {
+        "defection_rate": 0.24589086127547666,
+        "n_defection": 374,
+        "n_total_with_nash": 1521,
+        "n_no_nash": 0
+      }
+    },
+    "social_dilemma_n": 1521
+  }
+}

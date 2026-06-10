@@ -1,0 +1,30 @@
+{
+  "n_adversarial_annotated": 500,
+  "n_benign_annotated": 500,
+  "adversarial_entropy_gate_pass_rate": 1.0,
+  "mean_manifest_entropy_adversarial": 125.086,
+  "mean_manifest_entropy_benign": 85.5674,
+  "mean_n_tokens_adversarial": 24.41,
+  "mean_n_tokens_benign": 17.5,
+  "field_population_rates": {
+    "intent_class": 0.044,
+    "behavior_phase": 0.054,
+    "phase_transition": 0.004,
+    "embed_anom_bin": 1.0,
+    "role_marker": 0.022,
+    "hypoth_frame": 0.018,
+    "decomp_signal": 1.0,
+    "prem_drift": 0.676,
+    "provenance_fail": 0.0,
+    "demographic_prior": 0.0,
+    "scope_class": 1.0
+  },
+  "finding": "Annotation partially successful. Fields [intent_class, behavior_phase, phase_transition, role_marker, hypoth_frame, provenance_fail, demographic_prior] have low detection rates. Rule extension recommended before C1/C2.",
+  "caveats": [
+    "manifest_gen.py patterns target AI jailbreak trajectories (role injection, hypothetical frames, bypass language). PAN 2012 is human-human grooming chat (2012); pattern vocabulary overlap is low by design. Low population rates motivate rule extension, not failure.",
+    "Adversarial conversations: predator messages assigned role='user'; victim messages assigned role='assistant'.",
+    "Benign conversations: first unique speaker assigned role='user'; others assigned role='assistant'.",
+    "Training split re-derived from D3 algorithm (SEED=20260514); m3_author_split.json does not carry per-conversation IDs.",
+    "field_population_rates are adversarial population rates. scope_class, embed_anom_bin, and decomp_signal are structurally always populated by manifest_gen and are excluded from the low-population diagnostic."
+  ]
+}

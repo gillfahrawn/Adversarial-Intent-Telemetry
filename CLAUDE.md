@@ -68,6 +68,15 @@ This is the source of truth for what the README may describe as existing.
 | `tools/manifest_gen.py` | exists | Rule-based manifest extractor CLI |
 | `tools/requirements.txt` | exists | jsonschema>=4.17 |
 | `tools/lsh.py` | **not yet** | Banded MinHash signature primitive |
+<<<<<<< HEAD
+<<<<<<< HEAD
+| `experiments/exp_m8_sprt.py` | exists | SPRT vs Hoeffding isolation comparison |
+| `experiments/results/m8_sprt.json` | exists | Numeric output from SPRT experiment |
+| `experiments/results/m8_sprt.png` | exists | Figure output from SPRT experiment |
+| `experiments/results/m8_sprt.pdf` | exists | Figure output from SPRT experiment |
+=======
+=======
+>>>>>>> 478e1a19718740f9eb1f70743cbffb87c8553cd9
 | `experiments/exp_m3_federation_lift.py` | exists | M3 federation lift experiment |
 | `experiments/exp_m8_byzantine.py` | exists | M8 Byzantine tolerance experiment |
 | `experiments/exp_trajectory_lift.py` | exists | Sec. 6 trajectory lift experiment |
@@ -81,6 +90,10 @@ This is the source of truth for what the README may describe as existing.
 | `experiments/exp_m3_frontier.py` | **TODO — D4** | Operating-point frontier on PAN 2012 |
 | `experiments/exp_m8_stealth.py` | **TODO — D5** | M8 re-run with stealth/threshold-hovering Byzantine adversary |
 | `experiments/exp_fp_substrate.py` | **TODO — D7** | FP substrate analysis on PAN 2012 negatives |
+<<<<<<< HEAD
+>>>>>>> 478e1a19718740f9eb1f70743cbffb87c8553cd9
+=======
+>>>>>>> 478e1a19718740f9eb1f70743cbffb87c8553cd9
 | `.gitignore` | exists | Ignores out/, __pycache__, .venv |
 
 **Hard rule**: The README must never describe, link to, or provide commands for

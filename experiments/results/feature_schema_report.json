@@ -1,0 +1,24 @@
+{
+  "feature_names": [
+    "turn_count",
+    "avg_msg_len",
+    "std_msg_len",
+    "max_msg_len",
+    "reciprocity_ratio",
+    "avg_lexical_entropy",
+    "hedge_rate",
+    "repair_rate",
+    "migration_position",
+    "escalation_timing",
+    "cadence_variance"
+  ],
+  "X_baseline_shape": [
+    200,
+    12
+  ],
+  "X_experimental_shape": [
+    200,
+    12
+  ],
+  "normalization": "StandardScaler"
+}

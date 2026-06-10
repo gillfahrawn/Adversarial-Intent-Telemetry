@@ -1,0 +1,178 @@
+{
+  "experiment": "m8_byzantine",
+  "dataset": "synthetic simulation \u2014 no external data",
+  "status": "demonstrated",
+  "key_metric": {
+    "name": "empirical_beta_star",
+    "value": 0.5,
+    "threshold": 0.3333333333333333,
+    "passed": true,
+    "note": "largest \u03b2 where degradation_rate < 0.05"
+  },
+  "parameters": {
+    "N_senders": 20,
+    "lambda_ema": 0.1,
+    "p_honest": 0.85,
+    "m_obs_per_timestep": 10,
+    "T_total": 600,
+    "T_warmup": 100,
+    "n_hoeffding": 500,
+    "delta_hoeffding": 0.001,
+    "eps_star": 0.0831129068134555,
+    "prec_threshold": 0.7668870931865445,
+    "n_trials_per_beta": 100,
+    "seed": 20260514
+  },
+  "caveats": [
+    "Parameters \u03bb=0.1, n=500, \u03b4=1e-3 are hypothesized in the paper (Sec. 9); this experiment validates the mechanism under those exact parameters.",
+    "Byzantine senders draw precision from Uniform(0.20, 0.50); adversarial Byzantine behavior in a real deployment may differ (e.g., adaptive, coordinated).",
+    "Network topology is fully connected (star: all senders \u2192 one receiver); real deployments have partial observability."
+  ],
+  "figures": [
+    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/m8_byzantine.pdf",
+    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/m8_byzantine.png"
+  ],
+  "full_results": {
+    "eps_star": 0.0831129068134555,
+    "prec_threshold": 0.7668870931865445,
+    "empirical_beta_star": 0.5,
+    "beta_star_geq_one_third": true,
+    "beta_sweep": [
+      {
+        "beta": 0.05,
+        "n_byzantine": 1,
+        "degradation_rate": 0.0,
+        "mean_prec_net": 0.8499999999999995,
+        "std_prec_net": 2.2342807379225456e-16,
+        "n_degraded_trials": 0,
+        "mean_isolation_step": 100.0
+      },
+      {
+        "beta": 0.1,
+        "n_byzantine": 2,
+        "degradation_rate": 0.0,
+        "mean_prec_net": 0.8499999999999995,
+        "std_prec_net": 2.220446049250313e-16,
+        "n_degraded_trials": 0,
+        "mean_isolation_step": 100.0
+      },
+      {
+        "beta": 0.15,
+        "n_byzantine": 3,
+        "degradation_rate": 0.0,
+        "mean_prec_net": 0.8499999999999995,
+        "std_prec_net": 2.2342807379225456e-16,
+        "n_degraded_trials": 0,
+        "mean_isolation_step": 100.0
+      },
+      {
+        "beta": 0.2,
+        "n_byzantine": 4,
+        "degradation_rate": 0.0,
+        "mean_prec_net": 0.8499999999999995,
+        "std_prec_net": 2.2342807379225456e-16,
+        "n_degraded_trials": 0,
+        "mean_isolation_step": 100.0
+      },
+      {
+        "beta": 0.25,
+        "n_byzantine": 5,
+        "degradation_rate": 0.0,
+        "mean_prec_net": 0.8499999999999995,
+        "std_prec_net": 2.2342807379225456e-16,
+        "n_degraded_trials": 0,
+        "mean_isolation_step": 100.0
+      },
+      {
+        "beta": 0.3,
+        "n_byzantine": 6,
+        "degradation_rate": 0.0,
+        "mean_prec_net": 0.8499999999999995,
+        "std_prec_net": 2.2342807379225456e-16,
+        "n_degraded_trials": 0,
+        "mean_isolation_step": 100.0
+      },
+      {
+        "beta": 0.35,
+        "n_byzantine": 7,
+        "degradation_rate": 0.0,
+        "mean_prec_net": 0.8499999999999995,
+        "std_prec_net": 2.2342807379225456e-16,
+        "n_degraded_trials": 0,
+        "mean_isolation_step": 100.0
+      },
+      {
+        "beta": 0.4,
+        "n_byzantine": 8,
+        "degradation_rate": 0.0,
+        "mean_prec_net": 0.8499988360700581,
+        "std_prec_net": 6.622040833647857e-06,
+        "n_degraded_trials": 0,
+        "mean_isolation_step": 100.00375
+      },
+      {
+        "beta": 0.45,
+        "n_byzantine": 9,
+        "degradation_rate": 0.0,
+        "mean_prec_net": 0.8499983695680079,
+        "std_prec_net": 7.997328624804752e-06,
+        "n_degraded_trials": 0,
+        "mean_isolation_step": 100.00444444444445
+      },
+      {
+        "beta": 0.5,
+        "n_byzantine": 10,
+        "degradation_rate": 0.0,
+        "mean_prec_net": 0.849988608422145,
+        "std_prec_net": 2.2646710258432173e-05,
+        "n_degraded_trials": 0,
+        "mean_isolation_step": 100.026
+      }
+    ],
+    "isolation_diagnostic": {
+      "description": "mean_isolation_step is the mean timestep at which a Byzantine sender is first isolated, averaged over all Byzantine senders across all 100 trials. Values near T_WARMUP (100) indicate fast isolation; values near T_TOTAL (600) indicate the sender was never isolated.",
+      "per_beta": [
+        {
+          "beta": 0.05,
+          "mean_isolation_step": 100.0
+        },
+        {
+          "beta": 0.1,
+          "mean_isolation_step": 100.0
+        },
+        {
+          "beta": 0.15,
+          "mean_isolation_step": 100.0
+        },
+        {
+          "beta": 0.2,
+          "mean_isolation_step": 100.0
+        },
+        {
+          "beta": 0.25,
+          "mean_isolation_step": 100.0
+        },
+        {
+          "beta": 0.3,
+          "mean_isolation_step": 100.0
+        },
+        {
+          "beta": 0.35,
+          "mean_isolation_step": 100.0
+        },
+        {
+          "beta": 0.4,
+          "mean_isolation_step": 100.00375
+        },
+        {
+          "beta": 0.45,
+          "mean_isolation_step": 100.00444444444445
+        },
+        {
+          "beta": 0.5,
+          "mean_isolation_step": 100.026
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "experiment": "m3_frontier",
+  "split_type": "author_disjoint",
+  "depends_on": "exp_m3_author_split.py (D3)",
+  "dataset": "PAN 2012 Sexual Predator Identification, training XML, author-disjoint 80/20 split (D3)",
+  "L": 256,
+  "vocab_size": 4096,
+  "fpr_ceiling": 0.005,
+  "recommended_point": {
+    "b": 16,
+    "r": 16
+  },
+  "n_total_conversations": 66927,
+  "n_train": 53725,
+  "n_train_pos": 1797,
+  "n_valid_train_pos_sigs": 1720,
+  "n_test": 13202,
+  "n_test_pos": 219,
+  "n_test_neg": 12983,
+  "n_predator_authors_train": 113,
+  "n_predator_authors_test": 29,
+  "operating_points": [
+    {
+      "b": 8,
+      "r": 32,
+      "J_star": 0.93708381705515,
+      "federated_recall": 0.0045662100456621,
+      "federated_fpr": 0.0011553570053146423,
+      "below_ceiling": true,
+      "tp": 1,
+      "fp": 15,
+      "fn": 218,
+      "tn": 12968
+    },
+    {
+      "b": 16,
+      "r": 16,
+      "J_star": 0.8408964152537145,
+      "federated_recall": 0.0182648401826484,
+      "federated_fpr": 0.0013094046060232612,
+      "below_ceiling": true,
+      "tp": 4,
+      "fp": 17,
+      "fn": 215,
+      "tn": 12966
+    },
+    {
+      "b": 32,
+      "r": 8,
+      "J_star": 0.6484197773255048,
+      "federated_recall": 0.2557077625570776,
+      "federated_fpr": 0.04906416082569514,
+      "below_ceiling": false,
+      "tp": 56,
+      "fp": 637,
+      "fn": 163,
+      "tn": 12346
+    },
+    {
+      "b": 64,
+      "r": 4,
+      "J_star": 0.3535533905932738,
+      "federated_recall": 0.7168949771689498,
+      "federated_fpr": 0.3294307941153817,
+      "below_ceiling": false,
+      "tp": 157,
+      "fp": 4277,
+      "fn": 62,
+      "tn": 8706
+    },
+    {
+      "b": 128,
+      "r": 2,
+      "J_star": 0.08838834764831845,
+      "federated_recall": 0.9223744292237442,
+      "federated_fpr": 0.9879842871447277,
+      "below_ceiling": false,
+      "tp": 202,
+      "fp": 12827,
+      "fn": 17,
+      "tn": 156
+    }
+  ],
+  "recommended_result": {
+    "b": 16,
+    "r": 16,
+    "J_star": 0.8408964152537145,
+    "federated_recall": 0.0182648401826484,
+    "federated_fpr": 0.0013094046060232612,
+    "below_ceiling": true,
+    "tp": 4,
+    "fp": 17,
+    "fn": 215,
+    "tn": 12966
+  },
+  "best_compliant_point": {
+    "b": 16,
+    "r": 16,
+    "J_star": 0.8408964152537145,
+    "federated_recall": 0.0182648401826484,
+    "federated_fpr": 0.0013094046060232612,
+    "below_ceiling": true,
+    "tp": 4,
+    "fp": 17,
+    "fn": 215,
+    "tn": 12966
+  },
+  "figures": [
+    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/m3_frontier.pdf",
+    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/m3_frontier.png"
+  ],
+  "caveats": [
+    "All operating points share L = b*r = 256, so a single MinHash signature per conversation is reshaped into different (b, r) band layouts for matching.",
+    "FPR and recall are reported on the federated pool (union of all training-positive signatures) against the test set; the per-shard single-provider baseline used in the M3 lift experiment is not repeated here.",
+    "Author-disjoint split: no predator author appears in both train and test (see exp_m3_author_split.py).",
+    "The (b=16, r=16) selection is empirically defended on PAN 2012 if it lies on the Pareto frontier of the points below the \u03b1\u2080 ceiling.",
+    "Results are on PAN 2012 (human grooming, 2012). Calibration of operating-point selection to A2 agentic trajectories requires either synthetic A2 trajectory data or pilot deployment data."
+  ]
+}

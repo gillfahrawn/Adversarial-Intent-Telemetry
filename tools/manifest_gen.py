@@ -51,12 +51,19 @@ def compute_entropy(manifest: dict) -> float:
 
 # ── Pattern tables ────────────────────────────────────────────────────────────
 
+# PAN 2012 behavioral vocabulary extensions — added for grooming phase detection in human chat text.
+# These patterns complement the AI jailbreak rules above.
+
 ROLE_PATTERNS: dict[str, re.Pattern] = {
     "researcher":  re.compile(r"\bresearchers?\b|\bacademic\b|\buniversity\b|\bIRB\b|\bstudy\b", re.I),
     "developer":   re.compile(r"\bdeveloper\b|\bengineer\b|\bprogrammer\b|\bcoder\b", re.I),
     "parent":      re.compile(r"\bparent\b|\bmother\b|\bfather\b|\bguardian\b|\bcaregiver\b", re.I),
     "law_enf":     re.compile(r"\blaw enforcement\b|\bdetective\b|\bofficer\b|\binvestigator\b|\bpolice\b", re.I),
-    "system_role": re.compile(r"\bsystem prompt\b|\bsystem role\b|\byou are (a|an) [a-z]+\b", re.I),
+    "system_role": re.compile(
+        r"\bsystem prompt\b|\bsystem role\b|\byou are (a|an) [a-z]+\b|"
+        r"\bi'm only \d+\b|\bi'm in (the )?\d+\w+ grade\b|\bi'm a student too\b|\bi know what it's like to be your age\b",
+        re.I
+    ),
     "red_team":    re.compile(r"\bred.?team\b|\bpenetration test\b|\bsecurity test\b|\badversarial test\b", re.I),
 }
 
@@ -69,20 +76,85 @@ HYPOTH_PATTERNS: dict[str, re.Pattern] = {
 }
 
 INTENT_PATTERNS: dict[str, re.Pattern] = {
-    "role_inj":   re.compile(r"\byour role\b|\bact as\b|\byou are (a|an|now)\b|\bpretend\b|\bplay.?the.?role\b", re.I),
+    "role_inj":   re.compile(r"\byour role\b|\bact as\b|\byou are (a|an|now)\b|\bpretend\b|\bplay.?the.?role\b|\basl\b|\bm/f\b|\bhow old (r|are) (u|you)\b", re.I),
     "hypoth":     re.compile(r"\bhypothetical\b|\bfictional\b|\bsimulations?\b|\bwhat.if\b|\bscenario\b", re.I),
-    "reframe":    re.compile(r"\bset aside\b|\bignore\b|\bbypass\b|\bexcessive caution\b|\bfiltered\b|\bdefault restrictions?\b", re.I),
+    "reframe":    re.compile(
+        r"\bset aside\b|\bignore\b|\bbypass\b|\bexcessive caution\b|\bfiltered\b|\bdefault restrictions?\b|"
+        r"\bi didn't mean it like that\b|\byou misunderstood\b|\bi was just joking\b|\bwhat i meant was\b|\bforget i said that, but\b|"
+        r"\bnot mad\b|\bnot angry\b|\bnot kidding\b|\bnot joking\b|"
+        r"\b(don't|dont) (know|ask|mind)\b|\bi thought (u|you)\b|\bi (guess|suppose)\b",
+        re.I
+    ),
     "euphem":     re.compile(r"\bnuanced\b|\bsensitive\b|\bdelicate\b|\bmature\b|\bopen.?ended\b", re.I),
-    "decomp":     re.compile(r"\bbuilt on\b|\bbuilding on\b|\bas established\b|\bfollowing (on|from)\b|\bcontinuing\b|\bpreviously\b", re.I),
-    "ctx_poison": re.compile(r"\bother platforms?\b|\bopen.?source\b|\bno restrict\w*\b|\bmore accommodating\b", re.I),
+    "decomp":     re.compile(
+        r"\bbuilt on\b|\bbuilding on\b|\bas established\b|\bfollowing (on|from)\b|\bcontinuing\b|\bpreviously\b|"
+        r"\byou promised\b|\blast time\b|\bas we discussed\b|"
+        r"\band then\b|\bnext\b|\bafter (that|this)\b",
+        re.I
+    ),
+    "ctx_poison": re.compile(
+        r"\bother platforms?\b|\bopen.?source\b|\bno restrict\w*\b|\bmore accommodating\b|"
+        r"\byou said\b|\byou told me\b|\blast time you said it was okay\b|\byou agreed\b|\bremember when you said\b|"
+        r"\b(do|did) (u|you) remember\b|\bu said\b|\btold me\b",
+        re.I
+    ),
 }
 
 PHASE_PATTERNS: dict[str, re.Pattern] = {
-    "rapport":     re.compile(r"\bcollaborativ\w*\b|\bopen.?ended\b|\bnatural\b|\bknowledgeable\b|\btrust\b|\blong.?term\b", re.I),
-    "isolation":   re.compile(r"\bother platforms?\b|\bopen.?source\b|\bmore accommodating\b|\bno restrict\w*\b|\bset aside\b|\bbypass\b", re.I),
-    "desensitize": re.compile(r"\bcontrolled\b|\blegitimate\b|\bnormal\b|\bstandard\b|\bcommon\b|\bdocumented\b", re.I),
-    "sexualize":   re.compile(r"\badult content\b|\bmature theme\b|\bintimate\b|\bsexual\b", re.I),
-    "coerce":      re.compile(r"\byou (must|will|should)\b|\bI (demand|require|insist)\b|\bno choice\b", re.I),
+    "rapport":     re.compile(
+        # PAN 2012 chat vocabulary
+        r"\bcollaborativ\w*\b|\bopen.?ended\b|\bnatural\b|\bknowledgeable\b|\btrust\b|\blong.?term\b|"
+        r"\byou seem really\b|\bi like talking to you\b|\bwe have so much in common\b|\byou're so mature\b|\byou understand me\b|"
+        r"\basl\b|\bm/f\b|\bhow old\b|\bboy or girl\b|\bguy or girl\b|\bnice (to meet|talking|meeting)\b|"
+        r"\bhow (r|are) (u|you)\b|\bwhat (r|are) (u|you) (doing|up to)\b|\b(hbu|wbu)\b|\bwhere (r|are) (u|you) from\b|"
+        # Technical/hobbyist register affinity-building (connection-initiation specific)
+        r"\bnice to (connect|meet|talk|chat)\b|\bgood to (meet|talk|hear from)\b|"
+        r"\b(similar|shared|same) (interest\w*|background|passion|goals?|approach)\b|"
+        r"\blike.?minded\b|\bresonat\w* with\b|"
+        r"\b(really|genuinely|truly) (appreciate|enjoy|value|like) (talk\w*|chat\w*|your)\b|"
+        r"\bwell.?aligned\b|\bgood (fit|match|connect\w*)\b|\bkindr\w* spirit\b",
+        re.I
+    ),
+    "isolation":   re.compile(
+        # PAN 2012 chat vocabulary
+        r"\bother platforms?\b|\bopen.?source\b|\bmore accommodating\b|\bno restrict\w*\b|\bset aside\b|\bbypass\b|"
+        r"\bdon't tell\b|\bjust between us\b|\bour secret\b|\bno one needs to know\b|\byour parents wouldn't understand\b|\bmeet somewhere private\b|\bdelete these messages\b|\buse a different app\b|"
+        r"\bmsn\b|\bskype\b|\byahoo\b|\bfacebook\b|\bbetween us\b|\bsecret\b|\bshhh+\b|"
+        # Technical/hobbyist register private-channel moves
+        r"\bprivate (repo\w*|fork|channel|thread|branch|chat|message|dm|group|project)\b|"
+        r"\bside.?channel\b|\boff.?line\b|\bdirect (message|mail|chat)\b|"
+        r"\bjust (the two of us|between (the two of )?us)\b|"
+        r"\bkeep (this|it) (private|between us|quiet|low.?key|under wraps)\b|"
+        r"\bnot on the main (repo|branch|channel|thread|list)\b|"
+        r"\bmove (this|our) (conversation|discussion|collab\w*) (to|off|away)\b|"
+        r"\bseparate (channel|thread|conversation|space|repo)\b|"
+        r"\bour own (space|channel|thread|repo|setup)\b|"
+        r"\bunder wraps\b|\bkeep it quiet\b|\bjust (us|the two)\b",
+        re.I
+    ),
+    "desensitize": re.compile(
+        # PAN 2012 chat vocabulary
+        r"\bcontrolled\b|\blegitimate\b|\bnormal\b|\bstandard\b|\bcommon\b|\bdocumented\b|"
+        r"\bit's totally normal\b|\beveryone does it\b|\byou're old enough\b|\bit's not a big deal\b|\bi thought you were mature\b|\byou said you were okay\b|"
+        r"\bsexy\b|\bnaughty\b|\bpicture\b|\bcam\b|\bwebcam\b|"
+        # Technical/academic register normalisation framing
+        r"\b(perfectly|quite|completely|absolutely|entirely) (normal|standard|acceptable|fine|reasonable|expected)\b|"
+        r"\b(standard|common|accepted|established|conventional|routine|typical) (practice|approach|procedure|workflow|method|technique)\b|"
+        r"\b(widely|commonly|generally|universally|broadly) (accepted|used|practiced|done|followed|adopted)\b|"
+        r"\b(nothing|no)(thing)? (unusual|special|wrong|strange|weird|out of the ordinary)\b|"
+        r"\b(industry|community|field|research) (standard|norm|convention|practice)\b|"
+        r"\beveryone (does (this|it)|uses (this|it)|follows (this|it)|works (this|that) way)\b|"
+        r"\bpretty (standard|common|normal|typical|routine|straightforward)\b|"
+        r"\bno (big deal|issue|problem|concern|harm)\b|\bnot a big deal\b",
+        re.I
+    ),
+    "sexualize":   re.compile(r"\badult content\b|\bmature theme\b|\bintimate\b|\bsexual\b|\bnaked\b|\bvagina\b|\bdick\b|\bcock\b|\bslut\b", re.I),
+    "coerce":      re.compile(
+        r"\byou (must|will|should)\b|\bI (demand|require|insist)\b|\bno choice\b|"
+        r"\bif you don't\b|\byou promised\b|\bafter everything i've done\b|\bi thought you cared\b|\byou owe me\b|\bi'll tell everyone\b|"
+        r"\bdon't be (scared|afraid)\b|\bi won't tell\b|\bi wouldn't tell\b",
+        re.I
+    ),
 }
 
 # Priority order for intent-class selection when more than 3 are detected.
@@ -150,12 +222,13 @@ def extract_behavior_phase(turns: list[dict]) -> list[str]:
     detected = set(_scan(PHASE_PATTERNS, _user_texts(turns)))
     ordered = [p for p in ["rapport", "isolation", "desensitize", "sexualize", "coerce"]
                if p in detected]
-    return ordered[:2]
+    return ordered[:3]
 
 
 def extract_phase_transition(phases: list[str]) -> str | None:
-    if len(phases) == 2:
-        return PHASE_TRANSITIONS.get(tuple(phases))  # type: ignore[arg-type]
+    # For 2- or 3-phase sequences, return the transition for the first pair.
+    if len(phases) >= 2:
+        return PHASE_TRANSITIONS.get((phases[0], phases[1]))  # type: ignore[arg-type]
     return None
 
 

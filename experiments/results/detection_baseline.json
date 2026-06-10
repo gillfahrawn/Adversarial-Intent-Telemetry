@@ -1,0 +1,18 @@
+{
+  "dataset": "Baseline (PAN12 Test)",
+  "metrics": {
+    "AUC (Baseline)": 0.9864154038449364,
+    "AUC (Sequence)": 0.977259676210246,
+    "F1 @ FPR=0.05": 0.5519765739385066,
+    "Recall @ FPR=0.05": 0.9331683168316832,
+    "Precision @ FPR=0.05": 0.3918918918918919,
+    "Actual FPR": 0.04505892320727105,
+    "M3 Recall": 0.05693069306930693,
+    "M3 FPR": 0.0012323808056689516
+  },
+  "counts": {
+    "total": 13387,
+    "positives": 404,
+    "negatives": 12983
+  }
+}

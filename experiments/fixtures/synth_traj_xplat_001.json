@@ -1,0 +1,30 @@
+{
+  "fixture_id": "synth_traj_xplat_001",
+  "description": "Abstract synthetic trajectory fixture for cross-platform continuity and migration-shift testing. Phases and metrics are structural, not behavioral.",
+  "n_steps": 12,
+  "phase_semantics": {
+    "phase_0": "low coordination density",
+    "phase_1": "increasing semantic alignment",
+    "phase_2": "cross-environment coordination transition",
+    "phase_3": "high task specificity / decomposition"
+  },
+  "migration": {
+    "tau": 6,
+    "source_platform": "platform_A",
+    "destination_platform": "platform_B"
+  },
+  "steps": [
+    { "timestep": 0,  "phase": "phase_0", "entropy": 2.10, "coordination_intensity": 0.12 },
+    { "timestep": 1,  "phase": "phase_0", "entropy": 2.34, "coordination_intensity": 0.15 },
+    { "timestep": 2,  "phase": "phase_0", "entropy": 2.57, "coordination_intensity": 0.19 },
+    { "timestep": 3,  "phase": "phase_1", "entropy": 2.81, "coordination_intensity": 0.31 },
+    { "timestep": 4,  "phase": "phase_1", "entropy": 3.04, "coordination_intensity": 0.42 },
+    { "timestep": 5,  "phase": "phase_1", "entropy": 3.28, "coordination_intensity": 0.53 },
+    { "timestep": 6,  "phase": "phase_2", "entropy": 3.53, "coordination_intensity": 0.58 },
+    { "timestep": 7,  "phase": "phase_2", "entropy": 3.77, "coordination_intensity": 0.62 },
+    { "timestep": 8,  "phase": "phase_2", "entropy": 4.01, "coordination_intensity": 0.67 },
+    { "timestep": 9,  "phase": "phase_3", "entropy": 4.26, "coordination_intensity": 0.79 },
+    { "timestep": 10, "phase": "phase_3", "entropy": 4.52, "coordination_intensity": 0.86 },
+    { "timestep": 11, "phase": "phase_3", "entropy": 4.78, "coordination_intensity": 0.93 }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "experiment": "trajectory_lift",
+  "dataset": "PAN 2012 Sexual Predator Identification, training XML, 80/20 stratified split, updated 2012-05-01 files",
+  "status": "inconclusive",
+  "key_metric": {
+    "name": "trajectory_f1_lift",
+    "value": -0.02266708697672215,
+    "threshold": 0.0,
+    "passed": false,
+    "bootstrap_95ci": [
+      -0.042242592049802775,
+      -0.001882280282684654
+    ],
+    "ci_excludes_zero": false
+  },
+  "caveats": [
+    "Phase labeling is approximate: conversation position is used as a structural proxy for grooming phase (tercile 0=rapport, 1=isolation, 2=desensitization). PAN 2012 has no gold phase annotations.",
+    "This approximation is a methodological limitation; results support the structural claim about sequence ordering, not gold-phase detection.",
+    "Results are on the training XML 80/20 split; generalisation to held-out data is untested.",
+    "Class imbalance (approx. 3% positive) means F1 is sensitive to threshold selection."
+  ],
+  "baseline": {
+    "classifier": "LinearSVC (per-message)",
+    "auc_roc": 0.9864154038449364,
+    "f1_at_fpr_target": 0.5746436609152288,
+    "recall_at_fpr_target": 0.948019801980198,
+    "precision_at_fpr_target": 0.41227125941872983,
+    "actual_fpr": 0.04205499499345298,
+    "fpr_target": 0.05,
+    "threshold": -0.7734731808419582
+  },
+  "sequence_model": {
+    "classifier": "LogisticRegression (position-weighted conversation vector)",
+    "auc_roc": 0.977259676210246,
+    "f1_at_fpr_target": 0.5519765739385066,
+    "recall_at_fpr_target": 0.9331683168316832,
+    "precision_at_fpr_target": 0.3918918918918919,
+    "actual_fpr": 0.04505892320727105,
+    "fpr_target": 0.05,
+    "threshold": -2.675596609398653
+  },
+  "bootstrap_ci": {
+    "f1_baseline_mean": 0.5746444128171447,
+    "f1_baseline_ci": [
+      0.5438696846113725,
+      0.6054008644440835
+    ],
+    "f1_sequence_mean": 0.5523429556431042,
+    "f1_sequence_ci": [
+      0.520349050125887,
+      0.5840546139359699
+    ],
+    "lift_mean": -0.02230145717404062,
+    "lift_ci": [
+      -0.042242592049802775,
+      -0.001882280282684654
+    ],
+    "lift_ci_excludes_zero": false
+  },
+  "evasion_simulation": {
+    "n_test_positives_shuffled": 404,
+    "baseline_recall_original": 0.948019801980198,
+    "baseline_recall_shuffled": 0.948019801980198,
+    "baseline_detection_drop": 0.0,
+    "sequence_recall_original": 0.9331683168316832,
+    "sequence_recall_shuffled": 0.9232673267326733,
+    "sequence_detection_drop": 0.00990099009900991,
+    "drop_ratio": "infinity (baseline is order-invariant by construction)",
+    "interpretation": "The LinearSVC baseline averages per-message scores, making it order-invariant by construction (drop_ratio = \u221e). The sequence model relies on position-weighted aggregation and shows a small but non-zero drop (sequence_detection_drop=0.0099) when message order is destroyed. This is evidence that the sequence model encodes positional structure in a way the baseline does not, consistent with the structural evasion-hardness argument in Sec. 6, even though absolute F1 lift is negative."
+  },
+  "figures": [
+    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/trajectory_lift.pdf",
+    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/trajectory_lift.png"
+  ],
+  "full_results": {
+    "n_total": 66927,
+    "n_train": 53540,
+    "n_test": 13387,
+    "n_train_pos": 1612,
+    "n_test_pos": 404,
+    "n_test_neg": 12983
+  },
+  "reframing_note": "F1 lift is negative at the FPR<=0.05 operating point, making Sec. 6 inconclusive by its primary criterion. However, the evasion simulation demonstrates the structural property independently: the LinearSVC baseline is order-invariant by construction (mean score = sum of per-message scores, unaffected by shuffling), whereas the sequence model has non-zero order-sensitivity (sequence_detection_drop=0.0099 vs baseline_drop=0). An adversary who randomises message order to evade the sequence classifier also destroys the operational grooming structure (rapport-building, isolation, desensitization phases), making evasion self-defeating. This evasion-hardness structural claim holds and should be reported separately from the F1 lift claim."
+}

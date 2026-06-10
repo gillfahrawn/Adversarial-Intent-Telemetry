@@ -1,0 +1,307 @@
+{
+  "experiment": "m3_author_split",
+  "split_type": "author_disjoint",
+  "dataset": "PAN 2012 Sexual Predator Identification, training XML, author-disjoint 80/20 split (D3)",
+  "minhash_params": {
+    "L": 256,
+    "b": 16,
+    "r": 16,
+    "vocab_size": 4096
+  },
+  "fpr_ceiling": 0.005,
+  "n_total_conversations": 66927,
+  "n_predator_ids_in_groundtruth": 142,
+  "n_predator_authors_observed_in_xml": 142,
+  "n_predator_authors_train": 113,
+  "n_predator_authors_test": 29,
+  "comparison_at_n8": {
+    "old_conv_split": {
+      "split_type": "conversation_id",
+      "n_train": 53540,
+      "n_test": 13387,
+      "n_train_pos": 1612,
+      "n_test_pos": 404,
+      "n_test_neg": 12983,
+      "n_valid_train_pos_sigs": 1532,
+      "federated_recall": 0.05693069306930693,
+      "federated_fpr": 0.0012323808056689516,
+      "max_single_provider_recall": 0.04207920792079208,
+      "max_single_provider_fpr": 0.0007702380035430948,
+      "federation_lift": 0.01485148514851485
+    },
+    "new_author_disjoint": {
+      "split_type": "author_disjoint",
+      "n_train": 53725,
+      "n_test": 13202,
+      "n_train_pos": 1797,
+      "n_test_pos": 219,
+      "n_test_neg": 12983,
+      "n_valid_train_pos_sigs": 1720,
+      "federated_recall": 0.0182648401826484,
+      "federated_fpr": 0.0013094046060232612,
+      "max_single_provider_recall": 0.0182648401826484,
+      "max_single_provider_fpr": 0.0003080952014172379,
+      "federation_lift": 0.0
+    },
+    "delta_new_minus_old": {
+      "federated_recall": -0.03866585288665853,
+      "federated_fpr": 7.702380035430959e-05,
+      "max_single_provider_recall": -0.02381436773814368,
+      "federation_lift": -0.01485148514851485,
+      "note": "Negative delta on recall indicates that the original conversation-ID split inflated estimates via author-level leakage. The author-disjoint result is the corrected baseline."
+    }
+  },
+  "full_sweep": {
+    "old_conv_split": [
+      {
+        "n_providers": 2,
+        "max_single_provider_recall": 0.05198019801980198,
+        "max_single_provider_fpr": 0.0009242856042517138,
+        "federated_recall": 0.05693069306930693,
+        "federated_fpr": 0.0012323808056689516,
+        "federation_lift": 0.004950495049504955,
+        "lift_positive": true,
+        "fpr_ceiling_used": 0.005,
+        "provider_details": [
+          {
+            "provider": 0,
+            "n_positives_in_shard": 760,
+            "recall": 0.05198019801980198,
+            "fpr": 0.0009242856042517138
+          },
+          {
+            "provider": 1,
+            "n_positives_in_shard": 772,
+            "recall": 0.04207920792079208,
+            "fpr": 0.0010783332049603327
+          }
+        ]
+      },
+      {
+        "n_providers": 4,
+        "max_single_provider_recall": 0.05198019801980198,
+        "max_single_provider_fpr": 0.0009242856042517138,
+        "federated_recall": 0.05693069306930693,
+        "federated_fpr": 0.0012323808056689516,
+        "federation_lift": 0.004950495049504955,
+        "lift_positive": true,
+        "fpr_ceiling_used": 0.005,
+        "provider_details": [
+          {
+            "provider": 0,
+            "n_positives_in_shard": 414,
+            "recall": 0.039603960396039604,
+            "fpr": 0.0007702380035430948
+          },
+          {
+            "provider": 1,
+            "n_positives_in_shard": 346,
+            "recall": 0.05198019801980198,
+            "fpr": 0.0009242856042517138
+          },
+          {
+            "provider": 2,
+            "n_positives_in_shard": 397,
+            "recall": 0.034653465346534656,
+            "fpr": 0.0006932142031887853
+          },
+          {
+            "provider": 3,
+            "n_positives_in_shard": 375,
+            "recall": 0.039603960396039604,
+            "fpr": 0.0003851190017715474
+          }
+        ]
+      },
+      {
+        "n_providers": 8,
+        "max_single_provider_recall": 0.04207920792079208,
+        "max_single_provider_fpr": 0.0007702380035430948,
+        "federated_recall": 0.05693069306930693,
+        "federated_fpr": 0.0012323808056689516,
+        "federation_lift": 0.01485148514851485,
+        "lift_positive": true,
+        "fpr_ceiling_used": 0.005,
+        "provider_details": [
+          {
+            "provider": 0,
+            "n_positives_in_shard": 213,
+            "recall": 0.03712871287128713,
+            "fpr": 0.0003851190017715474
+          },
+          {
+            "provider": 1,
+            "n_positives_in_shard": 201,
+            "recall": 0.03712871287128713,
+            "fpr": 0.0006932142031887853
+          },
+          {
+            "provider": 2,
+            "n_positives_in_shard": 167,
+            "recall": 0.024752475247524754,
+            "fpr": 0.00015404760070861895
+          },
+          {
+            "provider": 3,
+            "n_positives_in_shard": 179,
+            "recall": 0.04207920792079208,
+            "fpr": 0.0007702380035430948
+          },
+          {
+            "provider": 4,
+            "n_positives_in_shard": 199,
+            "recall": 0.03217821782178218,
+            "fpr": 0.0003851190017715474
+          },
+          {
+            "provider": 5,
+            "n_positives_in_shard": 198,
+            "recall": 0.03217821782178218,
+            "fpr": 0.0003080952014172379
+          },
+          {
+            "provider": 6,
+            "n_positives_in_shard": 183,
+            "recall": 0.039603960396039604,
+            "fpr": 0.0003080952014172379
+          },
+          {
+            "provider": 7,
+            "n_positives_in_shard": 192,
+            "recall": 0.0297029702970297,
+            "fpr": 7.702380035430948e-05
+          }
+        ]
+      }
+    ],
+    "new_author_disjoint": [
+      {
+        "n_providers": 2,
+        "max_single_provider_recall": 0.0182648401826484,
+        "max_single_provider_fpr": 0.0007702380035430948,
+        "federated_recall": 0.0182648401826484,
+        "federated_fpr": 0.0013094046060232612,
+        "federation_lift": 0.0,
+        "lift_positive": false,
+        "fpr_ceiling_used": 0.005,
+        "provider_details": [
+          {
+            "provider": 0,
+            "n_positives_in_shard": 842,
+            "recall": 0.0045662100456621,
+            "fpr": 0.0010783332049603327
+          },
+          {
+            "provider": 1,
+            "n_positives_in_shard": 878,
+            "recall": 0.0182648401826484,
+            "fpr": 0.0007702380035430948
+          }
+        ]
+      },
+      {
+        "n_providers": 4,
+        "max_single_provider_recall": 0.0182648401826484,
+        "max_single_provider_fpr": 0.0006161904028344758,
+        "federated_recall": 0.0182648401826484,
+        "federated_fpr": 0.0013094046060232612,
+        "federation_lift": 0.0,
+        "lift_positive": false,
+        "fpr_ceiling_used": 0.005,
+        "provider_details": [
+          {
+            "provider": 0,
+            "n_positives_in_shard": 461,
+            "recall": 0.0045662100456621,
+            "fpr": 0.0007702380035430948
+          },
+          {
+            "provider": 1,
+            "n_positives_in_shard": 381,
+            "recall": 0.0045662100456621,
+            "fpr": 0.0003080952014172379
+          },
+          {
+            "provider": 2,
+            "n_positives_in_shard": 449,
+            "recall": 0.0045662100456621,
+            "fpr": 0.0004621428021258569
+          },
+          {
+            "provider": 3,
+            "n_positives_in_shard": 429,
+            "recall": 0.0182648401826484,
+            "fpr": 0.0006161904028344758
+          }
+        ]
+      },
+      {
+        "n_providers": 8,
+        "max_single_provider_recall": 0.0182648401826484,
+        "max_single_provider_fpr": 0.0003080952014172379,
+        "federated_recall": 0.0182648401826484,
+        "federated_fpr": 0.0013094046060232612,
+        "federation_lift": 0.0,
+        "lift_positive": false,
+        "fpr_ceiling_used": 0.005,
+        "provider_details": [
+          {
+            "provider": 0,
+            "n_positives_in_shard": 230,
+            "recall": 0.0045662100456621,
+            "fpr": 0.0003851190017715474
+          },
+          {
+            "provider": 1,
+            "n_positives_in_shard": 231,
+            "recall": 0.0045662100456621,
+            "fpr": 0.0003851190017715474
+          },
+          {
+            "provider": 2,
+            "n_positives_in_shard": 188,
+            "recall": 0.0045662100456621,
+            "fpr": 0.0
+          },
+          {
+            "provider": 3,
+            "n_positives_in_shard": 193,
+            "recall": 0.0045662100456621,
+            "fpr": 0.0003080952014172379
+          },
+          {
+            "provider": 4,
+            "n_positives_in_shard": 223,
+            "recall": 0.0045662100456621,
+            "fpr": 0.0003080952014172379
+          },
+          {
+            "provider": 5,
+            "n_positives_in_shard": 226,
+            "recall": 0.0045662100456621,
+            "fpr": 0.0004621428021258569
+          },
+          {
+            "provider": 6,
+            "n_positives_in_shard": 201,
+            "recall": 0.0182648401826484,
+            "fpr": 0.0003080952014172379
+          },
+          {
+            "provider": 7,
+            "n_positives_in_shard": 228,
+            "recall": 0.0045662100456621,
+            "fpr": 0.0006161904028344758
+          }
+        ]
+      }
+    ]
+  },
+  "caveats": [
+    "Author-disjoint split: no predator author appears in both train and test. Conversations with predators spanning both author partitions are assigned conservatively to test.",
+    "Negative conversations are split 80/20 by conversation_id (no author-level leakage concern for negatives).",
+    "MinHash at (b=16, r=16) with J*\u22480.841 produces low absolute recall on PAN 2012 because inter-conversation 4-gram Jaccard falls well below the inflection point (empirical adversarial mean \u226a 0.618 synthetic assumption).",
+    "Results are on PAN 2012 (human grooming, 2012). Validation on synthetic agentic trajectories or pilot deployment data is required before generalising to the A2 threat class.",
+    "The operating-point frontier on PAN 2012 (D4) depends on this split completing first."
+  ]
+}

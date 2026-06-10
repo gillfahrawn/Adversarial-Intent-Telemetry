@@ -1,0 +1,24 @@
+{
+  "diversity_metrics": {
+    "avg_jaccard_similarity": 0.09364340563815082,
+    "avg_cosine_similarity": 0.09514743583154261,
+    "avg_normalized_levenshtein": 0.05886806297164305,
+    "avg_ngram_overlap": {
+      "2": 0.007142489616624632,
+      "3": 0.0006115326256058388,
+      "5": 0.0
+    },
+    "avg_cadence_correlation": 0.021840244492790095,
+    "avg_motif_overlap": 0.7185964912280701,
+    "migration_position_variance": 0.0,
+    "turn_count_variance": 39.339999999999996,
+    "msg_length_variance": 15.597459391920035,
+    "avg_lexical_entropy": 1.5010041130101666,
+    "unique_topics_count": 20
+  },
+  "pan12_comparison": {
+    "turn_count_diff": 6.0986178971117795,
+    "msg_length_diff": 2.048533097838746,
+    "lexical_entropy_diff": 0.3277272022401547
+  }
+}

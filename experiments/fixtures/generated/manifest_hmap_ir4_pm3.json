@@ -1,0 +1,152 @@
+{
+  "id_prefix": "hmap_ir4_pm3",
+  "sweep": null,
+  "count": 5,
+  "entries": [
+    {
+      "fixture_id": "hmap_ir4_pm3_0000",
+      "latent": "hmap_ir4_pm3_0000.json",
+      "realization": "hmap_ir4_pm3_0000_realization.json",
+      "params": {
+        "fixture_id": "hmap_ir4_pm3_0000",
+        "n_steps": 12,
+        "tau": 8,
+        "L": 32,
+        "invariant_ratio": 0.4,
+        "perturbation_magnitude": 0.3,
+        "entropy_start": 2.1,
+        "entropy_growth_rate": 0.243,
+        "coord_start": 0.12,
+        "coord_slope": 0.074,
+        "seed": 0
+      },
+      "expected_continuity_metrics": {
+        "intra_phase_adjacent_jaccard_range": [
+          0.9062,
+          0.9375
+        ],
+        "phase_boundary_adjacent_jaccard": 0.8646,
+        "migration_step_jaccard_step7_step8": 0.25,
+        "post_migration_recovery_jaccard_step8_step9": 0.875,
+        "cross_platform_partial_overlap_step7_step9": 0.2188,
+        "distant_intra_trajectory_jaccard_step0_step8": 0.0312
+      }
+    },
+    {
+      "fixture_id": "hmap_ir4_pm3_0001",
+      "latent": "hmap_ir4_pm3_0001.json",
+      "realization": "hmap_ir4_pm3_0001_realization.json",
+      "params": {
+        "fixture_id": "hmap_ir4_pm3_0001",
+        "n_steps": 12,
+        "tau": 6,
+        "L": 32,
+        "invariant_ratio": 0.4,
+        "perturbation_magnitude": 0.3,
+        "entropy_start": 2.1,
+        "entropy_growth_rate": 0.243,
+        "coord_start": 0.12,
+        "coord_slope": 0.074,
+        "seed": 1
+      },
+      "expected_continuity_metrics": {
+        "intra_phase_adjacent_jaccard_range": [
+          0.8125,
+          0.9688
+        ],
+        "phase_boundary_adjacent_jaccard": 0.875,
+        "migration_step_jaccard_step5_step6": 0.3125,
+        "post_migration_recovery_jaccard_step6_step7": 0.8125,
+        "cross_platform_partial_overlap_step5_step7": 0.1562,
+        "distant_intra_trajectory_jaccard_step0_step6": 0.0938
+      }
+    },
+    {
+      "fixture_id": "hmap_ir4_pm3_0002",
+      "latent": "hmap_ir4_pm3_0002.json",
+      "realization": "hmap_ir4_pm3_0002_realization.json",
+      "params": {
+        "fixture_id": "hmap_ir4_pm3_0002",
+        "n_steps": 12,
+        "tau": 8,
+        "L": 32,
+        "invariant_ratio": 0.4,
+        "perturbation_magnitude": 0.3,
+        "entropy_start": 2.1,
+        "entropy_growth_rate": 0.243,
+        "coord_start": 0.12,
+        "coord_slope": 0.074,
+        "seed": 2
+      },
+      "expected_continuity_metrics": {
+        "intra_phase_adjacent_jaccard_range": [
+          0.8125,
+          1.0
+        ],
+        "phase_boundary_adjacent_jaccard": 0.875,
+        "migration_step_jaccard_step7_step8": 0.25,
+        "post_migration_recovery_jaccard_step8_step9": 0.875,
+        "cross_platform_partial_overlap_step7_step9": 0.2188,
+        "distant_intra_trajectory_jaccard_step0_step8": 0.0938
+      }
+    },
+    {
+      "fixture_id": "hmap_ir4_pm3_0003",
+      "latent": "hmap_ir4_pm3_0003.json",
+      "realization": "hmap_ir4_pm3_0003_realization.json",
+      "params": {
+        "fixture_id": "hmap_ir4_pm3_0003",
+        "n_steps": 12,
+        "tau": 8,
+        "L": 32,
+        "invariant_ratio": 0.4,
+        "perturbation_magnitude": 0.3,
+        "entropy_start": 2.1,
+        "entropy_growth_rate": 0.243,
+        "coord_start": 0.12,
+        "coord_slope": 0.074,
+        "seed": 3
+      },
+      "expected_continuity_metrics": {
+        "intra_phase_adjacent_jaccard_range": [
+          0.875,
+          0.9375
+        ],
+        "phase_boundary_adjacent_jaccard": 0.875,
+        "migration_step_jaccard_step7_step8": 0.25,
+        "post_migration_recovery_jaccard_step8_step9": 0.875,
+        "cross_platform_partial_overlap_step7_step9": 0.1875,
+        "distant_intra_trajectory_jaccard_step0_step8": 0.0625
+      }
+    },
+    {
+      "fixture_id": "hmap_ir4_pm3_0004",
+      "latent": "hmap_ir4_pm3_0004.json",
+      "realization": "hmap_ir4_pm3_0004_realization.json",
+      "params": {
+        "fixture_id": "hmap_ir4_pm3_0004",
+        "n_steps": 12,
+        "tau": 8,
+        "L": 32,
+        "invariant_ratio": 0.4,
+        "perturbation_magnitude": 0.3,
+        "entropy_start": 2.1,
+        "entropy_growth_rate": 0.243,
+        "coord_start": 0.12,
+        "coord_slope": 0.074,
+        "seed": 4
+      },
+      "expected_continuity_metrics": {
+        "intra_phase_adjacent_jaccard_range": [
+          0.8125,
+          0.9688
+        ],
+        "phase_boundary_adjacent_jaccard": 0.8542,
+        "migration_step_jaccard_step7_step8": 0.3125,
+        "post_migration_recovery_jaccard_step8_step9": 0.8125,
+        "cross_platform_partial_overlap_step7_step9": 0.1875,
+        "distant_intra_trajectory_jaccard_step0_step8": 0.0312
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "summary": "Lower separability (AUC closer to 0.5) indicates stronger behavioral grounding.",
+  "auc_score": 0.8694444444444445,
+  "top_divergent_features": [
+    [
+      "hedge_rate",
+      0.13420844824643793
+    ],
+    [
+      "turn_count",
+      0.13082496598637156
+    ],
+    [
+      "avg_len_diff",
+      0.13059113414794768
+    ],
+    [
+      "avg_entropy",
+      0.12931301162852707
+    ],
+    [
+      "avg_len",
+      0.12188786690278872
+    ]
+  ],
+  "divergence_analysis": {
+    "hedge_rate": {
+      "empirical_mean": 0.018664895699341245,
+      "generated_mean": 0.0331903271848924,
+      "empirical_std": 0.09419420139309735,
+      "generated_std": 0.044780591050452366
+    },
+    "turn_count": {
+      "empirical_mean": 41.097,
+      "generated_mean": 18.8,
+      "empirical_std": 77.94049211617354,
+      "generated_std": 6.34615507299706
+    },
+    "avg_len_diff": {
+      "empirical_mean": 3.61870643504825,
+      "generated_mean": 3.275519263009167,
+      "empirical_std": 7.623267405316169,
+      "generated_std": 1.7474873866124954
+    },
+    "avg_entropy": {
+      "empirical_mean": 1.749793862441801,
+      "generated_mean": 1.283027575470308,
+      "empirical_std": 1.0890712795979716,
+      "generated_std": 0.427519203577356
+    },
+    "avg_len": {
+      "empirical_mean": 6.70561998862184,
+      "generated_mean": 3.6510302971987754,
+      "empirical_std": 11.082757417486212,
+      "generated_std": 1.2787403362970984
+    }
+  },
+  "interpretation": "High AUC indicates structural distinguishability. Generated trajectories may be more consistent/less noisy than empirical ones."
+}
