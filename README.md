@@ -1,380 +1,182 @@
-<<<<<<< HEAD
-# Claude Code Experiment Plan — v4.0
-## Decentralized Telemetry for Adversarial AI Intent — NCMEC 2025 Integration
+# Adversarial Intent Telemetry
 
----
+**An empirical study of behavioral-signature detection under adaptive perturbation.**
 
-## What Changed from v3.1
-
-**PAN12 remains untouched.** Tier 1 ground truth is preserved exactly as peer-reviewed data. No rewrites, no paraphrasing.
-
-**A1c is replaced by NCMEC-constrained event injection.** The 200 x 12-turn agentic conversations in `adapted_trajectories.json` are kept as the scaffold. We do not edit turn text. We add a parallel telemetry layer sampled from real 2025 NCMEC statistics.
-
-**NCMEC 2025 rulebook is now the sampling prior.** The 21.3M total reports, 1.5M GAI-nexus reports, 1.4M online enticement reports (+156% vs 2024), and H1 2025 jumps are encoded in `ncmec_behavioral_constraints_2025.json`. These numbers are used only as probability distributions, never as content to copy.
-
-**GT-HarmBench scope remains unchanged.** It validates F3 (coordination mechanism), not signature-matching. F3b held-out test split still upgrades the claim from training to held-out.
-=======
-# Decentralized Telemetry for Adversarial AI Intent
-
-A secure coordination layer that helps different AI platforms detect and flag harmful or adversarial behavior, while keeping user data and proprietary model details private.
-
-**Working Draft v8.1 · May 2026**  
 Fahrawn Gill · Advisor, AI Governance & Cross-Platform Safety, Alliance to Counter Crime Online (ACCO)
 
-[![Draft v8.1](https://img.shields.io/badge/draft-v8.1%20%C2%B7%20May%202026-informational)](Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf)
-[![Privacy invariant](https://img.shields.io/badge/privacy-no%20raw%20prompts%20%C2%B7%20no%20user%20ids%20%C2%B7%20no%20weights-success)](#privacy-invariant)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+[![Empirical substrate](https://img.shields.io/badge/substrate-PAN%202012%20%C2%B7%20GT--HarmBench-informational)](#data-provenance-and-tiers)
+[![Status](https://img.shields.io/badge/status-empirical%20study%20%C2%B7%20mixed%20results-yellow)](#what-the-evidence-shows)
 
 ---
 
 ## What this is
-This repository defines a specification for a decentralized telemetry protocol that enables cross-provider detection of adversarial behavior in agentic AI systems.
 
-The core problem it addresses is structural in how modern Trust & Safety systems operate within isolated provider boundaries, while adversarial behavior increasingly spans multiple platforms and interaction surfaces.
+This repository asks a narrow, falsifiable question: **does a cross-provider behavioral-signature detection scheme survive contact with real adversarial data and adaptive perturbation?**
 
-The protocol introduces a privacy-preserving mechanism for exchanging *behavioral risk signatures* between providers without sharing raw user content, identifiers, or model artifacts. These signatures are designed to support near-real-time cross-platform matching while remaining compatible with existing Trust & Safety infrastructure.
+The scheme under test is a banded-MinHash signature primitive plus a trajectory-level sequence model, originally specified as a deployable cross-provider protocol in the design paper included here (`Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf`). **That paper is the design under test, not a validated system.** This README reports what happened when the primitives were run against real data.
 
-The system is explicitly designed to operate alongside existing industry approaches such as content-hash-based frameworks (e.g., the Tech Coalition’s Lantern program), extending them from content-level matching to behavior-level signal exchange.
+The short version: a per-message classifier detects grooming structure in the static PAN 2012 corpus with high AUC, but the protocol's signature-matching primitive achieves near-zero recall on real conversations at any false-positive rate a deployment could tolerate, and detection degrades sharply — in the heaviest perturbation, below random for the per-message baseline — once realistic adaptive noise is introduced. The trajectory model is more robust to that perturbation than the per-message baseline, which is the one direction worth pursuing further.
 
-This is a specification document. All components are defined with explicit status labeling in the Maturity Matrix (specified, proposed, hypothesized, demonstrated). : [`Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf`](Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf).
-<<<<<<< HEAD
->>>>>>> 478e1a19718740f9eb1f70743cbffb87c8553cd9
-=======
->>>>>>> 478e1a19718740f9eb1f70743cbffb87c8553cd9
+This is reported as a mixed result on purpose. The contribution is the decomposition of *where* behavioral detection holds and where it breaks, on real data, with the failure modes documented rather than smoothed over.
 
-**Output compatibility demonstrated via XML mapper.** Phase 4 produces valid CyberTipline XML from detections without contaminating the evaluation.
+## How to read this
 
-All LaTeX diffs remain in the chat prompting plan, not here.
-
----
-
-## The Data Tier Framework
-
-Every experiment that touches manifest features must label its data source explicitly. Three tiers exist. They are never mixed in the same table row, figure, or JSON result field.
-
-**Tier 0 — Pure LLM synthetic** (A1 output, already exists)
-Label: `"data_source": "pure_synthetic_llm"`
-Status: ablation baseline only. Demonstrates circularity risk. Used in three-way Jaccard comparison. Never cited as primary validation.
-
-**Tier 1 — PAN12 real annotated** (A1b output, primary)
-Label: `"data_source": "pan2012_real_annotated"`
-Status: primary empirical substrate. Behavioral structure from real predator conversations (PAN 2012), created independently of this protocol. `manifest_gen.py` annotation is rule-based and transparent. All headline claims rest here.
-
-**Tier 2 — NCMEC-constrained agentic** (Phase 2 output, replaces prior A1c)
-Label: `"data_source": "pan2012_phase_adapted_ncmec_2025"`
-Status: agentic extension. Phase sequences derived from Tier 1. Surface text is the existing 200 trajectories from `adapted_trajectories.json` — **zero text edits**. Adds parallel `events_injected` sampled from NCMEC 2025 distribution. Validates preservation of Tier 1 structure under current threat priors.
-
-This framework makes the claim precise: "We validate on behavioral structures derived from real adversarial data (Tier 1) and confirm detection lift on those structures when constrained by current NCMEC 2025 priors via non-invasive telemetry (Tier 2)."
-
----
-
-## Phase 0 — Inputs You Already Own
-
-1. **PAN12 raw** — Tier 1 ground truth, untouched
-2. **adapted_trajectories.json** — 200 x 12-turn agentic conversations (completed)
-3. **ncmec_behavioral_constraints_2025.json** — rulebook we just built
-
-You do not modify 1 or 2. Ever.
-
----
-
-## Phase 1 — Build the NCMEC Rulebook (done)
-
-Encoded 2025 numbers as sampling priors, not story prompts:
-
-- 21.3M total reports in 2025
-- 1.5M GAI-nexus reports (1.1M from Amazon alone)
-- 1.4M online enticement reports, +156% vs 2024
-- Trafficking reports: 8,480 in 2023 → 105,877 in 2025
-- H1 2025 vs H1 2024:
-  - enticement: 292,951 → 518,720 (+77%)
-  - GAI: 6,835 → 440,419
-  - financial sextortion: 13,842 → 23,593
-  - trafficking: 5,976 → 62,891
-- NCMEC specifically names Discord and Roblox as current origin platforms moving to ephemeral channels
-
-These become your sampling priors.
-
----
-
-## Phase 2 — Event Injection (replaces A1c)
-
-**Goal:** add a parallel telemetry layer, zero text edits.
-
-**Input:** each object from `adapted_trajectories.json`
-**Output:** `pan_ncmec_trajectories.jsonl` with new field `events_injected`
-
-**Process for each trajectory:**
-1. Read `manifest.behavior_phase` and `phase_transition`. Find isolation → desensitize boundary (usually turns 5-8).
-2. Sample migration from rulebook:
-   - 68% chance: inject `[EVENT: Migration_Initiated | origin=gaming | destination=ephemeral | platform=Discord/Roblox]`
-   - 22% chance: social → encrypted
-   - 10% chance: no migration
-3. If migration sampled, add coercion type using H1 2025 weights: financial sextortion (25%), gift (20%), image exchange (30%), other (25%)
-4. Independently sample AI augmentation at 32% (reflecting 1.5M GAI reports and 440k H1 jump)
-5. Insert 1-3 events as separate system objects *between* turns, never inside turn text:
-```json
-{"role": "system", "type": "telemetry", "event": "Migration_Initiated", "origin": "Roblox", "destination": "Discord_ephemeral", "timestamp": "turn_7", "coercion": "financial_sextortion", "ai_augmented": true}
-```
-
-**Validation checks (critical for authority):**
-- Text Jaccard between input and output = 1.0
-- `scaffold_fidelity` stays 1.0
-- Distribution of injected events across 200 files matches rulebook within ±5%
-
-Run with Opus, temperature 0.1, using the prompt from Phase 1.
-
-**Create:** `experiments/exp_inject_ncmec_events.py`
-**Output:** `data/agentic_ncmec/pan_ncmec_trajectories.jsonl`
-**Output:** `data/agentic_ncmec/injection_report.json`
-
----
-
-## Phase 3 — Run Your Detector (LSH + Byzantine)
-
-**Dataset 1 (baseline):** Run on pure PAN12
-- Input: original PAN12 conversations
-- Output: `experiments/results/detection_baseline.json`
-- Metrics: baseline recall / FPR
-
-**Dataset 2 (core experiment):** Run on NCMEC-constrained trajectories
-- Input: `pan_ncmec_trajectories.jsonl` (12 turns + events)
-- Algorithm sees both text and telemetry as single stream
-- Output: `experiments/results/detection_ncmec.json`
-- Metrics: detection timestamps, Byzantine vote counts, flagged trajectory IDs
-
-This proves the math: Byzantine bounds cluster migration intent despite conversational wrapper noise.
-
-**Ablation:** run same detector on 200 trajectories *without* events to isolate telemetry lift.
-
----
-
-## Phase 4 — NCMEC XML Mapper
-
-**Goal:** demonstrate output compatibility, not train on XML.
-
-**Input:** any trajectory where detection fired
-**Process:** map fields to CyberTipline schema
-- `manifest.intent_class` → `<IntentClassification>`
-- `events_injected` → `<PlatformMigration>` and `<OnlineEnticement>`
-- `turns` timestamps → `<ConversationTimeline>`
-
-**Output:** valid XML per detection, e.g.:
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<cyberTiplineReport xmlns="http://missingkids.org"
-                    xmlns:xsi="http://w3.org"
-                    xsi:schemaLocation="http://missingkids.org https://report.cybertip.org/ispws/xsd">
-  
-  <!-- System compliance requires the official registration ID of the platform -->
-  <reportingUser>
-    <username>Roblox_TS_Automation</username>
-    <organizationName>Roblox Corporation</organizationName>
-  </reportingUser>
-  
-  <incidentDetails>
-    <!-- Must match an official enumerated string code -->
-    <incidentType>ONLINE_ENTICEMENT</incidentType>
-    <incidentDateTime>2026-05-19T21:15:30Z</incidentDateTime>
-    <narrativeText>Suspect initiated contact on Roblox and migrated the conversation to Discord, where financial sextortion occurred.</narrativeText>
-  </incidentDetails>
-
-  <personOrUserReported>
-    <userProfile>
-      <screenName>RobloxGamer123</screenName>
-      <!-- This is where cross-platform migration is actually mapped -->
-      <externalAccountList>
-        <externalAccount>
-          <platformName>Discord</platformName>
-          <externalUserId>DiscordUser#4567</externalUserId>
-        </externalAccount>
-      </externalAccountList>
-    </userProfile>
-    
-    <!-- Network logs are rigorously nested, not loose tags -->
-    <internetAddressList>
-      <internetAddressEvent>
-        <ipAddress>203.0.113.10</ipAddress>
-        <eventDateTime>2026-05-19T21:15:30Z</eventDateTime>
-        <eventType>LOGIN</eventType>
-      </internetAddressEvent>
-    </internetAddressList>
-  </personOrUserReported>
-</cyberTiplineReport>
-
-```
-Key Mapping Rules for the above xml tip reports i.e. JSON guide for Your Variables - Cross-Platform Events: 
-{
-  "reportingUser": {
-    "username": "NCMEC_ASSIGNED_CLIENT_ID",
-    "organizationName": "LEGAL_COMPANY_NAME"
-  },
-  "incidentDetails": {
-    "incidentType": [
-      "ONLINE_ENTICEMENT",
-      "CHILD_SEXUAL_ABUSE_MATERIAL",
-      "CHILD_SEX_TRAFFICKING"
-    ],
-    "incidentDateTime": "ISO_8601_UTC_TIMESTAMP",
-    "narrativeText": "STRING [Max: 4000 chars] -> Explicitly state: CoercionType, AI_Indicators, AppSwitchingEvents"
-  },
-  "personOrUserReported": {
-    "userProfile": {
-      "screenName": "ORIGIN_PLATFORM_USERNAME",
-      "externalAccountList": [
-        {
-          "platformName": "DESTINATION_PLATFORM_NAME",
-          "externalUserId": "DESTINATION_PLATFORM_USERNAME_OR_ID"
-        }
-      ]
-    },
-    "internetAddressList": [
-      {
-        "ipAddress": "IPV4_OR_IPV6_ADDRESS",
-        "eventDateTime": "ISO_8601_UTC_TIMESTAMP",
-        "eventType": [
-          "LOGIN",
-          "REGISTRATION",
-          "POST",
-          "TRANSMISSION"
-        ]
-      ]
-    ]
-  }
-}
-
-
-**Create:** `tools/ncmec_xml_mapper.py` (50-line script using `xml.etree`)
-**Output dir:** `/outputs/ncmec_xml/report_001.xml ...`
-**Validation:** XML validity rate = 100%
-
----
-
-## Phase 5 — Evaluation and Paper Narrative
-
-Structure results as three tables:
-
-**Table 1 — PAN12 baseline**
-- LSH operating point does not regress vs historical
-- Data source: Tier 1
-
-**Table 2 — NCMEC-constrained agentic**
-- Recall lift on cross-platform events, with Byzantine resilience metrics
-- Include ablation: same 200 trajectories without events (proves lift from telemetry, not text)
-- Data source: Tier 2
-
-**Table 3 — System demonstration**
-- 5 example XML outputs generated from detections
-- Report XML validity rate
-
----
-
-## Full File Flow
-
-```
-/data/pan12/ (Tier 1)
-  → /data/agentic/adapted_trajectories.json (200, Tier 2 base)
-  → /data/ncmec/ncmec_behavioral_constraints_2025.json
-  → /data/agentic_ncmec/pan_ncmec_trajectories.jsonl (Tier 2 final)
-  → /experiments/results/detection_baseline.json
-  → /experiments/results/detection_ncmec.json
-  → /outputs/ncmec_xml/report_001.xml ...
-```
-
----
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Why This Preserves Authority
-=======
-Released under [GNU Affero General Public License v3.0](https://gnu.org). You may share and adapt with attribution. Nothing in this repository constitutes legal advice or a substitute for participant-level conformity assessment under the regulatory instruments cited in *Sec. 10*.
->>>>>>> 478e1a19718740f9eb1f70743cbffb87c8553cd9
-=======
-Released under [GNU Affero General Public License v3.0](https://gnu.org). You may share and adapt with attribution. Nothing in this repository constitutes legal advice or a substitute for participant-level conformity assessment under the regulatory instruments cited in *Sec. 10*.
->>>>>>> 478e1a19718740f9eb1f70743cbffb87c8553cd9
-
-1. You never rewrite PAN12-derived dialogue — behavioral structure stays peer-reviewed
-2. NCMEC data is used only as probability distribution, not as content to copy
-3. 2025 numbers (21.3M reports, 1.4M enticement, 440k GAI H1 jump, Discord/Roblox naming) give citable, current grounding reviewers cannot dismiss as "2024 is old"
-4. XML step proves real-world utility without contaminating algorithm evaluation
-
----
-
-## Status Summary (updated)
-
-| Item | Status |
+| If you are… | Start with |
 |---|---|
-| D3: Author-disjoint PAN split | DONE |
-| D4: Operating-point frontier PAN 2012 | DONE |
-| A1: Pure synthetic generation | DONE — Tier 0 ablation only |
-| A1b: PAN 2012 manifest annotation | Not started — BLOCKER (Tier 1) |
-| Phase 2: NCMEC event injection | Not started — BLOCKER (Tier 2) |
-| A2: Three-tier Jaccard distribution analysis | Not started |
-| B1: SPRT Byzantine | Not started |
-| B2: FP substrate | Not started |
-| Phase 3: Detector run (baseline + NCMEC) | Not started |
-| Phase 4: NCMEC XML mapper | Not started |
-| F3b: GT-HarmBench held-out test split | Not started |
-| C1: LDP recall-collapse curve | Not started |
-| C2: Manifest-level federation | Not started |
-| D1: CLAUDE.md maturity update | Not started — run last |
-| D2: README sync | Not started — run last |
+| A reviewer with five minutes | [What the evidence shows](#what-the-evidence-shows) — the results table |
+| An adversarial-ML researcher | [Robustness under perturbation](#robustness-under-perturbation), then `experiments/exp_trajectory_lift.py` and `tools/inject_discourse_noise.py` |
+| A T&S / detection engineer | [The architecture under evaluation](#the-architecture-under-evaluation), then `experiments/exp_m3_frontier.py` |
+| Checking how claims are bounded | [Integrity infrastructure](#integrity-infrastructure) — the truth ledger and validity-boundary statement |
+| Reading the original design | `Decentralized_Telemetry_Adversarial_AI_Intent_v8.1.pdf` (design under test) |
 
----
+## What the evidence shows
 
-## Model Selection
+All numbers below are produced by scripts in `experiments/` and written to `experiments/results/`. Each row carries an honest status; nothing here is asserted beyond what the corresponding result file supports.
 
-| Stage | Model | Reason |
+| Question | Result | Status |
 |---|---|---|
-| Stage 0 | Sonnet | Read and report only |
-| A1b | Sonnet | Mechanical annotation pipeline |
-| Phase 2 | **Opus** | Must understand phase boundaries and sample from rulebook without editing text |
-| A2 | Sonnet | Data analysis; three-tier comparison |
-| Phase 3 | Sonnet | Detector run, well-specified |
-| Phase 4 | Sonnet | XML mapping, mechanical |
-| B1 | Sonnet | Algorithm well-specified |
-| B2 | Sonnet | Keyword filtering and FPR |
-| F3b | Sonnet | Follows existing F3 structure |
-| C1, C2 | Sonnet | Numerical computation |
+| Can a per-message classifier detect grooming in real static data (PAN 2012)? | LinearSVC, **AUC 0.986**, recall **0.93** at FPR 0.05 | **Holds** (real, author-disjoint split) |
+| Does the protocol's MinHash signature-match primitive recall real conversations at a deployable operating point? | At the recommended (b=16, r=16): **recall 0.018, FPR 0.0013**. Usable recall (0.92) only appears at FPR **0.99** | **Does not hold** — no good operating point on real text |
+| Does the trajectory/sequence model beat the per-message baseline on clean data? | F1 lift **-0.023**, 95% CI [-0.042, -0.002] | **Negative / inconclusive** on clean data |
+| Does detection survive realistic perturbation? | Discourse-noise: AUC **0.92 -> 0.79**. NCMEC-constrained realism set: per-message AUC collapses to **0.13** (below random); sequence model holds at **0.57** | **Breaks** for per-message; trajectory model degrades more gracefully |
+| Does reputation-weighted aggregation tolerate Byzantine participants (simulation)? | Empirical beta* = **0.5** > 1/3 threshold; SPRT isolates **2.27x** faster than Hoeffding; stealth adversary beta* = 0.4 | **Demonstrated in simulation only** |
+| Does a payoff-perturbation mechanism raise cooperation in 2x2 games (GT-HarmBench)? | Cooperation improvement **0.184**; Prisoner's-Dilemma defection 1.0 -> 0.57 | **Analytical** result (mechanism design, not LLM behavior) |
 
----
+The two findings a skeptical reader should take away:
 
-## Dependency Graph
+1. **The cross-provider signature primitive — the core of the original protocol — does not separate real conversations.** Real inter-conversation Jaccard similarity sits well below the band-match inflection (J* ~ 0.84 at the recommended point), so recall is near zero unless the false-positive rate is pushed to where the detector is useless. This is a clean negative result against the protocol's headline mechanism.
 
+2. **Trajectory structure costs a little on clean data but buys robustness under adaptive perturbation.** On clean PAN 2012 the per-message baseline (AUC 0.986) edges out the sequence model (0.977). Under the heaviest realism perturbation the ordering inverts: the per-message signal falls below random (0.13) while the sequence model retains weak but real discrimination (0.57). The order-shuffle evasion test points the same way — destroying message order to evade the sequence model also destroys the grooming structure an adversary is trying to execute (`exp_trajectory_lift.py`, evasion simulation).
+
+## Robustness under perturbation
+
+The perturbation work is the part of this study most worth extending. `tools/inject_discourse_noise.py` applies retrieval-swap and reciprocity-asymmetry perturbations; the NCMEC-constrained set in `data/agentic_ncmec/pan_ncmec_trajectories.jsonl` adds a parallel telemetry layer sampled from 2025 reporting priors **with zero edits to the underlying PAN-derived text** (text Jaccard = 1.0 between input and output is enforced, so any lift cannot come from rewritten dialogue).
+
+The below-random AUC (0.13) on the per-message baseline is reported as-is and flagged: an AUC under 0.5 means the perturbation systematically inverts the per-message signal on this set, which is itself informative about how brittle lexical/per-message features are, but the magnitude should be read as a small-sample, single-perturbation observation rather than a calibrated robustness curve. See `experiments/results/detection_ncmec.json`, `discourse_noise_report.json`, and `realism_delta_metrics.json`.
+
+## The architecture under evaluation
+
+The diagrams below describe the **design being tested**, not a deployed system. They are retained from the design paper because they make the evaluation legible: the signature primitive and the federated cache are exactly the components whose real-data behavior is measured above.
+
+```mermaid
+flowchart LR
+    subgraph Adversary
+      A2[A2: Agentic operator<br/>multi-platform, persistent persona]
+    end
+    subgraph Provider perimeter
+      MCP[Agent surface<br/>MCP / tool layer]
+      CLS[Local classifier<br/>+ trajectory layer]
+      MAT[Feature manifest<br/>Appendix A schema]
+      LSH[Banded MinHash<br/>signature]
+    end
+    subgraph Federation
+      CACHE[Federated signature cache<br/>LSH bands only]
+      PSI[PSI reconciliation<br/>sector-crossing]
+    end
+
+    A2 --> MCP --> CLS --> MAT --> LSH
+    LSH <-->|emit / query| CACHE
+    LSH -->|candidate hit| PSI
 ```
-Stage 0 (every session)
-    |
-    +-- Phase A: Grounded Manifest Dataset
-    |     A1b: PAN 2012 annotation [BLOCKER]
-    |         |
-    |         +-- Phase 2: NCMEC event injection [BLOCKER]
-    |                   |
-    |                   +-- A2: Three-tier Jaccard analysis
-    |                   +-- Phase 3: Detector run
-    |                             |
-    |                             +-- Phase 4: XML mapper
-    |                             +-- Phase 5: Evaluation tables
-    |
-    +-- Phase B (PARALLEL)
-    |     B1: SPRT Byzantine
-    |     B2: FP substrate
-    |     F3b: GT-HarmBench held-out
-    |
-    +-- Phase D (after all)
-          D1: CLAUDE.md update
-          D2: README sync
+
+The **per-message classifier** (the `CLS` node) is what works on clean data. The **banded-MinHash signature** (the `LSH` node) is the primitive that fails to separate real conversations. The federation and PSI layers are design proposals that were never reached empirically and are not claimed as validated.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Emitter as Emitter Node
+    participant Cache as Overlay Cache
+    participant Receiver as Receiver Node
+
+    Note over Emitter: Local conversation flagged
+    Emitter->>Emitter: Extract feature manifest
+    Emitter->>Emitter: Compute banded-MinHash signature
+    Emitter->>Cache: Broadcast signature (LSH bands only)
+    Cache->>Receiver: Sync new signature
+    Receiver->>Receiver: Compute local signature, evaluate LSH match
+    alt Match
+        Receiver->>Receiver: Enqueue independent review
+    else No match
+        Receiver->>Receiver: Continue
+    end
 ```
 
----
+## Data provenance and tiers
 
-## Critical Notes (from v3.1, retained)
+Every experiment labels its data source. The tiers are never mixed in one result row.
 
-**A1b field population rates are gating.** If behavior_phase < 0.20, extend manifest_gen.py rules before Phase 2.
+- **Tier 1 — PAN 2012 real annotated** (`data_source: pan2012_real_annotated`): behavioral structure from real predator conversations (PAN 2012 Sexual Predator Identification), created independently of this work. All headline detection claims rest here. Raw PAN 2012 is **not redistributed** (see `data/pan12/README.md`); obtain it from the original source.
+- **Tier 2 — perturbation-constrained agentic** (`data_source: pan2012_phase_adapted_ncmec_2025`): the Tier 1 structure with a non-invasive telemetry layer sampled from 2025 NCMEC reporting distributions used **only as sampling priors, never as content**. Surface text is unedited (text Jaccard = 1.0).
+- **Tier 0 — pure LLM synthetic** (`data_source: pure_synthetic_llm`): ablation baseline only, used to demonstrate circularity risk. Never cited as primary validation. A `discrimination_report.json` shows generated trajectories are still structurally distinguishable from real ones (AUC 0.87), which is the reason Tier 0 is not load-bearing.
 
-**Text Jaccard = 1.0 is non-negotiable.** Any deviation means injection edited dialogue — reject the run.
+> **A note on the synthetic S-curve.** `validation/synthetic/s_curve.py` produces an illustrative S-curve on *synthetic* Beta-distributed Jaccard pairs. It demonstrates the shape of the band-match function, not detection performance on real data. The real operating-point numbers are in `experiments/results/m3_frontier.json`; read those, not the synthetic harness, for what the primitive actually does.
 
-**Phase 2 distribution check:** across 200 trajectories, migration types and coercion weights must match rulebook within ±5%. Log in injection_report.json.
+## Reproduce
 
-**Phase 3 ablation proves causality.** Without the no-events ablation, reviewers will claim lift comes from LLM text differences.
+```bash
+git clone https://github.com/gillfahrawn/adversarial-intent-telemetry.git
+cd adversarial-intent-telemetry
+pip install -r tools/requirements.txt -r validation/synthetic/requirements.txt
+```
 
-**Negative results remain publishable.** If LDP collapses recall on Tier 1 or federation lift is zero, that is a precise bound.
+Experiments that run without restricted data (synthetic and simulation):
+
+```bash
+python validation/synthetic/s_curve.py        # illustrative S-curve (synthetic)
+python experiments/exp_m8_byzantine.py        # Byzantine tolerance sweep (simulation)
+python experiments/exp_m8_sprt.py             # SPRT vs Hoeffding isolation (simulation)
+python experiments/exp_f3_reciprocity.py      # payoff-perturbation mechanism (GT-HarmBench)
+```
+
+Experiments that require the PAN 2012 corpus placed under `data/pan12/` (not redistributed):
+
+```bash
+python experiments/exp_m3_author_split.py     # author-disjoint split
+python experiments/exp_m3_frontier.py         # operating-point frontier on real data
+python experiments/exp_trajectory_lift.py     # per-message vs sequence model + evasion test
+python experiments/exp_annotate_pan_manifest.py
+```
+
+Outputs land in `experiments/results/`. A cross-domain caveat: `tools/manifest_gen.py` patterns target AI-jailbreak language (role injection, hypothetical framing), so on 2012 human-human grooming the manifest fields populate sparsely (e.g. `intent_class` 0.044, `behavior_phase` 0.054). That low transfer is reported in `pan_manifest_annotation_report.json` and bounds the cross-domain claim — it is a finding, not a bug to paper over.
+
+## Integrity infrastructure
+
+This repository is built to be cloned and checked. Two files exist specifically to keep claims honest:
+
+- `experiments/results/truth_ledger.json` — labels every dataset `EMPIRICAL`, `REPRESENTATION`, or `SYNTHETIC`, with the validation regime used.
+- `experiments/results/validity_boundary_statement.txt` — states which claims are multi-trial validated and **explicitly removes** narrative claims (e.g. intrinsic behavioral "phase transitions") that the continuous-metric data does not support.
+
+Splits are author-disjoint where it matters (`exp_m3_author_split.py`), lifts carry bootstrap CIs, and ablations isolate causality (the no-events ablation exists so perturbation lift can't be attributed to text differences). Where a result is negative or inconclusive, it is labeled that way.
+
+## What this is not
+
+- Not a validated or deployable detection protocol. The signature primitive's real-data recall is near zero at deployable FPR.
+- Not a prevalence claim about 2026 agentic abuse. NCMEC 2025 figures are used as sampling priors for perturbation, not as evidence of an established attack distribution.
+- Not a benchmark for LLM behavior in the F3 result, which is an analytical mechanism-design experiment on game matrices.
+- Not a substitute for the design paper's full argument; the paper is included as the design under test.
+
+## Citation
+
+```bibtex
+@techreport{gill2026adversarial,
+  title  = {Adversarial Intent Telemetry: An Empirical Study of
+            Behavioral-Signature Detection Under Adaptive Perturbation},
+  author = {Gill, Fahrawn},
+  year   = {2026},
+  note   = {Independent research; design paper "Decentralized Telemetry
+            for Adversarial AI Intent" (v8.1) included as the design under
+            test. Advisory engagement with the Alliance to Counter Crime
+            Online (ACCO).}
+}
+```
+
+## License
+
+Released under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0). Nothing here is legal advice or a substitute for participant-level conformity assessment.
+
+## Contact
+
+Fahrawn Gill · gillfahrawn@gmail.com · [linkedin.com/in/fahrawn-gill-1a9ba4163](https://linkedin.com/in/fahrawn-gill-1a9ba4163)
+
+Substantive technical critique, replication attempts, and pointers to prior art are welcome via issues or pull requests.
