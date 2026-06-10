@@ -19,8 +19,8 @@
     "Results on training XML 80/20 split only; the test folder has no ground-truth labels and was not used."
   ],
   "figures": [
-    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/m3_federation_lift.pdf",
-    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/m3_federation_lift.png"
+    "experiments/results/m3_federation_lift.pdf",
+    "experiments/results/m3_federation_lift.png"
   ],
   "full_results": {
     "n_total": 66927,

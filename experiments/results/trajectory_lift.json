@@ -69,8 +69,8 @@
     "interpretation": "The LinearSVC baseline averages per-message scores, making it order-invariant by construction (drop_ratio = \u221e). The sequence model relies on position-weighted aggregation and shows a small but non-zero drop (sequence_detection_drop=0.0099) when message order is destroyed. This is evidence that the sequence model encodes positional structure in a way the baseline does not, consistent with the structural evasion-hardness argument in Sec. 6, even though absolute F1 lift is negative."
   },
   "figures": [
-    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/trajectory_lift.pdf",
-    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/trajectory_lift.png"
+    "experiments/results/trajectory_lift.pdf",
+    "experiments/results/trajectory_lift.png"
   ],
   "full_results": {
     "n_total": 66927,

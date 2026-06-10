@@ -106,8 +106,8 @@
     "tn": 12966
   },
   "figures": [
-    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/m3_frontier.pdf",
-    "/Users/fahrawngill/Adv-Intent/Adversarial-Intent-Telemetry/experiments/results/m3_frontier.png"
+    "experiments/results/m3_frontier.pdf",
+    "experiments/results/m3_frontier.png"
   ],
   "caveats": [
     "All operating points share L = b*r = 256, so a single MinHash signature per conversation is reshaped into different (b, r) band layouts for matching.",
