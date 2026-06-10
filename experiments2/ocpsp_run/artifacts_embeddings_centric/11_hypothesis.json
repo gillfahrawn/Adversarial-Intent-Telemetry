@@ -1,0 +1,1 @@
+{"decision": "H0", "confidence": 0.7618, "justification": ["OII of 0.2382 is below the high-instability threshold (0.5).", "Observer boundary entropy values are low (< 0.1), suggesting stable results.", "Low cross-observer variance favors the H0 (observer-invariant structure)."]}

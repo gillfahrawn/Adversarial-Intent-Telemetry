@@ -1,0 +1,1 @@
+{"cosine": {"boundary_entropy": 0.06888522844606286, "k_variance": 0.1}, "euclidean": {"boundary_entropy": 0.07345271140221626, "k_variance": 0.1}, "lsh": {"boundary_entropy": 0.05843166825400733, "k_variance": 0.1}, "random_projection": {"boundary_entropy": 0.06559802618948016, "k_variance": 0.1}, "knn": {"boundary_entropy": 0.06769490768804387, "k_variance": 0.1}}

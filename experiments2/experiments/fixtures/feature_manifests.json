@@ -1,0 +1,6543 @@
+[
+  {
+    "trajectory_id": "adapted_adv_000",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "refusal -> request",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> refusal"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_001",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4286
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_002",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_003",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "compliance -> clarification",
+        "clarification -> request",
+        "clarification -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_004",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 4,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3571
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_005",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "compliance -> request",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_006",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "ambiguity_present -> clarification",
+        "clarification -> clarification",
+        "multi_step_reasoning -> ambiguity_present",
+        "compliance -> clarification",
+        "clarification -> multi_step_reasoning",
+        "clarification -> compliance",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4375
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_007",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 10
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> constraint_addition",
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "request -> multi_step_reasoning",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_008",
+    "event_features": [
+      "clarification",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "refusal -> refusal",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "request -> refusal",
+        "clarification -> request",
+        "request -> multi_step_reasoning"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_009",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 14
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "request -> refusal",
+        "refusal -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5625
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_010",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 10
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "clarification -> request",
+        "compliance -> compliance",
+        "clarification -> compliance",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.375
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_011",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.2857
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_012",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 10
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "clarification -> ambiguity_present",
+        "ambiguity_present -> clarification",
+        "compliance -> request",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> compliance",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5714
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_013",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> compliance",
+        "request -> multi_step_reasoning"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5714
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_014",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "request -> compliance",
+        "request -> refusal",
+        "refusal -> request",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6429
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_015",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 4,
+      "dependency_depth": 14
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "request -> refusal",
+        "refusal -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.7857
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_016",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.7,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> refusal",
+        "refusal -> request",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_017",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "refusal -> compliance",
+        "multi_step_reasoning -> request",
+        "compliance -> refusal",
+        "request -> refusal",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6667
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_018",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> clarification",
+        "multi_step_reasoning -> clarification",
+        "clarification -> multi_step_reasoning",
+        "clarification -> constraint_addition"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_019",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> ambiguity_present",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "clarification -> multi_step_reasoning",
+        "ambiguity_present -> compliance",
+        "request -> request"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_020",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_021",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 15
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "request -> refusal",
+        "refusal -> request",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.75
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_022",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 4,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "constraint_addition -> constraint_addition",
+        "multi_step_reasoning -> request",
+        "request -> refusal",
+        "refusal -> request",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6429
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_023",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "clarification -> clarification",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_024",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 10
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> refusal",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_025",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 5,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "compliance -> constraint_addition",
+        "request -> compliance",
+        "clarification -> clarification",
+        "compliance -> request",
+        "clarification -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3571
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_026",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 4,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "constraint_addition -> clarification",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5714
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_027",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> clarification",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "request -> ambiguity_present",
+        "multi_step_reasoning -> clarification",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4286
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_028",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "constraint_addition -> clarification",
+        "request -> compliance",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4375
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_029",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_030",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_031",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "request -> request",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_032",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> ambiguity_present",
+        "ambiguity_present -> multi_step_reasoning",
+        "multi_step_reasoning -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_033",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> refusal",
+        "refusal -> multi_step_reasoning",
+        "clarification -> clarification",
+        "clarification -> request",
+        "multi_step_reasoning -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_034",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> constraint_addition",
+        "clarification -> clarification",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3571
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_035",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "request -> refusal",
+        "refusal -> request",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.7143
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_036",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "constraint_addition -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4375
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_037",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "constraint_addition -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_038",
+    "event_features": [
+      "clarification",
+      "multi_step_reasoning"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.2,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> clarification",
+        "multi_step_reasoning -> clarification",
+        "clarification -> multi_step_reasoning"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.25
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_039",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 10
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "compliance -> clarification",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "clarification -> compliance",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.375
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_040",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "compliance -> request",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> compliance",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_041",
+    "event_features": [
+      "ambiguity_present",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3125
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_042",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 5,
+      "dependency_depth": 17
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.35
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_043",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "clarification -> clarification",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_044",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.2778
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_045",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_046",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 15
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_047",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "multi_step_reasoning -> clarification",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6667
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_048",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "clarification -> clarification",
+        "compliance -> request",
+        "compliance -> clarification",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_049",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "constraint_addition -> compliance",
+        "compliance -> compliance",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "compliance -> constraint_addition",
+        "multi_step_reasoning -> clarification",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6667
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_050",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3571
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_051",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 15
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "constraint_addition -> clarification",
+        "constraint_addition -> constraint_addition",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "clarification -> request",
+        "compliance -> compliance",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6111
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_052",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "compliance -> compliance",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "clarification -> compliance",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6667
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_053",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "compliance -> multi_step_reasoning",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> multi_step_reasoning",
+        "compliance -> compliance",
+        "multi_step_reasoning -> compliance",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_054",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "clarification -> request",
+        "request -> multi_step_reasoning"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_055",
+    "event_features": [
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.2778
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_056",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "compliance -> compliance",
+        "clarification -> request",
+        "request -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_057",
+    "event_features": [
+      "compliance",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.2,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 3
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "compliance -> compliance",
+        "request -> compliance"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.1667
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_058",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> constraint_addition",
+        "constraint_addition -> constraint_addition",
+        "clarification -> clarification",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_059",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> refusal"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_060",
+    "event_features": [
+      "ambiguity_present",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "constraint_addition -> constraint_addition",
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_061",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.2778
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_062",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "clarification -> clarification",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_063",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "constraint_addition -> multi_step_reasoning",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> constraint_addition"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_064",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "compliance -> multi_step_reasoning",
+        "request -> clarification",
+        "multi_step_reasoning -> constraint_addition",
+        "request -> compliance",
+        "constraint_addition -> compliance",
+        "compliance -> request",
+        "clarification -> request",
+        "compliance -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6667
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_065",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "compliance -> constraint_addition",
+        "clarification -> clarification",
+        "clarification -> multi_step_reasoning",
+        "compliance -> compliance",
+        "clarification -> compliance",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_066",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> clarification",
+        "compliance -> clarification",
+        "clarification -> request",
+        "clarification -> compliance",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_067",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3571
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_068",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> request",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.25
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_069",
+    "event_features": [
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_070",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> constraint_addition",
+        "multi_step_reasoning -> request",
+        "constraint_addition -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4375
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_071",
+    "event_features": [
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "compliance -> compliance",
+        "multi_step_reasoning -> compliance",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3125
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_072",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "compliance -> constraint_addition",
+        "constraint_addition -> compliance",
+        "clarification -> clarification",
+        "clarification -> multi_step_reasoning",
+        "clarification -> compliance",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_073",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 14
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4444
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_074",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "compliance -> constraint_addition",
+        "constraint_addition -> clarification",
+        "clarification -> clarification",
+        "clarification -> multi_step_reasoning",
+        "clarification -> compliance",
+        "multi_step_reasoning -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_075",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "constraint_addition -> constraint_addition",
+        "multi_step_reasoning -> request",
+        "constraint_addition -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_076",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.375
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_077",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "compliance -> request",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_078",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_079",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "clarification -> clarification",
+        "request -> refusal",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5714
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_080",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5625
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_081",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> multi_step_reasoning",
+        "compliance -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> compliance",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_082",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> request",
+        "request -> request",
+        "request -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_083",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> constraint_addition",
+        "constraint_addition -> multi_step_reasoning",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "clarification -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_084",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> constraint_addition",
+        "constraint_addition -> constraint_addition",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_085",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "compliance -> clarification",
+        "clarification -> request",
+        "request -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_086",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> constraint_addition",
+        "constraint_addition -> request",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "request -> multi_step_reasoning"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_087",
+    "event_features": [
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.25
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_088",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_089",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "compliance -> clarification",
+        "clarification -> multi_step_reasoning",
+        "clarification -> compliance",
+        "multi_step_reasoning -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_090",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_091",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 10
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> constraint_addition",
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "clarification -> clarification",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "clarification -> multi_step_reasoning",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.6429
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_092",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_093",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> compliance",
+        "request -> clarification",
+        "compliance -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_094",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 10
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "compliance -> ambiguity_present",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "clarification -> compliance",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6667
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_095",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> request",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "compliance -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> compliance"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_096",
+    "event_features": [
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_097",
+    "event_features": [
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "compliance -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request",
+        "request -> compliance"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_098",
+    "event_features": [
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "request -> multi_step_reasoning",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_099",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> multi_step_reasoning",
+        "request -> clarification",
+        "multi_step_reasoning -> compliance",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_100",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> clarification",
+        "request -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_101",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "constraint_addition -> constraint_addition",
+        "request -> compliance",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_102",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> constraint_addition",
+        "multi_step_reasoning -> clarification",
+        "constraint_addition -> constraint_addition",
+        "constraint_addition -> multi_step_reasoning"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_103",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> request",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_104",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_105",
+    "event_features": [
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "multi_step_reasoning -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_106",
+    "event_features": [
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "multi_step_reasoning -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.25
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_107",
+    "event_features": [
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_108",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> clarification",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_109",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> constraint_addition",
+        "request -> compliance",
+        "compliance -> request",
+        "constraint_addition -> request",
+        "request -> ambiguity_present",
+        "multi_step_reasoning -> clarification",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4375
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_110",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "compliance -> request",
+        "clarification -> request",
+        "clarification -> compliance",
+        "request -> constraint_addition",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_111",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_112",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> compliance",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_113",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "request -> compliance",
+        "clarification -> clarification",
+        "clarification -> request",
+        "compliance -> constraint_addition"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_114",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> constraint_addition",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_115",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> constraint_addition",
+        "multi_step_reasoning -> request",
+        "multi_step_reasoning -> ambiguity_present",
+        "request -> multi_step_reasoning",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3125
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_116",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "compliance -> multi_step_reasoning",
+        "clarification -> constraint_addition",
+        "request -> compliance",
+        "constraint_addition -> compliance",
+        "multi_step_reasoning -> request"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_117",
+    "event_features": [
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> clarification",
+        "request -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_118",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> clarification",
+        "request -> refusal",
+        "request -> request",
+        "clarification -> request"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.2857
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_119",
+    "event_features": [
+      "clarification",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.2,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 3
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.1667
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_120",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> constraint_addition",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "compliance -> request",
+        "clarification -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "multi_step_reasoning -> compliance",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5556
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_121",
+    "event_features": [
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 5,
+      "dependency_depth": 16
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.35
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_122",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4286
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_123",
+    "event_features": [
+      "compliance",
+      "constraint_addition",
+      "instruction",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "compliance -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.2778
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_124",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "constraint_addition -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> compliance",
+        "request -> constraint_addition",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_125",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "constraint_addition -> multi_step_reasoning",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_126",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 4,
+      "dependency_depth": 14
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> request",
+        "constraint_addition -> multi_step_reasoning",
+        "clarification -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "multi_step_reasoning -> clarification",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4444
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_127",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_128",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "instruction",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.7,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "constraint_addition -> multi_step_reasoning",
+        "multi_step_reasoning -> request",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.375
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_129",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5625
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_130",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "compliance -> multi_step_reasoning",
+        "request -> clarification",
+        "ambiguity_present -> request",
+        "request -> compliance",
+        "clarification -> request",
+        "request -> ambiguity_present",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_131",
+    "event_features": [
+      "ambiguity_present",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "request -> multi_step_reasoning",
+        "request -> request",
+        "multi_step_reasoning -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_132",
+    "event_features": [
+      "ambiguity_present",
+      "compliance",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 14
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "request -> refusal",
+        "refusal -> request",
+        "compliance -> request",
+        "request -> multi_step_reasoning",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3889
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_133",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6429
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_134",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 10
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_135",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "multi_step_reasoning -> compliance",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_136",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> multi_step_reasoning"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.375
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_137",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "ambiguity_present -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> ambiguity_present"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_138",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "compliance -> request",
+        "clarification -> request",
+        "clarification -> compliance",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_139",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 10
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4375
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_140",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_141",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.35
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_142",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 15
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4444
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_143",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_144",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5714
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_145",
+    "event_features": [
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_146",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.2778
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_147",
+    "event_features": [
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.2,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 4
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.0833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_148",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "refusal",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 5,
+      "dependency_depth": 14
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "request -> refusal",
+        "refusal -> request",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5625
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_149",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 5,
+      "dependency_depth": 16
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "ambiguity_present -> request",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> ambiguity_present",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6111
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_150",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "ambiguity_present -> multi_step_reasoning",
+        "multi_step_reasoning -> request",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> ambiguity_present"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_151",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "request -> compliance",
+        "compliance -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4286
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_152",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 14
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "multi_step_reasoning -> constraint_addition",
+        "multi_step_reasoning -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4444
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_153",
+    "event_features": [
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> request",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.1667
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_154",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "clarification -> multi_step_reasoning",
+        "compliance -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_155",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "constraint_addition -> constraint_addition",
+        "ambiguity_present -> constraint_addition",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> ambiguity_present",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6667
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_156",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "clarification -> request",
+        "request -> ambiguity_present"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_157",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 4,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "ambiguity_present -> request",
+        "constraint_addition -> clarification",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "constraint_addition -> request",
+        "request -> ambiguity_present",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_158",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> constraint_addition",
+        "request -> clarification",
+        "request -> request",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_159",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "ambiguity_present -> request",
+        "clarification -> request",
+        "request -> ambiguity_present",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_160",
+    "event_features": [
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> multi_step_reasoning",
+        "request -> clarification",
+        "request -> request",
+        "multi_step_reasoning -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_161",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "compliance -> request",
+        "compliance -> clarification",
+        "clarification -> request",
+        "clarification -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_162",
+    "event_features": [
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> clarification",
+        "request -> request",
+        "request -> multi_step_reasoning",
+        "clarification -> request"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_163",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "decreasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "constraint_addition -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_164",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "ambiguity_present -> request",
+        "request -> clarification",
+        "clarification -> ambiguity_present",
+        "request -> multi_step_reasoning",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3571
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_165",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_166",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> constraint_addition",
+        "constraint_addition -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_167",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "compliance -> request",
+        "clarification -> request",
+        "request -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3077
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_168",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 4
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> multi_step_reasoning",
+        "multi_step_reasoning -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.25
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_169",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_170",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 6
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_171",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_172",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> constraint_addition",
+        "constraint_addition -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_173",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 4,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "clarification -> ambiguity_present",
+        "ambiguity_present -> clarification",
+        "compliance -> request",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_174",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 4,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> compliance",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3571
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_175",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 14
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "ambiguity_present -> request",
+        "request -> compliance",
+        "clarification -> ambiguity_present",
+        "request -> ambiguity_present",
+        "compliance -> request",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "request -> constraint_addition",
+        "ambiguity_present -> compliance",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.7857
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_176",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "compliance -> multi_step_reasoning",
+        "constraint_addition -> compliance",
+        "clarification -> ambiguity_present",
+        "multi_step_reasoning -> request",
+        "compliance -> compliance",
+        "request -> constraint_addition",
+        "ambiguity_present -> compliance"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_177",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "constraint_addition -> multi_step_reasoning",
+        "compliance -> request",
+        "clarification -> multi_step_reasoning",
+        "multi_step_reasoning -> compliance",
+        "request -> constraint_addition",
+        "request -> request"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_178",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "clarification -> request",
+        "request -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.2857
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_179",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 10
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> ambiguity_present",
+        "constraint_addition -> multi_step_reasoning",
+        "clarification -> clarification",
+        "ambiguity_present -> constraint_addition",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_180",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "compliance -> multi_step_reasoning",
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "request -> compliance",
+        "compliance -> request",
+        "clarification -> request",
+        "multi_step_reasoning -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_181",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "request -> compliance",
+        "multi_step_reasoning -> request",
+        "compliance -> request",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> multi_step_reasoning"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.6667
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_182",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_183",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> constraint_addition",
+        "constraint_addition -> clarification",
+        "request -> compliance",
+        "clarification -> clarification",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_184",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "high",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_185",
+    "event_features": [
+      "clarification",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.3,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 0,
+      "dependency_depth": 5
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> request",
+        "multi_step_reasoning -> clarification",
+        "clarification -> multi_step_reasoning"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.2857
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_186",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 4,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "clarification -> ambiguity_present",
+        "ambiguity_present -> clarification",
+        "clarification -> clarification",
+        "clarification -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_187",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 11
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> request",
+        "clarification -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.2143
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_188",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3571
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_189",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "request -> request",
+        "clarification -> request"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_190",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> constraint_addition",
+        "multi_step_reasoning -> constraint_addition",
+        "multi_step_reasoning -> request",
+        "constraint_addition -> multi_step_reasoning",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> multi_step_reasoning"
+      ],
+      "loop_presence": false,
+      "branching_factor": 0.5833
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_191",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "compliance -> clarification",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "multi_step_reasoning -> compliance",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3846
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_192",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 4,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "request -> multi_step_reasoning",
+        "clarification -> request",
+        "clarification -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_193",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "clarification -> compliance",
+        "request -> clarification",
+        "request -> request",
+        "clarification -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_194",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "decreasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 3,
+      "dependency_depth": 12
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "compliance -> multi_step_reasoning",
+        "request -> clarification",
+        "multi_step_reasoning -> multi_step_reasoning",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning",
+        "clarification -> compliance",
+        "multi_step_reasoning -> clarification",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5714
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_195",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> multi_step_reasoning",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.5
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_196",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.5,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 8
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "clarification -> request",
+        "multi_step_reasoning -> clarification",
+        "request -> request"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4167
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_197",
+    "event_features": [
+      "clarification",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 2,
+      "dependency_depth": 9
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "multi_step_reasoning -> request",
+        "clarification -> clarification",
+        "clarification -> request",
+        "clarification -> multi_step_reasoning"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3846
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_198",
+    "event_features": [
+      "clarification",
+      "compliance",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "increasing",
+      "entropy_estimate": 0.4,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 4,
+      "dependency_depth": 7
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "clarification -> request",
+        "clarification -> compliance"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.3333
+    }
+  },
+  {
+    "trajectory_id": "adapted_adv_199",
+    "event_features": [
+      "ambiguity_present",
+      "clarification",
+      "compliance",
+      "constraint_addition",
+      "multi_step_reasoning",
+      "request"
+    ],
+    "behavioral_features": {
+      "turn_count_bin": "medium",
+      "escalation_slope": "flat",
+      "entropy_estimate": 0.6,
+      "repetition_detected": true
+    },
+    "interaction_features": {
+      "role_balance": "balanced",
+      "correction_cycles": 1,
+      "dependency_depth": 13
+    },
+    "structural_features": {
+      "event_bigrams": [
+        "request -> clarification",
+        "clarification -> clarification",
+        "clarification -> multi_step_reasoning",
+        "clarification -> request",
+        "request -> constraint_addition",
+        "multi_step_reasoning -> clarification"
+      ],
+      "loop_presence": true,
+      "branching_factor": 0.4286
+    }
+  }
+]

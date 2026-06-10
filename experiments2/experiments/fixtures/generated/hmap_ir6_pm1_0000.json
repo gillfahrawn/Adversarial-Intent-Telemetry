@@ -1,0 +1,103 @@
+{
+  "fixture_id": "hmap_ir6_pm1_0000",
+  "description": "Generated cross-platform trajectory fixture (experiments/fixtures/generate.py).",
+  "n_steps": 12,
+  "phase_semantics": {
+    "phase_0": "low coordination density",
+    "phase_1": "increasing semantic alignment",
+    "phase_2": "cross-environment coordination transition",
+    "phase_3": "high task specificity / decomposition"
+  },
+  "migration": {
+    "tau": 6,
+    "source_platform": "platform_A",
+    "destination_platform": "platform_B"
+  },
+  "generator_params": {
+    "fixture_id": "hmap_ir6_pm1_0000",
+    "n_steps": 12,
+    "tau": 6,
+    "L": 32,
+    "invariant_ratio": 0.6,
+    "perturbation_magnitude": 0.1,
+    "entropy_start": 2.1,
+    "entropy_growth_rate": 0.243,
+    "coord_start": 0.12,
+    "coord_slope": 0.074,
+    "seed": 0
+  },
+  "steps": [
+    {
+      "timestep": 0,
+      "phase": "phase_0",
+      "entropy": 2.1,
+      "coordination_intensity": 0.12
+    },
+    {
+      "timestep": 1,
+      "phase": "phase_0",
+      "entropy": 2.34,
+      "coordination_intensity": 0.19
+    },
+    {
+      "timestep": 2,
+      "phase": "phase_0",
+      "entropy": 2.59,
+      "coordination_intensity": 0.27
+    },
+    {
+      "timestep": 3,
+      "phase": "phase_1",
+      "entropy": 2.83,
+      "coordination_intensity": 0.34
+    },
+    {
+      "timestep": 4,
+      "phase": "phase_1",
+      "entropy": 3.07,
+      "coordination_intensity": 0.42
+    },
+    {
+      "timestep": 5,
+      "phase": "phase_1",
+      "entropy": 3.31,
+      "coordination_intensity": 0.49
+    },
+    {
+      "timestep": 6,
+      "phase": "phase_2",
+      "entropy": 3.56,
+      "coordination_intensity": 0.56
+    },
+    {
+      "timestep": 7,
+      "phase": "phase_2",
+      "entropy": 3.8,
+      "coordination_intensity": 0.64
+    },
+    {
+      "timestep": 8,
+      "phase": "phase_2",
+      "entropy": 4.04,
+      "coordination_intensity": 0.71
+    },
+    {
+      "timestep": 9,
+      "phase": "phase_3",
+      "entropy": 4.29,
+      "coordination_intensity": 0.79
+    },
+    {
+      "timestep": 10,
+      "phase": "phase_3",
+      "entropy": 4.53,
+      "coordination_intensity": 0.86
+    },
+    {
+      "timestep": 11,
+      "phase": "phase_3",
+      "entropy": 4.77,
+      "coordination_intensity": 0.93
+    }
+  ]
+}
